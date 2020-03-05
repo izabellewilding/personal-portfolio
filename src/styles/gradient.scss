@@ -1,0 +1,101 @@
+//gradient animation
+$gradientBlue: #96c2c1;
+$gradientBlue2: #00acca;
+$gradientBlue3: #a1cfcf;
+
+.gradient {
+  height: 100vh;
+  opacity: 100%;
+  background: -moz-linear-gradient(
+    53deg,
+    $gradientBlue 30%,
+    $gradientBlue3 80%,
+    $gradientBlue2 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(0%, $gradientBlue),
+    color-stop(50%, $gradientBlue3),
+    color-stop(100%, $gradientBlue2)
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    53deg,
+    $gradientBlue 0%,
+    $gradientBlue3 50%,
+    $gradientBlue2 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    53deg,
+    $gradientBlue 0%,
+    $gradientBlue3 50%,
+    $gradientBlue2 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(
+    $gradientBlue 0%,
+    $gradientBlue3 50%,
+    $gradientBlue2 100%
+  ); /* ie10+ */
+  background: linear-gradient(
+    37deg,
+    $gradientBlue 0%,
+    $gradientBlue3 50%,
+    $gradientBlue2 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb132', endColorstr='#7B48FF',GradientType=0 ); /* ie6-9 */
+  background-size: 200% 200%;
+  -webkit-animation: gradient_animation 8s ease infinite;
+  -moz-animation: gradient_animation 8s ease infinite;
+  animation: gradient_animation 8s ease infinite;
+}
+
+@keyframes gradient_animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes gradient_animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient_animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-ms-keyframes gradient_animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+//end gradient animation

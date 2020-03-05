@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "amatic";
+  src: url(../fonts/AmaticSC-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "quicksand";
+  src: url(../fonts/Quicksand-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "test";
+  src: url(../fonts/BarlowCondensed-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "serif-pro";
+  src: url(../fonts/SourceSerifPro-Regular.ttf);
+  font-display: swap;
+}
+
+//fonts
+
+.amatic {
+  font-family: "amatic";
+}
+
+.quicksand {
+  font-family: "quicksand";
+}
+
+.test {
+  font-family: "test";
+}
+
+.serif-pro {
+  font-family: "serif-pro";
+}
+
+.text-massive {
+  font-size: 6rem;
+}
+//colors
+
+$darkRed: #4f0000;
+$pink: #ff0481;
+$brown: #7f6c73;
+$lightestBlue: #eaffff;
+$darkBlue: #18132a;
+
+//breakpoints
+
+$mobileBreakpoint: 750px;
+
+.scrolling-box {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    overflow-y: unset;
+  }
+}
+
+.text-darkBlue {
+  color: $darkBlue;
+}
+
+.bg-darkBlue {
+  background: $darkBlue;
+}
+
+.bird {
+  fill: $darkBlue;
+  top: -5rem;
+  right: 0;
+  height: 22rem;
+
+  @media (min-width: 750px) {
+    height: 40rem;
+    top: -12rem;
+  }
+}
+
+.splash {
+  left: 10%;
+}
+
+.splash-med-left {
+  left: 10%;
+}
+
+.splash2 {
+  right: 20%;
+  transform: rotateX(180deg);
+}
+
+.blob-splash {
+  left: 25%;
+  bottom: 1%;
+}
+
+.small-splash {
+  top: 5%;
+  right: 25%;
+}
+
+.lightSVG {
+  fill: $lightestBlue;
+}
+
+.pinkSVG {
+  fill: $pink;
+}
+
+.bg-pink {
+  background: $pink;
+}
+.bg-lightBlue {
+  background-color: #9bc9cb;
+}
+.bg-lightestBlue {
+  background-color: #93bdc52e;
+}
+.text-light {
+  color: $lightestBlue;
+}
+
+.card-stlye {
+  border: solid black 1px;
+}
+
+.social-icon-footer {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+//nav
+
+.nav-list-item {
+  padding: 1rem;
+  color: $darkBlue;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $darkRed;
+  }
+  &:focus,
+  &:active {
+    color: $pink;
+  }
+}
+
+.custom-underline {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    &::after {
+      width: 80%;
+      transition: 0.3s ease all;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 77%;
+    height: 3px;
+    width: 0%;
+    left: 10%;
+    background-color: #ff074d;
+    -webkit-transition: 0.5s ease all 0.3s;
+    transition: 0.5s ease all 0s;
+    border-radius: 5px;
+  }
+}
+
+#nav-toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2rem;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: block;
+  }
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  @media (max-width: $mobileBreakpoint) {
+    padding: 0px 13px 4px 0px;
+  }
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 31px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+  // @media (max-width: $mobileBreakpoint) {
+  //   display: block;
+  // }
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+//end header hamburger icon
+
+//RMWC Drawer content
+.nav-logo {
+  fill: $darkRed;
+}
+
+.nav .mdc-drawer--modal + .mdc-drawer-scrim {
+  background-color: #ffffff00;
+  z-index: 0;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+}
