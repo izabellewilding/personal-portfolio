@@ -52,8 +52,8 @@ const LandingPage = props => {
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
         {" "}
         {/* hero text */}
-        <div className="relative  h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <Link
+        <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          {/* <Link
             to="projects"
             spy={true}
             smooth={true}
@@ -62,25 +62,29 @@ const LandingPage = props => {
             className="arrow p-3 absolute rounded-full"
           >
             <RusticArrow className="h-12" />{" "}
-          </Link>
+          </Link> */}
           <div className="inline-block">
-            <h1 className=" landing-heading relative text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond  leading-none">
+            <h1 className="relative text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond leading-none">
               Izabelle Wilding
             </h1>{" "}
-            <p className="landing-subheading quicksand text-2xl md:text-2xl text-lightPrimary uppercase">
+            <p className="landing-subheading quicksand text-xl md:text-2xl text-lightPrimary uppercase">
               Freelance Web Developer
             </p>{" "}
             <SocialIcons />
           </div>
 
-          {/* <a
-            href="#projects"
-            class="invisible uppercase md:visible absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
-            style={{ bottom: "21%" }}
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className=" absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
+            style={{ bottom: "25%" }}
             role="button"
           >
-            projects
-          </a> */}
+            Click to see Projects
+          </Link>
         </div>{" "}
       </div>{" "}
       {/* </div>{" "} */}

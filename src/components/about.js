@@ -18,8 +18,8 @@ const About = props => {
 
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-800"></p>
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-          Hello! I'm Izabelle, a freelance web developer in Bristol. I hadn't
-          always planned to become a developer, but my love for language,
+          Hello! I'm Izabelle, a freelance web developer based in Bristol. I
+          hadn't always planned to become a developer, but my love for language,
           solving complex problems, and art lead me here. As a developer I can
           channel my combined knowledge and interests into building responsive,
           high performance, attractive UIs using HTML, CSS, and JavaScript.
@@ -41,17 +41,17 @@ const About = props => {
             src="../images/adrien-converse-xzH7K6nVVgI-unsplash.jpg"
             alt="Sunset in the mountains"
           />
-          <div className="px-6 py-4 bg-lightPrimary">
+          <div className="px-6 py-4 bg-white">
             <div className="font-bold text-xl mb-2 text-darkPrimary">
               My Blog
             </div>
-            <p className="text-gray-700 text-base bg-lightPrimary">
+            <p className="text-gray-700 text-base bg-white">
               I've recently started writing a front-end blog to reaffirm my
               knowledge and explore some of the interesting topics I've been
               learning about :-){" "}
             </p>
           </div>
-          <div className="px-6 py-4 bg-lightPrimary">
+          <div className="px-6 py-4 bg-white">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               #blog
             </span>

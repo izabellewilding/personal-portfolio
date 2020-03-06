@@ -12,7 +12,7 @@ const CardBack = ({ ...props }) => {
       <div className="card-text-wrapper p-5">
         <h3 className="card-back-title">Main Features</h3>
         {/* <h3 className="card-back-subtitle">Features</h3> */}
-        <ul>
+        <ul style={{ listStyle: "square" }}>
           <li>{props.listItem1}</li>
           <li>{props.listItem2}</li>
           <li>{props.listItem3}</li>

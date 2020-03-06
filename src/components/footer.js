@@ -45,19 +45,19 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-4">
             {" "}
             {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
-            <h4 className="text-3xl font-semibold text-lightPrimary">
+            <h4 className="text-3xl font-semibold text-lightPrimary mb-6">
               Get in touch
             </h4>
-            <h5 className="text-lg mt-0 mb-2 text-lightPrimary">
+            <h5 className="text-lg mt-0 mb-2 text-gray-400">
               Find me on these platforms - or say hello!
             </h5>{" "}
-            <p className="text-lightPrimary">izabellewilding@gmail.com</p>
+            <p className="text-gray-500">izabellewilding@gmail.com</p>
             <div className="mt-6 flex flex-row">
               <a
                 href="https://github.com/izabellewilding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-lightPrimary flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="social-icon-hover bg-white text-lightPrimary flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <GitHub className="social-icon-footer" />{" "}
@@ -66,7 +66,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-lightPrimary shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="social-icon-hover bg-white text-lightPrimary shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <LinkedIn className="social-icon-footer" />
@@ -81,7 +81,7 @@ const Footer = () => {
                 href="mailto:izabellewilding@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="social-icon-hover bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <Email className="social-icon-footer" />
@@ -171,15 +171,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-400" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()}{" "}
-              <a
-                href="https://www.creative-tim.com"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a className="text-gray-600 hover:text-gray-900">
                 Izabelle Wilding
               </a>
             </div>

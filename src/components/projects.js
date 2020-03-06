@@ -28,28 +28,49 @@ const Projects = ({ projectsRef, ...props }) => {
       className="mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
     >
       <div className="container inline-block pb-16">
-        <div classname="section">
+        {/* <div classname="section">
           <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8">
             Here are some of the projects I've been working on. Have a browse or
             check out the code on GitHub.
           </h1>{" "}
           <a>{GitHub}</a>
-        </div>
+        </div> */}
         <section className="projects">
-          {" "}
+          <Card
+            cardFront={
+              <CardFront
+                style={{ backgroundColor: "#18132a" }}
+                // logo={<ElecLogo />}
+                cardImage="../images/doula-site.JPG"
+                cardTitle="Website and design for a Bristol based Doula."
+              />
+            }
+            cardBack={
+              <CardBack
+                style={{
+                  backgroundColor: "#18132a",
+                }}
+                listItem1="Fully customizable content with Netlify CMS"
+                listItem2="Built using Bulma CSS framework"
+                listItem3="Live Instagram feed"
+                siteLink="https://chantal-baptiste-doula.netlify.com/"
+                gitLink="https://github.com/doula-website/personal-doula-website"
+              />
+            }
+          />{" "}
           <Card
             cardFront={
               <CardFront
                 // logo={<FoodBlogLogo />}
                 cardImage="../images/abof-img.png"
-                cardTitle="Food recipe blog"
+                cardTitle="Recipe Website and Blog"
               />
             }
             cardBack={
               <CardBack
                 listItem1="On and offline search bar made with Elasticlunr"
-                listItem2="MDX recipe pags"
-                listItem3="Responsive original UI design with custom SVGs"
+                listItem2="MDX recipe pages"
+                listItem3="Responsive UI design, bespoke SVGs, easy to read recipe format"
                 style={{
                   backgroundColor: "#18132a",
                 }}
@@ -68,7 +89,7 @@ const Projects = ({ projectsRef, ...props }) => {
                   }}
                   cardImage="../images/flickrapi-img.JPG"
                   // logo={"Artist Photograph & Art Gallery"}
-                  cardTitle="Flickr Image Gallery"
+                  cardTitle="Artist Image Gallery"
                 />
               }
               cardBack={

@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
         <LandingPage id="1" />
         <Projects id="projects" projectsRef={ref} />
         <About id="about" />
-        <Footer />
+        <Footer id="contact" />
       </div>
       {/* <footer>
         © {new Date().getFullYear()}, Built with
