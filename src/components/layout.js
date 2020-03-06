@@ -50,8 +50,8 @@ const Layout = ({ children }) => {
       <div className="scrolling-box">
         <Header isSticky={isSticky} />
         <LandingPage id="1" />
-        <Projects projectsRef={ref} />
-        <About />
+        <Projects id="projects" projectsRef={ref} />
+        <About id="about" />
         <Footer />
       </div>
       {/* <footer>
