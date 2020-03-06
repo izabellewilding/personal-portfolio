@@ -56,7 +56,7 @@
   .card-back-title {
     margin-bottom: 0;
     font-size: 1.25rem;
-    color: $lightestBlue;
+    color: $lightPrimary;
     text-align: center;
     text-transform: uppercase;
   }
@@ -67,7 +67,7 @@
   // }
 
   ul {
-    color: $lightestBlue;
+    color: $lightPrimary;
 
     padding: 1rem;
     padding-bottom: 0rem;
@@ -110,8 +110,8 @@
     text-decoration: none;
     background-color: transparent;
 
-    border: solid 1px $lightestBlue;
-    color: $lightestBlue;
+    border: solid 1px $lightPrimary;
+    color: $lightPrimary;
     cursor: pointer;
     font-family: "quicksand";
 
@@ -127,7 +127,7 @@
     }
 
     .git-button-icon {
-      fill: $lightestBlue;
+      fill: $lightPrimary;
 
       height: 1.2rem;
       margin-right: 0.5rem;

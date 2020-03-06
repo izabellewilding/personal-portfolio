@@ -1,6 +1,8 @@
+$mobileBreakpoint: 768px;
+
 @font-face {
-  font-family: "amatic";
-  src: url(../fonts/AmaticSC-Regular.ttf);
+  font-family: "chivo";
+  src: url(../fonts/Chivo-Regular.ttf);
   font-display: swap;
 }
 
@@ -11,80 +13,139 @@
 }
 
 @font-face {
-  font-family: "test";
+  font-family: "barlow-cond";
   src: url(../fonts/BarlowCondensed-Medium.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "serif-pro";
-  src: url(../fonts/SourceSerifPro-Regular.ttf);
   font-display: swap;
 }
 
 //fonts
 
-.amatic {
-  font-family: "amatic";
+.chivo {
+  font-family: "chivo";
 }
 
 .quicksand {
   font-family: "quicksand";
 }
 
-.test {
-  font-family: "test";
+.barlow-cond {
+  font-family: "barlow-cond";
 }
 
-.serif-pro {
-  font-family: "serif-pro";
+//text style
+
+.landing-heading {
+  font-size: 2.45rem;
+  @media (min-width: $mobileBreakpoint) {
+    font-size: 4rem;
+  }
 }
 
-.text-massive {
-  font-size: 6rem;
+.landing-subheading {
+  font-size: 1.05rem;
+
+  @media (min-width: $mobileBreakpoint) {
+    font-size: 1.75rem;
+  }
 }
+
 //colors
 
-$darkRed: #4f0000;
-$pink: #ff0481;
-$brown: #7f6c73;
-$lightestBlue: #eaffff;
-$darkBlue: #18132a;
+$lightPrimary: #e5f8fc;
+$darkPrimary: #12182b;
+$midPrimary: #c5dddd;
+
+//color utils
+
+.bg-darkPrimary {
+  background-color: $darkPrimary;
+}
+.bg-midPrimary {
+  background-color: $midPrimary;
+}
+.bg-lightPrimary {
+  background-color: $lightPrimary;
+}
+
+.text-darkPrimary {
+  color: $darkPrimary;
+}
+.text-midPrimary {
+  color: $midPrimary;
+}
+.text-lightPrimary {
+  color: $lightPrimary;
+}
+
+.svg-lightPrimary {
+  fill: $lightPrimary;
+}
+.svg-midPrimary {
+  fill: $midPrimary;
+}
+.svg-darkPrimary {
+  fill: $darkPrimary;
+}
+
+.notSticky {
+  display: none;
+  z-index: 1;
+}
+
+.wave {
+  fill: $darkPrimary;
+  opacity: 100;
+  bottom: -1rem;
+  width: 120%;
+}
+.sticky {
+  position: fixed;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: moveDown 0.5s ease;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translateY(0);
+  }
+}
 
 //breakpoints
 
-$mobileBreakpoint: 750px;
+// .scrolling-box {
+//   scroll-behavior: smooth;
+//   overflow-y: scroll;
+//   height: 100vh;
 
-.scrolling-box {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  height: 100vh;
+//   @media (max-width: 768px) {
+//     overflow-y: unset;
+//   }
+// }
 
-  @media (max-width: 768px) {
-    overflow-y: unset;
-  }
-}
+// .bird {
+//   fill: $darkBlue;
+//   top: -5rem;
+//   right: 0;
+//   height: 22rem;
 
-.text-darkBlue {
-  color: $darkBlue;
-}
+//   @media (min-width: 750px) {
+//     height: 40rem;
+//     top: -12rem;
+//   }
+// }
 
-.bg-darkBlue {
-  background: $darkBlue;
-}
-
-.bird {
-  fill: $darkBlue;
-  top: -5rem;
-  right: 0;
-  height: 22rem;
-
-  @media (min-width: 750px) {
-    height: 40rem;
-    top: -12rem;
-  }
-}
-
+//landing page svg splashes
 .splash {
   left: 10%;
 }
@@ -108,27 +169,6 @@ $mobileBreakpoint: 750px;
   right: 25%;
 }
 
-.lightSVG {
-  fill: $lightestBlue;
-}
-
-.pinkSVG {
-  fill: $pink;
-}
-
-.bg-pink {
-  background: $pink;
-}
-.bg-lightBlue {
-  background-color: #9bc9cb;
-}
-.bg-lightestBlue {
-  background-color: #93bdc52e;
-}
-.text-light {
-  color: $lightestBlue;
-}
-
 .card-stlye {
   border: solid black 1px;
 }
@@ -142,17 +182,17 @@ $mobileBreakpoint: 750px;
 
 .nav-list-item {
   padding: 1rem;
-  color: $darkBlue;
+
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
-    color: $darkRed;
+    color: $darkPrimary;
   }
   &:focus,
   &:active {
-    color: $pink;
+    color: $midPrimary;
   }
 }
 
@@ -170,7 +210,7 @@ $mobileBreakpoint: 750px;
   &::after {
     content: "";
     position: absolute;
-    top: 77%;
+    top: 70%;
     height: 3px;
     width: 0%;
     left: 10%;
@@ -244,9 +284,6 @@ $mobileBreakpoint: 750px;
 //end header hamburger icon
 
 //RMWC Drawer content
-.nav-logo {
-  fill: $darkRed;
-}
 
 .nav .mdc-drawer--modal + .mdc-drawer-scrim {
   background-color: #ffffff00;

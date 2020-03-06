@@ -1,0 +1,260 @@
+@import "../styles/all.scss";
+
+.tech-icons {
+  position: absolute;
+  height: 500px;
+  vertical-align: top;
+  left: 729px;
+  top: -6rem;
+  @media (max-width: $mobileBreakpoint) {
+    position: absolute;
+    height: 500px;
+    vertical-align: top;
+    left: -53px;
+    top: 1rem;
+  }
+}
+
+.tech-icon-container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 1;
+  -webkit-transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+  transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+}
+
+.tech-icon-container {
+  animation-duration: 4s;
+  height: 144px;
+  margin-left: 76px;
+  margin-top: -25px;
+  position: absolute;
+  width: 144px;
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+    transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.git {
+  -webkit-animation-delay: -3.4s;
+  animation-delay: -3.4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 86px;
+  margin-left: 30vw;
+  margin-top: 260px;
+  position: absolute;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  width: 86px;
+
+  @media (max-width: $mobileBreakpoint) {
+    margin-left: 59vw;
+  }
+}
+
+.java-script {
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  background-size: 100px;
+  height: 122px;
+  margin-left: 16vw;
+  margin-top: 105px;
+  position: absolute;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 122px;
+}
+
+.tech-icon-container {
+  fill: #f60fbe;
+  .tech-icon.image {
+    width: 40px;
+    height: 40px;
+    opacity: 0.95;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .tech-icon.large {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .tech-icon.medium-size {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    width: 35px;
+    height: 35px;
+  }
+
+  .tech-icon.small {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.tech-icon-container.gatsby {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 124px;
+  margin-left: 12vw;
+  margin-top: 234px;
+  position: absolute;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  width: 124px;
+}
+
+.tech-icon-container.css-3 {
+  animation-delay: -3.9s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 96px;
+  margin-left: 6vw;
+  margin-top: 340px;
+  position: absolute;
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+  width: 96px;
+}
+
+.tech-icon-container.photoshop {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 102px;
+  margin-left: 5vw;
+  margin-top: 48px;
+  position: absolute;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  width: 102px;
+}
+
+.tech-icon-container.html-5 {
+  -webkit-animation-delay: -2.9s;
+  animation-delay: -2.9s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 82px;
+  margin-left: 1vw;
+  margin-top: 210px;
+  position: absolute;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  width: 82px;
+  opacity: 0.75;
+}
+
+.tech-icon-container.react {
+  -webkit-animation-delay: -2.2s;
+  animation-delay: -2.2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 94px;
+  margin-left: 8vw;
+  margin-top: 153px;
+  position: absolute;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 94px;
+}
+
+.tech-icon-container.sass {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 74px;
+  margin-left: 23vw;
+  margin-top: 340px;
+  position: absolute;
+  width: 74px;
+  opacity: 0.75;
+
+  @media (max-width: $mobileBreakpoint) {
+    margin-left: 39vw;
+    margin-top: 300px;
+  }
+}
+
+.tech-icon-container.microsoft {
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 147px;
+  margin-left: 417px;
+  margin-top: 38px;
+  position: absolute;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  width: 147px;
+}
+
+.tech-icon-container.illustrator {
+  -webkit-animation-delay: -2.2s;
+  animation-delay: -2.2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  height: 94px;
+  margin-left: 25vw;
+  margin-top: 190px;
+  position: absolute;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 94px;
+  opacity: 0.75;
+}
+
+.tech-icon-link:hover .tech-icon-container {
+  background: #f7f7f7;
+}

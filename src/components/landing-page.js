@@ -61,29 +61,31 @@ const LandingPage = props => {
         className="h-screen absolute bottom-0 lightSVG "
         style={{ height: "65vh", left: "5%" }}
       /> */}
-      <Bird className="absolute opacity-75 bird" />{" "}
+      {/* <Bird className="absolute opacity-75 bird" />{" "} */}
       <div className=" absolute opacity-25 bottom-0 right-0 top-0 left-0" />
-      <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " />
+      {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " /> */}
       {/* <div className="absolute top-0 w-full h-full bg-center bg-cover"> */}{" "}
-      <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0">
+      <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
         {" "}
         {/* hero text */}
-        <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <h1 className=" text-white text-5xl md:text-6xl uppercase test text-darkBlue">
-            Izabelle Wilding
-          </h1>{" "}
-          <p className="quicksand text-2xl md:text-3xl text-white ">
-            Freelance Web Developer
-          </p>{" "}
-          <SocialIcons />
-          <a
+        <div className="relative  h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div className="inline-block">
+            <h1 className=" landing-heading relative text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond  leading-none">
+              Izabelle Wilding
+            </h1>{" "}
+            <p className="landing-subheading quicksand text-2xl md:text-2xl text-lightPrimary uppercase">
+              Freelance Web Developer
+            </p>{" "}
+            <SocialIcons />{" "}
+          </div>
+          {/* <a
             href="#projects"
-            class="invisible md:visible absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
+            class="invisible uppercase md:visible absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
             style={{ bottom: "21%" }}
             role="button"
           >
-            Click to See Projects
-          </a>
+            projects
+          </a> */}
         </div>{" "}
       </div>{" "}
       {/* </div>{" "} */}

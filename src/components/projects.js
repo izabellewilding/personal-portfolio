@@ -8,9 +8,6 @@ import "../styles/all.scss"
 import CardFront from "./card-front"
 import CardBack from "./card-back"
 import GitHub from "../assets/github-darkRed.svg"
-import ElecLogo from "../assets/alex-wilding-logo.svg"
-import FoodBlogLogo from "../assets/bitoffood-underlined.svg"
-// import Arrow from "../assets/arrow4-black.svg"
 
 const Card = ({ cardFront, cardBack }) => {
   return (
@@ -23,16 +20,18 @@ const Card = ({ cardFront, cardBack }) => {
   )
 }
 
-const Projects = props => {
+const Projects = ({ projectsRef, ...props }) => {
   return (
     <main
+      ref={projectsRef}
       {...props}
-      className=" w-full min-h-full flex justify-center items-center "
+      className="mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
     >
-      <div className="container inline-block bg-lightestBlue pb-16">
+      <div className="container inline-block pb-16">
         <div classname="section">
-          <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase quicksand">
-            Projects
+          <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8">
+            Here are some of the projects I've been working on. Have a browse or
+            check out the code on GitHub.
           </h1>{" "}
           <a>{GitHub}</a>
         </div>

@@ -4,6 +4,7 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
+import FloatingIcons from "../components/floating-icons"
 
 const Gradient = styled.div`
   background: linear-gradient(
@@ -17,7 +18,8 @@ const Gradient = styled.div`
 
 const Footer = () => {
   return (
-    <footer className="relative bg-lightBlue pt-8 pb-6">
+    <footer className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden">
+      <FloatingIcons />
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
         style={{ height: "80px", transform: "translateZ(0)" }}
@@ -42,17 +44,20 @@ const Footer = () => {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
             {" "}
-            <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " />
-            <h4 className="text-3xl font-semibold .text-light">Get in touch</h4>
-            <h5 className="text-lg mt-0 mb-2 text-light">
+            {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
+            <h4 className="text-3xl font-semibold text-lightPrimary">
+              Get in touch
+            </h4>
+            <h5 className="text-lg mt-0 mb-2 text-lightPrimary">
               Find me on these platforms - or say hello!
             </h5>{" "}
+            <p className="text-lightPrimary">izabellewilding@gmail.com</p>
             <div className="mt-6 flex flex-row">
               <a
                 href="https://github.com/izabellewilding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-blue-400 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white text-lightPrimary flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <GitHub className="social-icon-footer" />{" "}
@@ -61,7 +66,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-blue-600 shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white text-lightPrimary shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <LinkedIn className="social-icon-footer" />

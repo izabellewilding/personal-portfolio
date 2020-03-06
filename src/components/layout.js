@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect, useState, useRef } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../style.css"
@@ -29,14 +29,29 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [isSticky, setSticky] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(ref.current.getBoundingClientRect().top <= 200)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll)
+    }
+  }, [])
+
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="scrolling-box">
-        <Header />
+        <Header isSticky={isSticky} />
         <LandingPage id="1" />
-        <Projects id="projects" />
-        <About id="about" />
+        <Projects projectsRef={ref} />
+        <About />
         <Footer />
       </div>
       {/* <footer>

@@ -2,17 +2,7 @@
 //social icon bar style 1
 
 .social-bar {
-  grid-column: 2/3;
-  grid-row: 1/3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 0.5rem;
-
-  z-index: 1;
-
-  // @media (max-width: $mobileBreakpoint) {
-  //   display: none;
+  width: 100%;
 }
 
 .social-bar-inner-footer {
@@ -27,17 +17,18 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  width: 33%;
 
   .social-icon {
-    transition: all ease-in-out 0.1s;
-    width: 2rem;
+    transition: all ease-in-out 0.05s;
+    width: 1.5rem;
   }
 
   .icon-text {
     opacity: 0;
 
     transition: all 0.1s ease-in;
-    color: $lightestBlue;
+    color: $lightPrimary;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: quicksand;
@@ -47,7 +38,7 @@
   // &:active,
   &:focus {
     .social-icon {
-      fill: $lightestBlue;
+      fill: $lightPrimary;
     }
     .icon-text {
       opacity: 1;
