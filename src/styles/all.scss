@@ -1,5 +1,8 @@
 $mobileBreakpoint: 768px;
 
+// @import "@material/drawer/mdc-drawer";
+// @import "@material/list/mdc-list";
+
 @font-face {
   font-family: "chivo";
   src: url(../fonts/Chivo-Regular.ttf);
@@ -233,7 +236,7 @@ $midPrimary: #c5dddd;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
   @media (max-width: $mobileBreakpoint) {
-    padding: 0px 13px 4px 0px;
+    padding: 8px 17px 0px 0px;
   }
 }
 #nav-toggle span,
@@ -243,7 +246,7 @@ $midPrimary: #c5dddd;
   border-radius: 1px;
   height: 3px;
   width: 31px;
-  background: white;
+  background: $darkPrimary;
   position: absolute;
   display: block;
   content: "";
