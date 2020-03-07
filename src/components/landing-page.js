@@ -21,9 +21,9 @@ const LandingPage = props => {
     //landing page top
     <main
       {...props}
-      className="gradient w-full h-screen relative items-center justify-center "
+      className=" w-full h-screen relative items-center justify-center "
     >
-      <div className="relative w-full h-screen">
+      <div className="gradient relative w-full h-screen">
         {" "}
         <Splash
           className=" absolute lightSVG bottom-0 splash "
