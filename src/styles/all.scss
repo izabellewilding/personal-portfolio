@@ -80,6 +80,9 @@ $midPrimary: #c5dddd;
   z-index: 1;
 }
 
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+
 .arrow {
   bottom: 20%;
 }
