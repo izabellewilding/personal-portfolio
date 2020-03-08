@@ -88,6 +88,11 @@ $midPrimary: #c5dddd;
   opacity: 100;
   bottom: -1rem;
   width: 120%;
+
+  @media (max-width: $mobileBreakpoint) {
+    width: 231%;
+    z-index: 10;
+  }
 }
 .sticky {
   position: fixed;
@@ -286,7 +291,7 @@ $midPrimary: #c5dddd;
 
 .nav .mdc-drawer--modal + .mdc-drawer-scrim {
   background-color: #ffffff00;
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 .nav-list-item a {

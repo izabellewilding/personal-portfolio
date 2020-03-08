@@ -9,8 +9,8 @@ const About = props => {
       {...props}
       className="relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-midPrimary pb-64 pt-16"
     >
-      <Wave className="wave absolute bottom-0 left-0 right-0 svg-darkPrimary" />
-      <div className="w-full md:w-5/12 px-4 mr-auto ml-auto ">
+      <Wave className="wave z-10 absolute bottom-0 left-0 right-0 svg-darkPrimary" />
+      <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-8 ">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>
         </div> */}
@@ -33,7 +33,7 @@ const About = props => {
         </p>
       </div>
 
-      <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
+      <div className="w-full md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
         <div class="max-w-sm rounded overflow-hidden shadow-lg">
           <Image
             className="w-full"

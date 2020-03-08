@@ -14,7 +14,7 @@ import "@material/list/dist/mdc.list.css"
 import "@material/drawer/dist/mdc.drawer.css"
 
 const StyledDrawer = styled(Drawer)`
-  background-color: #17102feb;
+  background-color: #ffffff;
   top: 0;
   bottom: 0;
   z-index: 2;
@@ -50,7 +50,7 @@ const Header = props => {
   return (
     <header
       {...props}
-      className={`${props.isSticky ? "sticky shadow" : "notSticky"}`}
+      className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
     >
       <div className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
@@ -154,7 +154,7 @@ const Header = props => {
           href="https://github.com/izabellewilding"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          className="text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
           <GitHub className="social-icon-footer" />{" "}
@@ -163,7 +163,7 @@ const Header = props => {
           href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-lightPrimary  flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          className=" text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
           <LinkedIn className="social-icon-footer" />
@@ -178,7 +178,7 @@ const Header = props => {
           href="mailto:izabellewilding@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-white text-gray-900  font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          className=" text-gray-900 font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
           <Email className="social-icon-footer" />

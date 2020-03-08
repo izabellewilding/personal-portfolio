@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(ref.current.getBoundingClientRect().top <= 200)
+      setSticky(ref.current.getBoundingClientRect().top <= 80)
     }
 
     window.addEventListener("scroll", handleScroll)
