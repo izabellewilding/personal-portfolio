@@ -9,6 +9,8 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@material/drawer": "^5.1.0",
+    "@material/list": "^5.1.0",
     "@rmwc/drawer": "^5.7.2",
     "@rmwc/list": "^5.7.2",
     "classnames": "^2.2.6",

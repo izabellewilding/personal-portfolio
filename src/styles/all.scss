@@ -1,7 +1,7 @@
-$mobileBreakpoint: 768px;
+@use "@material/drawer/mdc-drawer";
+@use "@material/list/mdc-list";
 
-// @import "@material/drawer/mdc-drawer";
-// @import "@material/list/mdc-list";
+$mobileBreakpoint: 768px;
 
 @font-face {
   font-family: "chivo";
@@ -79,9 +79,6 @@ $midPrimary: #c5dddd;
   display: none;
   z-index: 1;
 }
-
-@import "@material/drawer/mdc-drawer";
-@import "@material/list/mdc-list";
 
 .arrow {
   bottom: 20%;
