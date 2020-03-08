@@ -47,6 +47,11 @@ const Header = props => {
   function drawerOpen() {
     setOpen(!open)
   }
+
+  function handleSetActive(to) {
+    console.log(to)
+  }
+
   return (
     <header
       {...props}
@@ -122,27 +127,87 @@ const Header = props => {
           <span></span>
         </div>
       </div>
-      <StyledDrawer dir="ltr" modal open={open} onClose={menu}>
+      <StyledDrawer
+        className=" z-10"
+        dir="ltr"
+        modal
+        open={open}
+        onClose={menu}
+      >
         <DrawerHeader>
           {" "}
           <DrawerTitle>
             {" "}
-            <Logo className="h-12 nav-logo svg-lightPrimary" />
+            <Logo className="h-12 nav-logo svg-darkPrimary" />
           </DrawerTitle>
         </DrawerHeader>
         <DrawerContent>
           <StyledList>
-            <StyledLink to="/" className="nav-list-item">
-              Projects
-            </StyledLink>
+            <Link
+              activeClass="active"
+              onSetActive={handleSetActive}
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="hover:text-midPrimary cursor-pointer"
+            >
+              <li className="text-darkPrimary nav-list-item  mr-6 p-1">
+                Projects
+              </li>{" "}
+            </Link>
             {/* <StyledLink to="/blog" className="nav-list-item">
                 Blog
               </StyledLink> */}
 
-            <StyledLink to="/about" className="nav-list-item">
-              About
-            </StyledLink>
-
+            <Link
+              activeClass="active"
+              onSetActive={handleSetActive}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="hover:text-midPrimary cursor-pointer"
+            >
+              {" "}
+              <li className="text-darkPrimary nav-list-item  mr-6 p-1">
+                About
+              </li>
+            </Link>
+            <Link
+              activeClass="active"
+              onSetActive={handleSetActive}
+              to=""
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="hover:text-midPrimary cursor-pointer"
+            >
+              <li className="nav-list-item  mr-6 p-1">
+                <a className="text-darkPrimary" href="#">
+                  Blog
+                </a>
+              </li>
+            </Link>
+            <Link
+              activeClass="active"
+              onSetActive={handleSetActive}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className=" cursor-pointer"
+            >
+              <li className="nav-list-item  mr-6 p-1">
+                <a className="text-darkPrimary" href="#">
+                  Contact
+                </a>
+              </li>
+            </Link>
             {/* <StyledLink to="/404" className="nav-list-item">
                 Resume
               </StyledLink> */}

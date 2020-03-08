@@ -41,7 +41,7 @@ $mobileBreakpoint: 768px;
 
 $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
-$midPrimary: #c5dddd;
+$midPrimary: #d7e6e6e5;
 
 //color utils
 
@@ -91,7 +91,7 @@ $midPrimary: #c5dddd;
 
   @media (max-width: $mobileBreakpoint) {
     width: 231%;
-    z-index: 10;
+    // z-index: 1;
   }
 }
 .sticky {
@@ -115,6 +115,10 @@ $midPrimary: #c5dddd;
   }
 }
 
+.active {
+  background-color: $midPrimary;
+  width: 100%;
+}
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);
@@ -186,7 +190,7 @@ $midPrimary: #c5dddd;
 
 .nav-list-item {
   padding: 1rem;
-
+  width: 100%;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -289,11 +293,10 @@ $midPrimary: #c5dddd;
 
 //RMWC Drawer content
 
-.nav .mdc-drawer--modal + .mdc-drawer-scrim {
-  background-color: #ffffff00;
-  z-index: 0 !important;
+.mdc-drawer--modal + .mdc-drawer-scrim {
+  background-color: transparent !important;
+  z-index: 0;
 }
-
 .nav-list-item a {
   text-decoration: none;
 }
