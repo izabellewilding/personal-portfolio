@@ -119,6 +119,11 @@ $midPrimary: #d7e6e6e5;
   background-color: $midPrimary;
   width: 100%;
 }
+
+// .md-active li {
+//   color: pink !important;
+// }
+
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);

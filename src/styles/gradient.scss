@@ -44,7 +44,7 @@ $gradientBlue3: #a1cfcf;
     $gradientBlue2 100%
   ); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb132', endColorstr='#7B48FF',GradientType=0 ); /* ie6-9 */
-  background-size: 200% 200%;
+  // background-size: 200% 200%;
   -webkit-animation: gradient_animation 8s ease infinite;
   -moz-animation: gradient_animation 8s ease infinite;
   animation: gradient_animation 8s ease infinite;

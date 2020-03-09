@@ -35,7 +35,7 @@ const Projects = ({ projectsRef, ...props }) => {
           </h1>{" "}
           <a>{GitHub}</a>
         </div> */}
-        <section className="projects">
+        <section className="projects justify-center">
           <Card
             cardFront={
               <CardFront
