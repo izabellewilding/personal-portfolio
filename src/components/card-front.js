@@ -32,7 +32,7 @@ const CardFront = ({ ...props }) => {
         <Img src={props.cardImage} className="card-img " />
       </div>{" "}
       <Gradient className=" absolute top-0 bottom-0 right-0 left-0" />
-      <p className="absolute bottom-0 left-0 text-white text-xl flex quicksand p-5 font-semibold">
+      <p className="absolute bottom-0 text-white text-2xl uppercase flex font-sans p-5">
         {props.cardTitle}
       </p>
     </div>

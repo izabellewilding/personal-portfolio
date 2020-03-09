@@ -10,8 +10,8 @@ import classNames from "classnames"
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
 import styled from "styled-components"
 import { ListItem, List } from "@rmwc/list"
-import "@material/list/dist/mdc.list.css"
-import "@material/drawer/dist/mdc.drawer.css"
+import "@material/list/dist/mdc.list.min.css"
+import "@material/drawer/dist/mdc.drawer.min.css"
 
 const StyledDrawer = styled(Drawer)`
   background-color: #ffffff;
@@ -20,18 +20,11 @@ const StyledDrawer = styled(Drawer)`
   z-index: 2;
 `
 
-const StyledLink = styled(Link)`
-  && {
-    font-family: "europa";
-    // text-transform: uppercase;
-    font-size: 112.5%;
-    color: #d7ffff;
-  }
-`
 const StyledList = styled(List)`
   && {
     display: flex;
     flex-direction: column;
+    list-style: none;
   }
 `
 
@@ -61,9 +54,11 @@ const Header = props => {
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </div>
       {/* <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i> */}
-      <ul className=" hidden md:visible text-darkPrimary quicksand md:flex  items-center overflow-x-hidden mr-10 font-semibold">
+      <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
         {" "}
         <Link
+          activeClass="md-active"
+          onSetActive={handleSetActive}
           to="projects"
           spy={true}
           smooth={true}
@@ -82,6 +77,8 @@ const Header = props => {
           offset={-70}
           duration={500}
           className="hover:text-midPrimary cursor-pointer"
+          activeClass="md-active"
+          onSetActive={handleSetActive}
         >
           {" "}
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
@@ -95,6 +92,8 @@ const Header = props => {
           offset={-70}
           duration={500}
           className="hover:text-midPrimary cursor-pointer"
+          activeClass="md-active"
+          onSetActive={handleSetActive}
         >
           <li className="nav-list-item custom-underline mr-6 p-1">
             <a className="text-darkPrimary" href="#">
@@ -109,6 +108,8 @@ const Header = props => {
           offset={-70}
           duration={500}
           className=" cursor-pointer"
+          activeClass="md-active"
+          onSetActive={handleSetActive}
         >
           <li className="nav-list-item custom-underline mr-6 p-1">
             <a className="text-darkPrimary" href="#">
@@ -142,9 +143,9 @@ const Header = props => {
           </DrawerTitle>
         </DrawerHeader>
         <DrawerContent>
-          <StyledList>
+          <StyledList stlye={{ listStyle: "none" }}>
             <Link
-              activeClass="active"
+              activeClass="sm-active"
               onSetActive={handleSetActive}
               to="projects"
               spy={true}
@@ -153,7 +154,7 @@ const Header = props => {
               duration={500}
               className="hover:text-midPrimary cursor-pointer"
             >
-              <li className="text-darkPrimary nav-list-item  mr-6 p-1">
+              <li className="text-darkPrimary nav-list-item mr-6 p-1">
                 Projects
               </li>{" "}
             </Link>
@@ -162,7 +163,7 @@ const Header = props => {
               </StyledLink> */}
 
             <Link
-              activeClass="active"
+              activeClass="sm-active"
               onSetActive={handleSetActive}
               to="about"
               spy={true}
@@ -177,7 +178,7 @@ const Header = props => {
               </li>
             </Link>
             <Link
-              activeClass="active"
+              activeClass="sm-active"
               onSetActive={handleSetActive}
               to=""
               spy={true}
@@ -193,20 +194,18 @@ const Header = props => {
               </li>
             </Link>
             <Link
-              activeClass="active"
+              activeClass="sm-active"
               onSetActive={handleSetActive}
               to="contact"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-              className=" cursor-pointer"
+              className="hover:text-midPrimary cursor-pointer"
             >
-              <li className="nav-list-item  mr-6 p-1">
-                <a className="text-darkPrimary" href="#">
-                  Contact
-                </a>
-              </li>
+              <li className="text-darkPrimary nav-list-item mr-6 p-1">
+                Contact
+              </li>{" "}
             </Link>
             {/* <StyledLink to="/404" className="nav-list-item">
                 Resume

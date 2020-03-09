@@ -48,6 +48,7 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="scrolling-box">
+        <link rel="stylesheet" href="./mdc.drawer.min.css" />
         <Header isSticky={isSticky} />
         <LandingPage id="1" />
         <Projects id="projects" projectsRef={ref} />

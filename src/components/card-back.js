@@ -10,7 +10,7 @@ const CardBack = ({ ...props }) => {
       <div className="card-gradient"></div>
 
       <div className="card-text-wrapper p-5">
-        <h3 className="card-back-title">Main Features</h3>
+        <h3 className="card-back-title font-semibold">Main Features</h3>
         {/* <h3 className="card-back-subtitle">Features</h3> */}
         <ul style={{ listStyle: "square" }}>
           <li>{props.listItem1}</li>

@@ -115,7 +115,7 @@ $midPrimary: #d7e6e6e5;
   }
 }
 
-.active {
+.sm-active {
   background-color: $midPrimary;
   width: 100%;
 }
@@ -221,7 +221,7 @@ $midPrimary: #d7e6e6e5;
     top: 74%;
     height: 2px;
     width: 0%;
-    left: 10%;
+    left: 12%;
     background-color: $midPrimary;
     -webkit-transition: 0.5s ease all 0.3s;
     transition: 0.5s ease all 0s;
@@ -281,6 +281,7 @@ $midPrimary: #d7e6e6e5;
 #nav-toggle.active span:before,
 #nav-toggle.active span:after {
   top: 0;
+  right: 0;
 }
 #nav-toggle.active span:before {
   transform: rotate(45deg);
