@@ -8,6 +8,13 @@
     drop-shadow(0 10px 10px rgba(0, 0, 0, 0.1));
 }
 
+@media (max-width: 768px) {
+  .flip-container {
+    filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.25))
+      drop-shadow(0 10px 10px rgba(0, 0, 0, 0.1));
+  }
+}
+
 /* flip the pane when hovered */
 .flip-container:hover .flipper,
 .flip-container.hover .flipper {
@@ -15,6 +22,16 @@
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
 }
 
 .flip-container,
