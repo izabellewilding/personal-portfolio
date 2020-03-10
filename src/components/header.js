@@ -193,6 +193,7 @@ const Header = props => {
             </Link>
             <Link
               to="contact"
+              onClick={scrollToBottom}
               spy={true}
               smooth={true}
               offset={-70}
