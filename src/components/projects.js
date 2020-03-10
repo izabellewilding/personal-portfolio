@@ -42,7 +42,7 @@ const Projects = ({ projectsRef, ...props }) => {
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site.JPG"
-                cardTitle="Web Design and Development for a Bristol based Doula"
+                cardTitle="Web Design and Development for a Bristol Doula"
               />
             }
             cardBack={

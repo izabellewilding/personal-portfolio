@@ -50,9 +50,9 @@ const Header = props => {
       {...props}
       className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
     >
-      <div className="flex-shrink-0 p-4 cursor-pointer">
+      <Link to="/index" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
-      </div>
+      </Link>
       {/* <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i> */}
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
         {" "}
@@ -86,22 +86,6 @@ const Header = props => {
           </li>
         </Link>
         <Link
-          to=""
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className="hover:text-midPrimary cursor-pointer"
-          activeClass="md-active"
-          onSetActive={handleSetActive}
-        >
-          <li className="nav-list-item custom-underline mr-6 p-1">
-            <a className="text-darkPrimary" href="#">
-              Blog
-            </a>
-          </li>
-        </Link>
-        <Link
           to="contact"
           spy={true}
           smooth={true}
@@ -115,6 +99,20 @@ const Header = props => {
             <a className="text-darkPrimary" href="#">
               Contact
             </a>
+          </li>
+        </Link>{" "}
+        <Link
+          to="blog"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="hover:text-midPrimary cursor-pointer"
+          activeClass="sm-active"
+          onSetActive={handleSetActive}
+        >
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+            Blog
           </li>
         </Link>
       </ul>
@@ -161,7 +159,6 @@ const Header = props => {
             {/* <StyledLink to="/blog" className="nav-list-item">
                 Blog
               </StyledLink> */}
-
             <Link
               activeClass="sm-active"
               onSetActive={handleSetActive}
@@ -178,34 +175,34 @@ const Header = props => {
               </li>
             </Link>
             <Link
-              activeClass="sm-active"
-              onSetActive={handleSetActive}
-              to=""
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="hover:text-midPrimary cursor-pointer"
-            >
-              <li className="nav-list-item  mr-6 p-1">
-                <a className="text-darkPrimary" href="#">
-                  Blog
-                </a>
-              </li>
-            </Link>
-            <Link
-              activeClass="sm-active"
-              onSetActive={handleSetActive}
               to="contact"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
               className="hover:text-midPrimary cursor-pointer"
+              activeClass="sm-active"
+              onSetActive={handleSetActive}
             >
               <li className="text-darkPrimary nav-list-item mr-6 p-1">
                 Contact
               </li>{" "}
+            </Link>{" "}
+            <Link
+              to="blog"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="hover:text-midPrimary cursor-pointer"
+              activeClass="sm-active"
+              onSetActive={handleSetActive}
+            >
+              <li className="nav-list-item mr-6 p-1">
+                <a className="text-darkPrimary" href="#">
+                  Blog
+                </a>
+              </li>
             </Link>
             {/* <StyledLink to="/404" className="nav-list-item">
                 Resume

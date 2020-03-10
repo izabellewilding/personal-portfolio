@@ -5,6 +5,13 @@ module.exports = {
     author: `@izabellewilding`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -21,6 +28,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
