@@ -12,7 +12,7 @@ import "../style.css"
 import "../styles/all.scss"
 import "../styles/gradient.scss"
 import Header from "../components/header"
-import Footer from "../components/footer.js"
+import Contact from "../components/contact"
 
 // import Header from "./header"
 
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
 
       <link rel="stylesheet" href="./mdc.drawer.min.css" />
       {children}
-      <Footer id="footer" />
+      {/* <Footer name="footer" id="footer" /> */}
 
       {/* <footer>
         © {new Date().getFullYear()}, Built with

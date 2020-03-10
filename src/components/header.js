@@ -58,11 +58,7 @@ const Header = props => {
       {...props}
       className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
     >
-      <Link
-        to="/index"
-        className="flex-shrink-0 p-4 cursor-pointer"
-        onClick={scrollToTop}
-      >
+      <Link to="home" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </Link>
       {/* <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i> */}
@@ -98,15 +94,15 @@ const Header = props => {
           </li>
         </Link>
         <Link
-          // to="footer"
+          activeClass="md-active"
+          onSetActive={handleSetActive}
+          onClick={scrollToBottom}
+          to="contact2"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
           className="hover:text-midPrimary cursor-pointer"
-          activeClass="md-active"
-          onSetActive={handleSetActive}
-          onClick={scrollToBottom}
         >
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             Contact
@@ -148,7 +144,17 @@ const Header = props => {
           {" "}
           <DrawerTitle>
             {" "}
-            <Logo className="h-12 nav-logo svg-darkPrimary" />
+            <Link>
+              <Logo
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="h-12 nav-logo svg-darkPrimary"
+                onClick={scrollToTop}
+              />
+            </Link>
           </DrawerTitle>
         </DrawerHeader>
         <DrawerContent>
@@ -186,7 +192,7 @@ const Header = props => {
               </li>
             </Link>
             <Link
-              to="footer"
+              to="contact"
               spy={true}
               smooth={true}
               offset={-70}

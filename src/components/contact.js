@@ -4,7 +4,7 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
-import FloatingIcons from "../components/floating-icons"
+import FloatingIcons from "./floating-icons"
 
 const Gradient = styled.div`
   background: linear-gradient(
@@ -16,7 +16,7 @@ const Gradient = styled.div`
   );
 `
 
-const Footer = () => {
+const Contact = () => {
   return (
     <footer className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden">
       <FloatingIcons />
@@ -186,4 +186,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Contact

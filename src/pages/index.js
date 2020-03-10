@@ -8,7 +8,7 @@ import About from "../components/about.js"
 import LandingPage from "../components/landing-page"
 import Projects from "../components/projects.js"
 import SEO from "../components/seo"
-import Footer from "../components/footer"
+import Contact from "../components/contact"
 // import Blog from "../pages/blog"
 
 const IndexPage = () => {
@@ -30,9 +30,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <Header isSticky={isSticky} />
-      <LandingPage />
+      <LandingPage id="home" />
       <Projects id="projects" projectsRef={ref} />
       <About id="about" />
+      <Contact id="contact2" name="contact2" />
       {/* <Blog id="blog" /> */}
     </Layout>
   )
