@@ -4,7 +4,7 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
-import FloatingIcons from "./floating-icons"
+import FloatingIcons from "../components/floating-icons"
 
 const Gradient = styled.div`
   background: linear-gradient(

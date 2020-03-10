@@ -43,6 +43,8 @@ const Projects = ({ projectsRef, ...props }) => {
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site.JPG"
                 cardTitle="Web Design and Development for a Bristol Doula"
+                siteLink="https://chantal-baptiste-doula.netlify.com/"
+                gitLink="https://github.com/doula-website/personal-doula-website"
               />
             }
             cardBack={
@@ -64,6 +66,8 @@ const Projects = ({ projectsRef, ...props }) => {
                 // logo={<FoodBlogLogo />}
                 cardImage="../images/abof-img.png"
                 cardTitle="Recipe Website and Blog"
+                gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
+                siteLink="https://abitoffood.netlify.com/"
               />
             }
             cardBack={
@@ -90,6 +94,8 @@ const Projects = ({ projectsRef, ...props }) => {
                   cardImage="../images/flickrapi-img.JPG"
                   // logo={"Artist Photograph & Art Gallery"}
                   cardTitle="Artist Image Gallery"
+                  gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
+                  siteLink="https://flickr-api-gallery.netlify.com/#/"
                 />
               }
               cardBack={
@@ -122,6 +128,8 @@ const Projects = ({ projectsRef, ...props }) => {
                 // logo={<ElecLogo />}
                 cardImage="../images/elec-site-img.png"
                 cardTitle="Small business website"
+                siteLink="https://www.alexwildingelectricalservices.com/"
+                gitLink="https://github.com/izabellewilding/website-for-electrician"
               />
             }
             cardBack={
