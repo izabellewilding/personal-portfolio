@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "./image"
 import WhatIDo from "../assets/what-i-do.svg"
-// import Wave from "../assets/waveFlipped.svg"
+import Wave from "../assets/waveFlipped.svg"
 
 const About = props => {
   return (
@@ -9,6 +9,8 @@ const About = props => {
       {...props}
       className="relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-midPrimary pb-16 pt-16"
     >
+      {/* <Wave className="wave absolute bottom-0 left-0 right-0 svg-darkPrimary" /> */}
+
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-8 ">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>

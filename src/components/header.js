@@ -45,12 +45,24 @@ const Header = props => {
     console.log(to)
   }
 
+  function scrollToBottom() {
+    scroll.scrollToBottom()
+  }
+
+  function scrollToTop() {
+    scroll.scrollToTop()
+  }
+
   return (
     <header
       {...props}
       className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
     >
-      <Link to="/index" className="flex-shrink-0 p-4 cursor-pointer">
+      <Link
+        to="/index"
+        className="flex-shrink-0 p-4 cursor-pointer"
+        onClick={scrollToTop}
+      >
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </Link>
       {/* <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i> */}
@@ -86,22 +98,21 @@ const Header = props => {
           </li>
         </Link>
         <Link
-          to="contact"
+          // to="footer"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          className=" cursor-pointer"
+          className="hover:text-midPrimary cursor-pointer"
           activeClass="md-active"
           onSetActive={handleSetActive}
+          onClick={scrollToBottom}
         >
-          <li className="nav-list-item custom-underline mr-6 p-1">
-            <a className="text-darkPrimary" href="#">
-              Contact
-            </a>
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+            Contact
           </li>
         </Link>{" "}
-        <Link
+        {/* <Link
           to="blog"
           spy={true}
           smooth={true}
@@ -114,7 +125,7 @@ const Header = props => {
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             Blog
           </li>
-        </Link>
+        </Link> */}
       </ul>
       <div className="flex-shrink-0 p-4 cursor-pointer">
         <div
@@ -175,7 +186,7 @@ const Header = props => {
               </li>
             </Link>
             <Link
-              to="contact"
+              to="footer"
               spy={true}
               smooth={true}
               offset={-70}
@@ -188,7 +199,7 @@ const Header = props => {
                 Contact
               </li>{" "}
             </Link>{" "}
-            <Link
+            {/* <Link
               to="blog"
               spy={true}
               smooth={true}
@@ -203,7 +214,7 @@ const Header = props => {
                   Blog
                 </a>
               </li>
-            </Link>
+            </Link> */}
             {/* <StyledLink to="/404" className="nav-list-item">
                 Resume
               </StyledLink> */}

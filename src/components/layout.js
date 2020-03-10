@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState, useRef, forwardRef } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../style.css"
 import "../styles/all.scss"
 import "../styles/gradient.scss"
-
+import Header from "../components/header"
 import Footer from "../components/footer.js"
 
 // import Header from "./header"
@@ -30,11 +30,11 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Header isSticky={isSticky} />
 
       <link rel="stylesheet" href="./mdc.drawer.min.css" />
       {children}
-      <Footer id="contact" />
+      <Footer id="footer" />
+
       {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

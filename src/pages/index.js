@@ -9,7 +9,7 @@ import LandingPage from "../components/landing-page"
 import Projects from "../components/projects.js"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
-import Blog from "../pages/blog"
+// import Blog from "../pages/blog"
 
 const IndexPage = () => {
   const [isSticky, setSticky] = useState(false)
@@ -29,10 +29,11 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Header isSticky={isSticky} />
       <LandingPage />
       <Projects id="projects" projectsRef={ref} />
       <About id="about" />
-      <Blog id="blog" />
+      {/* <Blog id="blog" /> */}
     </Layout>
   )
 }
