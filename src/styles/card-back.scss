@@ -70,6 +70,7 @@
     color: $lightPrimary;
 
     padding: 1rem;
+    padding-top: 0;
     padding-bottom: 0rem;
     font-size: 1rem;
     margin-bottom: 0;
@@ -91,7 +92,7 @@
 
 .card-back-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: "quicksand";
 
@@ -100,7 +101,7 @@
   }
   button {
     padding: 0.75rem;
-    margin: 2rem;
+    margin: 1rem;
 
     height: 3rem;
     width: auto;

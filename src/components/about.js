@@ -1,15 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
 import Image from "./image"
-import WhatIDo from "../assets/what-i-do.svg"
-import Wave from "../assets/waveFlipped.svg"
 
-const About = props => {
+const About = React.forwardRef((props, ref) => {
   return (
     <div
+      ref={ref}
       {...props}
-      className="relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-midPrimary pb-16 pt-16"
+      className=" relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-midPrimary pb-16 pt-32"
     >
-      {/* <Wave className="wave absolute bottom-0 left-0 right-0 svg-darkPrimary" /> */}
+      {/* <div className="header-offset"></div> */}
 
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-8 ">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
@@ -23,7 +23,7 @@ const About = props => {
           hadn't always planned to become a developer, but my love for language,
           solving complex problems, and art lead me here. As a developer I can
           channel my combined knowledge and interests into building responsive,
-          high performance, attractive UIs using HTML, CSS, and JavaScript.
+          high performance, attractive web applications.
         </p>
         <br />
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
@@ -67,6 +67,6 @@ const About = props => {
       </div>
     </div>
   )
-}
+})
 
 export default About

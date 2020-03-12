@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link, navigate } from "gatsby"
 import {
   Card,
   CardPrimaryAction,
@@ -20,7 +20,6 @@ import FavoriteBorder from "../assets/favorite_border-24px.svg"
 import Share from "../assets/share-24px.svg"
 import More from "../assets/more_vert-24px.svg"
 
-import { Link } from "gatsby"
 import Img from "../components/image"
 
 const ListItem = props => {
@@ -85,10 +84,23 @@ const Blog = () => {
     }
   `)
 
-  console.warn(result)
+  const handleHeaderNavigation = navItem => {
+    if (navItem === "landing") {
+      navigate("/")
+    } else if (navItem === "projects") {
+      navigate("/#projects")
+    } else if (navItem === "about") {
+      navigate("/#about")
+    } else if (navItem === "contact") {
+      navigate("/contact")
+
+      // } else if (navItem === "blog") {
+      //   blogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
   return (
     <Layout pageTitle="blog">
-      <Header isSticky={true} />
+      <Header isSticky={true} onNav={handleHeaderNavigation} />
       <div className="header-offset"></div>
 
       <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden  pb-64 pt-16">

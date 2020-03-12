@@ -5,6 +5,7 @@ import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
 import FloatingIcons from "../components/floating-icons"
+import Wave from "../assets/waveFlipped.svg"
 
 const Gradient = styled.div`
   background: linear-gradient(
@@ -16,33 +17,22 @@ const Gradient = styled.div`
   );
 `
 
-const Contact = () => {
+const Contact = React.forwardRef((props, ref) => {
   return (
-    <footer className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden">
+    <footer
+      ref={ref}
+      className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden"
+    >
+      {/* <Wave /> */}
       <FloatingIcons />
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
         style={{ height: "80px", transform: "translateZ(0)" }}
-      >
-        {/* <svg
-          className="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            className="bg-darkBlue"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg> */}
-      </div>
+      ></div>
       <div className="container mx-auto px-4">
         {" "}
         <div className="flex flex-wrap">
-          <div className="w-full lg:w-6/12 px-4">
+          <div className="w-full lg:w-1/3 px-4">
             {" "}
             {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
             <h4 className="text-3xl font-semibold text-lightPrimary mb-6">
@@ -90,45 +80,46 @@ const Contact = () => {
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
-              {/* <div className="w-full lg:w-4/12 px-4 ml-auto">
+              <div className="w-full px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   Useful Links
-                </span> */}
-              {/* <ul className="list-unstyled"> */}
-              {/* <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation"
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/blog"
+                      className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
                     >
                       Blog
-                    </a>
-                  </li> */}
-              {/* <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
                       href="https://blog.creative-tim.com"
                     >
                       Resume
-                    </a>
-                  </li> */}
-              {/* <li>
+                    </Link>
+                  </li>
+                  <li>
                     <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial"
+                      href="https://flickr-api-gallery.netlify.com/#/art-gallery"
+                      className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
                     >
                       Art
                     </a>
-                  </li> */}
-              {/* <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free"
-                    >
-                      Free Products
-                    </a>
-                  </li> */}
-              {/* </ul>
-              </div> */}
+                  </li>
+                </ul>
+              </div>
               {/* <div className="w-full lg:w-4/12 px-4">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   Other Resources
@@ -184,6 +175,5 @@ const Contact = () => {
       </div>
     </footer>
   )
-}
-
+})
 export default Contact

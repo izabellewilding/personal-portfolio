@@ -20,13 +20,14 @@ const Card = ({ cardFront, cardBack }) => {
   )
 }
 
-const Projects = ({ projectsRef, ...props }) => {
+const Projects = React.forwardRef((props, ref) => {
   return (
     <main
-      ref={projectsRef}
+      ref={ref}
       {...props}
       className="mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
     >
+      <div className="header-offset"></div>
       <div className="container inline-block pb-16">
         {/* <div classname="section">
           <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8">
@@ -150,6 +151,6 @@ const Projects = ({ projectsRef, ...props }) => {
       </div>
     </main>
   )
-}
+})
 
 export default Projects

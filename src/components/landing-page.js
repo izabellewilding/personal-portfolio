@@ -16,11 +16,12 @@ import SplashMedium from "../assets/slash-medium.svg"
 //   );
 // `
 
-const LandingPage = props => {
+const LandingPage = React.forwardRef((props, ref) => {
   return (
     //landing page top
     <main
       {...props}
+      ref={ref}
       className=" w-full h-screen relative items-center justify-center "
     >
       <div className="gradient relative w-full h-screen">
@@ -61,11 +62,11 @@ const LandingPage = props => {
             smooth={true}
             offset={-70}
             duration={500}
-            className=" absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
+            className=" absolute bottom-0 bg-button hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
             style={{ bottom: "25%" }}
             role="button"
           >
-            Click to see Projects
+            Take me to Projects
           </Link>
         </div>{" "}
       </div>{" "}
@@ -73,5 +74,6 @@ const LandingPage = props => {
       {/* </div> */}
     </main>
   )
-}
+})
+
 export default LandingPage

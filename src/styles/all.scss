@@ -42,7 +42,7 @@ $mobileBreakpoint: 768px;
 
 $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
-$midPrimary: #d7e6e6e5;
+$midPrimary: #edfcfd;
 
 //color utils
 
@@ -54,6 +54,10 @@ $midPrimary: #d7e6e6e5;
 }
 .bg-lightPrimary {
   background-color: $lightPrimary;
+}
+
+.bg-button {
+  background-color: rgba(158, 19, 133, 0.1);
 }
 
 .text-darkPrimary {
@@ -79,6 +83,10 @@ $midPrimary: #d7e6e6e5;
 .notSticky {
   display: none;
   z-index: 1;
+}
+
+.header-offset {
+  height: 56px;
 }
 
 .arrow {
@@ -311,7 +319,6 @@ $midPrimary: #d7e6e6e5;
 //blog
 
 .blog-post-container {
-  max-width: 48rem;
   padding-top: 5rem;
   margin: auto;
   padding: 3rem;
@@ -334,6 +341,5 @@ $midPrimary: #d7e6e6e5;
 }
 
 .gatsby-resp-image-wrapper {
-  max-width: 66rem !important;
   width: 100%;
 }

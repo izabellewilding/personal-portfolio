@@ -21,7 +21,6 @@ const CardBack = ({ ...props }) => {
           <a href={props.siteLink} target="_blank" rel="noopener noreferrer">
             <button className="visit-site-button">View Site</button>
           </a>{" "}
-          {/* <CardWave className="card-wave" /> */}
           <a href={props.gitLink} target="_blank" rel="noopener noreferrer">
             <button className="visit-site-button">
               {" "}

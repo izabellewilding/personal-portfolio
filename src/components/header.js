@@ -1,10 +1,9 @@
-import React, { useState } from "react"
-// import { Link } from "gatsby"
+import React, { useState, useRef } from "react"
+import { Link } from "gatsby"
 import Logo from "../assets/text-logo2.svg"
 import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
-import { Link, animateScroll as scroll } from "react-scroll"
 import classNames from "classnames"
 
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
@@ -41,82 +40,49 @@ const Header = props => {
     setOpen(!open)
   }
 
-  function handleSetActive(to) {
-    console.log(to)
-  }
-
-  function scrollToBottom() {
-    scroll.scrollToBottom()
-  }
-
-  function scrollToTop() {
-    scroll.scrollToTop()
-  }
-
   return (
     <header
       {...props}
       className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
     >
-      <Link to="home" className="flex-shrink-0 p-4 cursor-pointer">
+      <Link to="/" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </Link>
-      {/* <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i> */}
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
         {" "}
-        <Link
-          activeClass="md-active"
-          onSetActive={handleSetActive}
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
+        <a
+          onClick={() => props.onNav("projects")}
           className="hover:text-midPrimary cursor-pointer"
         >
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             Projects
           </li>{" "}
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
+        </a>
+        <a
+          onClick={() => props.onNav("about")}
           className="hover:text-midPrimary cursor-pointer"
-          activeClass="md-active"
-          onSetActive={handleSetActive}
         >
           {" "}
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             About
           </li>
-        </Link>
-        <Link
-          activeClass="md-active"
-          onSetActive={handleSetActive}
-          onClick={scrollToBottom}
-          to="contact2"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
+        </a>
+        <a href="/blog">
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+            Blog
+          </li>
+        </a>{" "}
+        <a
+          onClick={() => props.onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
         >
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             Contact
           </li>
-        </Link>{" "}
+        </a>{" "}
         {/* <Link
-          to="blog"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
+          
           className="hover:text-midPrimary cursor-pointer"
-          activeClass="sm-active"
-          onSetActive={handleSetActive}
         >
           <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
             Blog
@@ -145,15 +111,7 @@ const Header = props => {
           <DrawerTitle>
             {" "}
             <Link>
-              <Logo
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="h-12 nav-logo svg-darkPrimary"
-                onClick={scrollToTop}
-              />
+              <Logo className="h-12 nav-logo svg-darkPrimary" />
             </Link>
           </DrawerTitle>
         </DrawerHeader>
@@ -161,12 +119,8 @@ const Header = props => {
           <StyledList stlye={{ listStyle: "none" }}>
             <Link
               activeClass="sm-active"
-              onSetActive={handleSetActive}
+              // onSetActive={handleSetActive}
               to="projects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
               className="hover:text-midPrimary cursor-pointer"
             >
               <li className="text-darkPrimary nav-list-item mr-6 p-1">
@@ -178,12 +132,12 @@ const Header = props => {
               </StyledLink> */}
             <Link
               activeClass="sm-active"
-              onSetActive={handleSetActive}
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              // onSetActive={handleSetActive}
+              // to="about"
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
               className="hover:text-midPrimary cursor-pointer"
             >
               {" "}
@@ -193,14 +147,14 @@ const Header = props => {
             </Link>
             <Link
               to="contact"
-              onClick={scrollToBottom}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              // onClick={scrollToBottom}
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
               className="hover:text-midPrimary cursor-pointer"
-              activeClass="sm-active"
-              onSetActive={handleSetActive}
+              // activeClass="sm-active"
+              // onSetActive={handleSetActive}
             >
               <li className="text-darkPrimary nav-list-item mr-6 p-1">
                 Contact

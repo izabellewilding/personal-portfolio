@@ -3,12 +3,12 @@ path: "/react-component-lifecycle"
 date: "2020-10-02"
 title: "React Component Lifecycle: Before and After React 16.8"
 description: "How to solve a project dependency error that stops you from starting your React App"
-postImage: "../images/dependency-tree-error-copy"
+postImage: "../images/lifecycle.png"
 ---
 
 When you clone Create React App and run `npm start`, this error may appear:
 
-![My Image](../images/dependency-tree-error.png)
+![My Image](../images/lifecycle.png)
 
 > There might be a problem with the project dependency tree. It is likely not a bug in Create React App, but something you need to fix locally.
 
