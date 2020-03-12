@@ -1,0 +1,27 @@
+.blog-post-container {
+  max-width: 48rem;
+  padding-top: 5rem;
+  margin: auto;
+  padding: 3rem;
+}
+.blog-post-card {
+  text-decoration: none;
+  margin: 1rem;
+
+  @media (max-width: $mobileBreakpoint) {
+    margin: 0;
+    margin-bottom: 1.666%;
+  }
+}
+.blog-post-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-intro {
+  text-align: left;
+}
+
+.gatsby-resp-image-wrapper {
+  max-width: 66rem !important;
+  width: 100%;
+}

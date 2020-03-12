@@ -1,7 +1,7 @@
 ---
 path: "/react-component-lifecycle"
 date: "2020-10-02"
-title: "The React Component Lifecycle"
+title: "React Component Lifecycle: Before and After React 16.8"
 description: "How to solve a project dependency error that stops you from starting your React App"
 postImage: "../images/dependency-tree-error-copy"
 ---

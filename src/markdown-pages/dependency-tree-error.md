@@ -1,8 +1,8 @@
 ---
 path: "/problem-creating-react-app"
 date: "2019-05-02"
-title: "There Might be a Problem with the Project Dependency Tree"
-description: "How to solve a project dependency error that stops you from starting your React App"
+title: "How to Solve: There Might be a Problem with the Project Dependency Tree"
+description: "What to do when you get a project dependency error that stops you from starting your React App"
 postImage: "../images/dependency-tree-error-copy"
 ---
 

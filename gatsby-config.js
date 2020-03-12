@@ -12,6 +12,7 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -29,7 +30,6 @@ module.exports = {
       },
     },
 
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,

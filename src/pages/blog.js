@@ -15,10 +15,10 @@ import "@material/card/dist/mdc.card.css"
 import "@material/button/dist/mdc.button.css"
 import "@material/icon-button/dist/mdc.icon-button.css"
 import Header from "../components/header"
+import Contact from "../components/contact"
 import FavoriteBorder from "../assets/favorite_border-24px.svg"
 import Share from "../assets/share-24px.svg"
 import More from "../assets/more_vert-24px.svg"
-import Wave from "../assets/waveFlipped.svg"
 
 import { Link } from "gatsby"
 import Img from "../components/image"
@@ -26,7 +26,7 @@ import Img from "../components/image"
 const ListItem = props => {
   return (
     <Link to={props.linkTo} className="blog-post-card">
-      <Card style={{ width: "21rem" }}>
+      <Card style={{ width: "20rem", height: "20rem" }}>
         <CardPrimaryAction>
           {/* <CardMedia
             sixteenByNine
@@ -46,13 +46,11 @@ const ListItem = props => {
             >
               by Izzy Wilding
             </Typography> */}
-            <p theme="textSecondaryOnBackground">{props.postDescription}</p>
           </div>
         </CardPrimaryAction>
         <CardActions>
           <CardActionButtons>
             <CardActionButton>Read</CardActionButton>
-            <CardActionButton>Bookmark</CardActionButton>
           </CardActionButtons>
           <CardActionIcons>
             <CardActionIcon icon={<FavoriteBorder />} />
@@ -91,10 +89,9 @@ const Blog = () => {
   return (
     <Layout pageTitle="blog">
       <Header isSticky={true} />
+      <div className="header-offset"></div>
 
       <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden  pb-64 pt-16">
-        <Wave className="wave absolute bottom-0 left-0 right-0 svg-darkPrimary" />
-
         <h2 className="text-3xl mb-8 leading-normal ">Blog Posts</h2>
         <div className="blog-post-list">
           {result.allMarkdownRemark.edges.map(({ node }) => {
@@ -109,6 +106,7 @@ const Blog = () => {
           })}
         </div>
       </main>
+      <Contact />
     </Layout>
   )
 }
