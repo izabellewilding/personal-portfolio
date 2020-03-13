@@ -21,15 +21,17 @@ You could say that mounting constitutes the components birth, unmounting to its 
 
 There are lots of useful methods that come under these categories, but render() is the only essential one. It returns JSX rendered in the UI, or null if the component is empty. Render() is a pure function, which means that you can’t alter state or perform any asynchronous functions within it. This is where the other lifecycle methods come into use.
 
-**Why not to use componentWillMount()**
+## Why not to use componentWillMount()
 
+<br />
 The first lifecycle method in a component’s mounting phase was componentWillMount(), which would run just before the render method. React have deprecated its use due to it often being used incorrectly.
 ComponentWillMount() was often misused for data fetching. You might think that it makes sense to initiate a data request before the render, so that the data is ready to render onto the screen in time for the render, giving the fetch method a head start.
 
 In reality, this is not a good idea. The data will usually take a while to return, by this time render will already have taken place. This said, if the request was resolved and the data came back before the render, you would be trying to set state on an unmounted component. Best practice is to render the HTML before sending a data request, as this allows the skeleton UI to load and provide a loading indicator to show the user that the page is on its way. Similarly, if you have an app with data that changes every few seconds, you don’t want a change in the data to cause a re-render every time it updates.
 
-**Using componentDidMount() for Async Functions**
+## Using componentDidMount() for Async Functions
 
+<br />
 ComponentDidMount() is considered the best location for initiating an asynchronous function, as it runs just after the initial render. Here’s a basic example of how you could fetch data in a class component:
 
 ```js
@@ -42,11 +44,13 @@ componentDidMount() {
 }
 ```
 
-<>
+<br />
+
 First we set the state and decide which lifecycle method to use, call the fetch function with our API address, convert the data response into JSON and set data to the newly received response.
 
-**React Hooks for Data Fetching**
+## React Hooks for Data Fetching
 
+<br />
 With the release of React 16.8, side-effects such as data fetching don’t need to be placed under lifecycle methods in class components. React Hooks were introduced to allow developers to tap into the React state and lifecycle features without using class components. Hooks provide a more concise means of setting state and side-effects.
 
 The useEffect() hook can be used in an equivalent way to componentDidMount(), componentDidUpdate() and componentWillUnmount. In other words, the useEffect() hook handles side effect functions. Here’s is the same example of data fetching shown in the last example, but using the useEffect() hook:
@@ -61,10 +65,13 @@ useEffect(() =>
 ), []);```
 ````
 
+<br />
+
 We just want the useEffect hook to run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters ( state and props) that control when the useEffect is run. If the array is left empty, then the useEffect will only run once on mounting. If you include dependency parameters, the useEffect hook will run each time one of these parameters is changed or updated. Without the dependency conditions, useEffect can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
 
-**Don't forget to Unmount**
+## Don't forget to Unmount
 
+<br />
 The useEffect hook also offers an optional clean-up function called componentWillUnmount, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in componentDidMount. Leaving active subscriptions results in an undesirable memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
 
 To illustrate, here’s an example of a function that gets called every time the user scrolls. The useEffect still only mounts and unmounts once, so our cleanup function removeEventListener cancels the event subscription when the component unmounts.

@@ -36,14 +36,14 @@ const About = React.forwardRef((props, ref) => {
       </div>
 
       <div className="w-full md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <Link to="/blog" class="max-w-sm rounded overflow-hidden shadow-lg">
           <Image
             className="w-full"
             style={{ maxHeight: 228 }}
             src="../images/adrien-converse-xzH7K6nVVgI-unsplash.jpg"
             alt="Sunset in the mountains"
           />
-          <Link to="/blog" className="px-6 py-4 bg-white">
+          <div className="px-6 py-4 bg-white">
             <div className="font-bold text-xl mb-2 text-darkPrimary">
               My Blog
             </div>
@@ -52,7 +52,7 @@ const About = React.forwardRef((props, ref) => {
               knowledge and explore some of the interesting topics I've been
               learning about :-){" "}
             </p>
-          </Link>
+          </div>
           <div className="px-6 py-4 bg-white">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               #blog
@@ -64,7 +64,7 @@ const About = React.forwardRef((props, ref) => {
               #web development
             </span>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   )

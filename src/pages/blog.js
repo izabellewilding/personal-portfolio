@@ -36,7 +36,9 @@ const ListItem = props => {
           ></CardMedia> */}
           <Img src={props.src} />
           <div style={{ padding: "0 1rem 1rem 1rem" }}>
-            <h2 style={{ paddingTop: "1rem" }}>{props.postTitle}</h2>
+            <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
+              {props.postTitle}
+            </h3>
             {/* <Typography
               use="subtitle2"
               tag="h2"
