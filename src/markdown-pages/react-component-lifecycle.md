@@ -8,19 +8,19 @@ postImage: "../images/lifecycle.png"
 
 <br />
 
-I’m on a bit of a React journey at the moment, so I’ve decided to write some blog posts about its key concepts. The component lifecycle is first on my list because it’s been key to understanding how to do a load of awesome JavaScript stuff with my websites, like adding event listeners for animated sticky headers and knowing when to request data from an API.
+I’m on a bit of a React journey at the moment, so I’ve decided to write some blog posts about its key concepts. The component lifecycle is first on my list because it’s been key to understanding how to do a load of cool JavaScript stuff with my websites, like adding event listeners for animated sticky headers and knowing when to request data from an API.
 
 ![The React Component Lifecycle](../images/lifecycle.png)
 [Click to see the original!]('http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/')
 
-Just like humans, React components go through their own lifecycles. The component lifecycle is composed of several different phases that can be manipulated to run code at different times in a component’s lifetime. The phases are manipulated or overridden by lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’m going to mostly be using asynchronous data fetching as an example, as it’s something I had to get my head around when I made my Flickr image gallery.
+Just like humans, React components go through their own lifecycles. The component lifecycle is composed of several different phases that can be manipulated to run code at different times in the lifecycle. The phases are manipulated or overridden by lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://flickr-api-gallery.netlify.com/#/').
 
 The lifecycle methods come in four main categories:
 
-1. Mounting
-1. Updating
-1. Error boundaries
-1. Unmounting
+> 1. Mounting
+> 1. Updating
+> 1. Error boundaries
+> 1. Unmounting
 
 You could say that mounting constitutes the components birth, unmounting to its death, and everything in between as its growth.
 
@@ -64,7 +64,7 @@ First we set the state and decide which lifecycle method to use, call the fetch 
 <br />
 With the release of React 16.8, side-effects such as data fetching don’t need to be placed under lifecycle methods in class components. React Hooks were introduced to allow developers to tap into the React state and lifecycle features without using class components. Hooks provide a more concise means of setting state and side-effects.
 
-The `useEffect()` hook can be used in an equivalent way to c`omponentDidMount()`, `componentDidUpdate()` and `componentWillUnmount()`. In other words, the `useEffect()` hook handles side effect functions. Here’s is the same example of data fetching shown in the last example, but using the `useEffect()` hook:
+The `useEffect()` hook can be used in an equivalent way to c`omponentDidMount()`, `componentDidUpdate()` and `componentWillUnmount()`. In other words, it handles side effect functions. Here’s is the same example of data fetching shown in the last example, but using the `useEffect()` hook:
 
 ```javascript
 const [data, setData] = useState(undefined)
@@ -78,14 +78,15 @@ useEffect(() =>
 
 <br />
 
-We just want the useEffect hook to run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the useEffect is run. If the array is left empty, then the useEffect will only run once on mounting. If you include dependency parameters, the useEffect hook will run each time one of these parameters is changed or updated. Without the dependency conditions, useEffect can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
+We just want `useEfecct` run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the `useEffect()` is run. If the array is left empty, then it will only run once on mounting. If you include dependency parameters, the `useEffect()` hook will run each time one of these parameters is changed or updated. Without the dependency conditions, it can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
 
 ## Don't forget to Unmount
 
 <br />
-The useEffect hook also offers an optional clean-up function called componentWillUnmount, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in componentDidMount. Leaving active subscriptions results in an undesirable memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
 
-To illustrate, here’s an example of a function that gets called every time the user scrolls. The useEffect still only mounts and unmounts once, so our cleanup function removeEventListener cancels the event subscription when the component unmounts.
+The useEffect hook also offers an optional clean-up function called `componentWillUnmount()`, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in `componentDidMount()`. Leaving active subscriptions results in an undesirable memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
+
+To illustrate, here’s an example of a function that gets called every time the user scrolls. The `useEffect()` still only mounts and unmounts once, so our cleanup function removeEventListener cancels the event subscription when the component unmounts.
 
 ```javascript
 useEffect(() => {

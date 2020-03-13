@@ -2,6 +2,10 @@
 @use "@material/list/mdc-list";
 @use "@material/card/mdc-card";
 
+$lightPrimary: #e5f8fc;
+$darkPrimary: #12182b;
+$midPrimary: #1fb3cb;
+
 $mobileBreakpoint: 768px;
 
 @font-face {
@@ -22,6 +26,27 @@ $mobileBreakpoint: 768px;
   font-display: swap;
 }
 
+///tailwind preset overrides for markdown
+p {
+  margin-bottom: 1.666rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+a {
+  color: $midPrimary;
+}
+ol {
+  list-style: square;
+}
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
 //fonts
 // html * {
 //   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -31,16 +56,6 @@ $mobileBreakpoint: 768px;
 // .chivo {
 //   font-family: "chivo";
 // }
-
-p {
-  margin-bottom: 1.666rem;
-}
-h2 {
-  font-size: 1.25rem;
-}
-ol {
-  list-style: square;
-}
 
 .quicksand {
   font-family: "quicksand";
@@ -53,10 +68,6 @@ ol {
 //text style
 
 //colors
-
-$lightPrimary: #e5f8fc;
-$darkPrimary: #12182b;
-$midPrimary: #edfcfd;
 
 //color utils
 

@@ -7,7 +7,7 @@ const About = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       {...props}
-      className=" relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-midPrimary pb-16 pt-32"
+      className=" relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-lightPrimary pb-16 pt-32"
     >
       {/* <div className="header-offset"></div> */}
 

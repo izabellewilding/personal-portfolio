@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SocialIcons from "../components/social-icons.js"
 import { Link, animateScroll as scroll } from "react-scroll"
+import SEO from "../components/seo"
 
 import Splash from "../assets/slash-nice.svg"
 import SplashMedium from "../assets/slash-medium.svg"
@@ -24,6 +25,11 @@ const LandingPage = React.forwardRef((props, ref) => {
       ref={ref}
       className=" w-full h-screen relative items-center justify-center "
     >
+      {" "}
+      <SEO
+        title="Homepage"
+        description="Izabelle Wilding - Freelance WebDeveloper"
+      />
       <div className="gradient relative w-full h-screen">
         {" "}
         <Splash
