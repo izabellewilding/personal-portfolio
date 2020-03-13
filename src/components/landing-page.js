@@ -50,7 +50,7 @@ const LandingPage = React.forwardRef((props, ref) => {
             <h1 className="relative text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond leading-none">
               Izabelle Wilding
             </h1>{" "}
-            <p className="landing-subheading quicksand text-xl md:text-2xl text-lightPrimary uppercase">
+            <p className="landing-subheading quicksand text-xl md:text-3xl text-lightPrimary uppercase">
               Freelance Web Developer
             </p>{" "}
             <SocialIcons />

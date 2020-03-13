@@ -54,7 +54,7 @@ const Header = props => {
           onClick={() => props.onNav("projects")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
             Projects
           </li>{" "}
         </a>
@@ -63,12 +63,12 @@ const Header = props => {
           className="hover:text-midPrimary cursor-pointer"
         >
           {" "}
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
             About
           </li>
         </a>
         <a href="/blog">
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
             Blog
           </li>
         </a>{" "}
@@ -76,7 +76,7 @@ const Header = props => {
           onClick={() => props.onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
             Contact
           </li>
         </a>{" "}
@@ -117,16 +117,14 @@ const Header = props => {
         </DrawerHeader>
         <DrawerContent>
           <StyledList stlye={{ listStyle: "none" }}>
-            <Link
-              activeClass="sm-active"
-              // onSetActive={handleSetActive}
-              to="projects"
+            <a
+              onClick={() => props.onNav("projects")}
               className="hover:text-midPrimary cursor-pointer"
             >
-              <li className="text-darkPrimary nav-list-item mr-6 p-1">
+              <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
                 Projects
               </li>{" "}
-            </Link>
+            </a>
             {/* <StyledLink to="/blog" className="nav-list-item">
                 Blog
               </StyledLink> */}

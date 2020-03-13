@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Contact from "../components/contact"
@@ -9,24 +9,37 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+
+  const handleHeaderNavigation = navItem => {
+    if (navItem === "landing") {
+      navigate("/")
+    } else if (navItem === "projects") {
+      navigate("/#projects")
+    } else if (navItem === "about") {
+      navigate("/#about")
+    } else if (navItem === "contact") {
+      navigate("/#contact")
+
+      // } else if (navItem === "blog") {
+      //   blogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
   return (
     <Layout>
-      <Header isSticky={true} />
-      <div className="header-padding"></div>
-      <div className="blog-post-container">
-        <div
-          className="blog-post"
-          style={{ textAlign: "start", fontFamily: "europa" }}
-        >
-          <header className="blog-intro">
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.description}</h2>
+      <Header isSticky={true} onNav={handleHeaderNavigation} />
+      <div className="header-offset"></div>
+      <div className="w-full min-h-full flex flex-wrap overflow-hidden mt-12">
+        <div className="w-full md:w-7/12 px-4 mr-auto ml-auto mb-8">
+          <header className="">
+            <h1 className="text-3xl mb-2 leading-normal chivo">
+              {frontmatter.title}
+            </h1>
+            <h2 className="text-2xl mb-2 quicksand text-gray-700">
+              {frontmatter.description}
+            </h2>
             <h3>{frontmatter.date}</h3>
           </header>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div className="" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
       <Contact />

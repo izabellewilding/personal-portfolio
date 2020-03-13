@@ -1,23 +1,85 @@
 ---
 path: "/react-component-lifecycle"
-date: "2020-10-02"
+date: "2020-03-13"
 title: "React Component Lifecycle: Before and After React 16.8"
-description: "How to solve a project dependency error that stops you from starting your React App"
+description: "Beginners Guide to the React Lifecycle Methods in Class and Function Components"
 postImage: "../images/lifecycle.png"
 ---
 
-When you clone Create React App and run `npm start`, this error may appear:
-
 ![My Image](../images/lifecycle.png)
 
-> There might be a problem with the project dependency tree. It is likely not a bug in Create React App, but something you need to fix locally.
+React components have their own lifecycles, meaning that they go through a number of different phases from start to finish. These phases can be seen as events that are triggered by certain methods. Lifecycle methods can be overridden to run code at a particular time in the component’s event cycle. These are particularly useful if you want to make things happen at a specific time in the components lifetime, like adding and removing event listeners or perform asynchronous functions like data fetching.
 
-**What does it mean?**
+The lifecycle methods come in four main categories:
 
-As the error suggests, there&#39;s a problem with the project dependency tree. A problem that appears to crop up regularly within the NPM ecosystem. Ultimately, versions of certain packages can depend on specific versions of other packages. When there&#39;s a conflict in these version dependencies, your React App will face an error.
+- Mounting
+- Updating
+- Error boundaries
+- Unmounting
 
-**How do we fix it?**
+You could say that mounting constitutes the components birth, unmounting to its death, and everything in between as its growth.
 
-In this case, the error was caused by an old version of _babel-eslint_ in a misplaced node_modules package. While the new React App was stored in \Documents\websites\transitions-project, an old NPM package lay dormant in \Documents.
+There are lots of useful methods that come under these categories, but render() is the only essential one. It returns JSX rendered in the UI, or null if the component is empty. Render() is a pure function, which means that you can’t alter state or perform any asynchronous functions within it. This is where the other lifecycle methods come into use.
 
-You can `cd ../` into the directory above and ls to list the files, if you see an incorrectly placed _node_modules_ folder, delete it. After you&#39;ve located and removed the problematic file, return to your project, delete node-modules, run `npm install` and try `npm start` again.
+**Why not to use componentWillMount()**
+
+The first lifecycle method in a component’s mounting phase was componentWillMount(), which would run just before the render method. React have deprecated its use due to it often being used incorrectly.
+ComponentWillMount() was often misused for data fetching. You might think that it makes sense to initiate a data request before the render, so that the data is ready to render onto the screen in time for the render, giving the fetch method a head start.
+
+In reality, this is not a good idea. The data will usually take a while to return, by this time render will already have taken place. This said, if the request was resolved and the data came back before the render, you would be trying to set state on an unmounted component. Best practice is to render the HTML before sending a data request, as this allows the skeleton UI to load and provide a loading indicator to show the user that the page is on its way. Similarly, if you have an app with data that changes every few seconds, you don’t want a change in the data to cause a re-render every time it updates.
+
+**Using componentDidMount() for Async Functions**
+
+ComponentDidMount() is considered the best location for initiating an asynchronous function, as it runs just after the initial render. Here’s a basic example of how you could fetch data in a class component:
+
+```js
+state = { data: undefined };
+
+componentDidMount() {
+    fetch('https://example.api.com')
+    .then(response => response.JSON())
+    .then(data => this.setState({data})
+}
+```
+
+<>
+First we set the state and decide which lifecycle method to use, call the fetch function with our API address, convert the data response into JSON and set data to the newly received response.
+
+**React Hooks for Data Fetching**
+
+With the release of React 16.8, side-effects such as data fetching don’t need to be placed under lifecycle methods in class components. React Hooks were introduced to allow developers to tap into the React state and lifecycle features without using class components. Hooks provide a more concise means of setting state and side-effects.
+
+The useEffect() hook can be used in an equivalent way to componentDidMount(), componentDidUpdate() and componentWillUnmount. In other words, the useEffect() hook handles side effect functions. Here’s is the same example of data fetching shown in the last example, but using the useEffect() hook:
+
+````js
+const [data, setData] = useState(undefined)
+
+useEffect(() =>
+  fetch('https://example.api.com')
+    .then(response => response.JSON())
+    .then(data => this.setState({data});
+), []);```
+````
+
+We just want the useEffect hook to run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters ( state and props) that control when the useEffect is run. If the array is left empty, then the useEffect will only run once on mounting. If you include dependency parameters, the useEffect hook will run each time one of these parameters is changed or updated. Without the dependency conditions, useEffect can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
+
+**Don't forget to Unmount**
+
+The useEffect hook also offers an optional clean-up function called componentWillUnmount, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in componentDidMount. Leaving active subscriptions results in an undesirable memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
+
+To illustrate, here’s an example of a function that gets called every time the user scrolls. The useEffect still only mounts and unmounts once, so our cleanup function removeEventListener cancels the event subscription when the component unmounts.
+
+```js
+//run this effect when the component mounts
+useEffect(() => {
+//function that runs each time the user scrolls
+    const handleScroll = () => {
+        console.log("page was scrolled";
+    };
+    window.addEventListener("scroll)handleScroll);
+//unsubscribe from the sctoll event when the component unmounts
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    }
+}, []);
+```

@@ -92,7 +92,7 @@ const Blog = () => {
     } else if (navItem === "about") {
       navigate("/#about")
     } else if (navItem === "contact") {
-      navigate("/contact")
+      navigate("/#contact")
 
       // } else if (navItem === "blog") {
       //   blogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })

@@ -27,10 +27,11 @@ const About = React.forwardRef((props, ref) => {
         </p>
         <br />
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-          Most of my websites are built with Gatby and React, but I'm always
-          looking to expand my knowledge of frameworks and libraries. I spend a
-          lot of my free time experimenting with Photoshop and Illustrator to
-          convert my art and hand drawn images in SVGs for my sites.
+          I use React and frameworks like Gatby to make most of my websites, but
+          I'm always looking to expand my knowledge of frameworks and libraries.
+          I spend a lot of my free time experimenting with Photoshop and
+          Illustrator to convert my art and hand drawn images in SVGs for my
+          sites.
         </p>
       </div>
 
@@ -42,16 +43,16 @@ const About = React.forwardRef((props, ref) => {
             src="../images/adrien-converse-xzH7K6nVVgI-unsplash.jpg"
             alt="Sunset in the mountains"
           />
-          <div className="px-6 py-4 bg-white">
+          <Link to="/blog" className="px-6 py-4 bg-white">
             <div className="font-bold text-xl mb-2 text-darkPrimary">
-              My Blog - (COMING SOON)
+              My Blog
             </div>
             <p className="text-gray-700 text-base bg-white">
               I've recently started writing a front-end blog to reaffirm my
               knowledge and explore some of the interesting topics I've been
               learning about :-){" "}
             </p>
-          </div>
+          </Link>
           <div className="px-6 py-4 bg-white">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               #blog

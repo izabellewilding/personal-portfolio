@@ -23,11 +23,18 @@ $mobileBreakpoint: 768px;
 }
 
 //fonts
+// html * {
+//   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+//     "Lucida Sans", Arial, sans-serif;
+// }
 
-.chivo {
-  font-family: "chivo";
+// .chivo {
+//   font-family: "chivo";
+// }
+
+p {
+  margin-bottom: 1.666rem;
 }
-
 .quicksand {
   font-family: "quicksand";
 }
@@ -86,7 +93,7 @@ $midPrimary: #edfcfd;
 }
 
 .header-offset {
-  height: 56px;
+  height: 99px;
 }
 
 .arrow {
