@@ -92,9 +92,11 @@
 
 .card-back-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-family: "quicksand";
+  width: 100%;
+  bottom: 1rem;
 
   a {
     text-decoration: none !important;
@@ -102,6 +104,8 @@
   button {
     padding: 0.75rem;
     margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
 
     height: 3rem;
     width: auto;

@@ -121,43 +121,35 @@ const Header = props => {
               onClick={() => props.onNav("projects")}
               className="hover:text-midPrimary cursor-pointer"
             >
-              <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
+              <li className="text-darkPrimary nav-list-item mr-6 p-1">
                 Projects
-              </li>{" "}
+              </li>
             </a>
             {/* <StyledLink to="/blog" className="nav-list-item">
                 Blog
               </StyledLink> */}
-            <Link
-              activeClass="sm-active"
-              // onSetActive={handleSetActive}
-              // to="about"
-              // spy={true}
-              // smooth={true}
-              // offset={-70}
-              // duration={500}
+            <a
+              onClick={() => props.onNav("about")}
               className="hover:text-midPrimary cursor-pointer"
             >
               {" "}
               <li className="text-darkPrimary nav-list-item  mr-6 p-1">
                 About
               </li>
-            </Link>
-            <Link
-              to="contact"
-              // onClick={scrollToBottom}
-              // spy={true}
-              // smooth={true}
-              // offset={-70}
-              // duration={500}
+            </a>
+            <Link to="/blog">
+              <li className="text-darkPrimary nav-list-item mr-6 p-1 quicksand">
+                Blog
+              </li>
+            </Link>{" "}
+            <a
+              onClick={() => props.onNav("contact")}
               className="hover:text-midPrimary cursor-pointer"
-              // activeClass="sm-active"
-              // onSetActive={handleSetActive}
             >
               <li className="text-darkPrimary nav-list-item mr-6 p-1">
                 Contact
               </li>{" "}
-            </Link>{" "}
+            </a>{" "}
             {/* <Link
               to="blog"
               spy={true}
