@@ -119,7 +119,9 @@ module.exports = {
           require(`postcss-simple-vars`),
           require(`postcss-nested`),
           require(`postcss-import`),
+          require(`postcss-custom-media`),
         ],
+        parser: require("postcss-comment"),
       },
     },
 

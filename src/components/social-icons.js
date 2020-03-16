@@ -4,7 +4,7 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 
-import "../styles/social-icons.scss"
+import "../styles/social-icons.css"
 
 const SocialIcons = props => {
   return (

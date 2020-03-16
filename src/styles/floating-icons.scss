@@ -1,4 +1,4 @@
-@import "../styles/all.scss";
+@import "../styles/all.css";
 
 .tech-icons {
   position: absolute;
@@ -6,7 +6,7 @@
   vertical-align: top;
   left: 819px;
   top: -6rem;
-  @media (max-width: $mobileBreakpoint) {
+  @media (max-width: --small-viewport) {
     position: absolute;
     height: 500px;
     vertical-align: top;
@@ -82,7 +82,7 @@
   transition-delay: 0.3s;
   width: 86px;
 
-  @media (max-width: $mobileBreakpoint) {
+  @media (--small-viewport) {
     margin-left: 59vw;
   }
 }
@@ -221,7 +221,7 @@
   width: 74px;
   opacity: 0.75;
 
-  @media (max-width: $mobileBreakpoint) {
+  @media (--small-viewport) {
     margin-left: 39vw;
     margin-top: 300px;
   }

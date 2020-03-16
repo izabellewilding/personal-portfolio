@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import "../styles/card-back.scss"
 import "../styles/card-flip.css"
 import "../styles/card-front.scss"
-import "../styles/all.scss"
+import "../styles/all.css"
 
 import CardFront from "./card-front"
 import CardBack from "./card-back"
