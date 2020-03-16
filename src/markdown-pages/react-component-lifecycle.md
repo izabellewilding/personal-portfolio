@@ -1,19 +1,19 @@
 ---
 path: "/react-component-lifecycle"
 date: "2020-03-13"
-title: "React Component Lifecycle: Before and After React 16.8"
+title: "React Component Lifecycle: Before and After React 16"
 description: "Beginners Guide to the React Lifecycle Methods in Class and Function Components"
 postImage: "../images/lifecycle.png"
 ---
 
 <br />
 
-I’m on a bit of a React journey at the moment, so I’ve decided to write some blog posts about its key concepts. The component lifecycle is first on my list because it’s been key to understanding how to do a load of cool JavaScript stuff with my websites, like adding event listeners for animated sticky headers and knowing when to request data from an API.
+I’m on a bit of a React journey at the moment, so I’ve decided to write some blog posts about its key concepts. First on my list if the component lifecycle, because I've been using it to give my websites some life. By this I mean animating sticky headers and fetching data from a remote endpoint.
 
 ![The React Component Lifecycle](../images/lifecycle.png)
 [Click to see the original!]('http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/')
 
-Just like humans, React components go through their own lifecycles. The component lifecycle is composed of several different phases that can be manipulated to run code at different times in the lifecycle. The phases are manipulated or overridden by lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://flickr-api-gallery.netlify.com/#/').
+Just like humans, React components go through their own lifecycles. These lifecycles are composed of several different phases that can be manipulated to run code at different times in the component's existence. Each phase comes with its own lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://flickr-api-gallery.netlify.com/#/').
 
 The lifecycle methods come in four main categories:
 
@@ -31,9 +31,9 @@ There are lots of useful methods that come under these categories, but `render()
 <br />
 
 The first lifecycle method in a component’s mounting phase was `componentWillMount()`, which would run just before the render method. React have deprecated its use due to it often being used incorrectly.
-From what I can gather, `ComponentWillMount()` was frequently used for data fetching. which created problems. You might think that it makes sense to initiate a data request before the render, so that the data is ready to render onto the screen in time for the render, giving the fetch method a head start.
+Based on my research, `ComponentWillMount()` was frequently used for data fetching. You might think that it makes sense to initiate a data request before the render, so that the data to go in time for the UI render, giving the fetch method a head start.
 
-In reality, this is not a good idea. The data will usually take a while to return, by this time render will already have taken place. This said, if the request was resolved and the data came back before the render, you would be trying to set state on an unmounted component. Best practice is to render the HTML before sending a data request, as this allows the skeleton UI to load and provide a loading indicator to show the user that the page is on its way. Similarly, if you have an app with data that changes every few seconds, you don’t want a change in the data to cause a re-render every time it updates.
+In reality, this isn't a good idea. The data will usually take a while to return, by this time render will already have taken place. This said, if the request was resolved and the data came back before the render, you would be trying to set state on an unmounted component. Best practice is to render the HTML before sending a data request, as this allows the skeleton UI to load and provide a loading indicator to show the user that the page is on its way. Similarly, if you have an app with data that changes every few seconds, you don’t want a change in the data to cause a re-render every time it updates.
 
 ## Using componentDidMount() for Async Functions
 
@@ -57,7 +57,7 @@ fetch('https://example.api.com')
 
 <br />
 
-First we set the state and decide which lifecycle method to use, call the fetch function with our API address, convert the data response into JSON and set data to the newly received response.
+> First we set the state and decide which lifecycle method to use, call the fetch function with our API address, convert the data response into JSON and set our data to the newly received response.
 
 ## React Hooks for Data Fetching
 
@@ -78,13 +78,13 @@ useEffect(() =>
 
 <br />
 
-We just want `useEfecct` run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the `useEffect()` is run. If the array is left empty, then it will only run once on mounting. If you include dependency parameters, the `useEffect()` hook will run each time one of these parameters is changed or updated. Without the dependency conditions, it can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
+We just want `useEfecct()` run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the `useEffect()` is run. If the array is left empty, then it will only run once on mounting. If you include dependency parameters, the `useEffect()` hook will run each time one of these parameters is changed or updated. Without the dependency conditions, it can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
 
 ## Don't forget to Unmount
 
 <br />
 
-The useEffect hook also offers an optional clean-up function called `componentWillUnmount()`, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in `componentDidMount()`. Leaving active subscriptions results in an undesirable memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
+The useEffect hook also offers an optional clean-up function called `componentWillUnmount()`, which runs just before the component unmounts. You can use this method to unsubscribe from any side effects or async functions initiated in `componentDidMount()`. Leaving active subscriptions results in a memory leak warning, so it’s important to use this function to destroy anything that might continue running after the component has left the DOM.
 
 To illustrate, here’s an example of a function that gets called every time the user scrolls. The `useEffect()` still only mounts and unmounts once, so our cleanup function removeEventListener cancels the event subscription when the component unmounts.
 
@@ -99,3 +99,5 @@ useEffect(() => {
     }
 }, []);
 ```
+
+Find out more from the [React official docs.]('https://reactjs.org/docs/react-component.html')
