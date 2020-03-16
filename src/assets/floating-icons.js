@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/floating-icons.scss"
+import "../styles/floating-icons.css"
 import SassIcon from "../assets/sass-1.svg"
 import GitIcon from "../assets/github-darkRed.svg"
 import HTML5Icon from "../assets/html5.svg"

@@ -8,9 +8,12 @@
 import React, { useEffect, useState, useRef, forwardRef } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "../styles/tailwind.css"
+import "../styles/imports.css"
 import "../styles/all.css"
-import "../styles/gradient.scss"
+import "../styles/gradient.css"
+
+import "@material/drawer/dist/mdc.drawer.min.css"
+import "@material/list/dist/mdc.list.min.css"
 import Header from "../components/header"
 import Contact from "../components/contact"
 import "@rmwc/tooltip/tooltip.css"
@@ -32,7 +35,6 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
-      <link rel="stylesheet" href="./mdc.drawer.min.css" />
       {children}
       {/* <Footer name="footer" id="footer" /> */}
 

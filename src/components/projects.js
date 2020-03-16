@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 
-import "../styles/card-back.scss"
+import "../styles/card-back.css"
 import "../styles/card-flip.css"
-import "../styles/card-front.scss"
+// import "../styles/card-front.css"
 import "../styles/all.css"
 
 import CardFront from "./card-front"

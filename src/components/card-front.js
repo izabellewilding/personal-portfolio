@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "../components/image"
-import "../styles/card-front.scss"
-import "../styles/projects.scss"
+import "../styles/projects.css"
 import styled from "styled-components"
 import GitHub from "../assets/github-darkRed.svg"
 

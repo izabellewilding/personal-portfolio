@@ -135,24 +135,15 @@ const Header = props => {
               </li>{" "}
             </a>{" "}
             {/* <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+
               className="hover:text-midPrimary cursor-pointer"
-              activeClass="sm-active"
-              onSetActive={handleSetActive}
             >
               <li className="nav-list-item mr-6 p-1">
                 <a className="text-darkPrimary" href="#">
                   Blog
                 </a>
               </li>
-            </Link> */}
-            {/* <StyledLink to="/404" className="nav-list-item">
-                Resume
-              </StyledLink> */}
+            </Link>{" "} */}
           </StyledList>
         </DrawerContent>
       </StyledDrawer>
