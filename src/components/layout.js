@@ -13,6 +13,7 @@ import "../styles/all.scss"
 import "../styles/gradient.scss"
 import Header from "../components/header"
 import Contact from "../components/contact"
+import "@rmwc/tooltip/tooltip.css"
 
 // import Header from "./header"
 

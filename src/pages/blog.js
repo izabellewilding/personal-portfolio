@@ -14,12 +14,14 @@ import {
 import "@material/card/dist/mdc.card.css"
 import "@material/button/dist/mdc.button.css"
 import "@material/icon-button/dist/mdc.icon-button.css"
+import "@material/list/dist/mdc.list.min.css"
+import "@material/drawer/dist/mdc.drawer.min.css"
+
 import Header from "../components/header"
 import Contact from "../components/contact"
 import FavoriteBorder from "../assets/favorite_border-24px.svg"
 import Share from "../assets/share-24px.svg"
 import More from "../assets/more_vert-24px.svg"
-
 import Img from "../components/image"
 
 const ListItem = props => {
@@ -34,7 +36,7 @@ const ListItem = props => {
               backgroundImage: "{props.src}",
             }}
           ></CardMedia> */}
-          <Img src={props.src} />
+          {/* <Img src={props.src} /> */}
           <div style={{ padding: "0 1rem 1rem 1rem" }}>
             <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
               {props.postTitle}
@@ -65,7 +67,7 @@ const ListItem = props => {
     //
   )
 }
-const Blog = () => {
+const BlogHome = () => {
   const result = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -125,4 +127,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogHome

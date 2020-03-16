@@ -54,7 +54,7 @@ const Header = props => {
           onClick={() => props.onNav("projects")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
+          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Projects
           </li>{" "}
         </a>
@@ -63,31 +63,23 @@ const Header = props => {
           className="hover:text-midPrimary cursor-pointer"
         >
           {" "}
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
+          <li className="text-darkPrimary nav-list-item  hover-textLight custom-underline mr-6 p-1 quicksand">
             About
           </li>
         </a>
-        <a href="/blog">
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
+        <Link to="/blog">
+          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Blog
           </li>
-        </a>{" "}
+        </Link>{" "}
         <a
           onClick={() => props.onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1 quicksand">
+          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Contact
           </li>
         </a>{" "}
-        {/* <Link
-          
-          className="hover:text-midPrimary cursor-pointer"
-        >
-          <li className="text-darkPrimary nav-list-item custom-underline mr-6 p-1">
-            Blog
-          </li>
-        </Link> */}
       </ul>
       <div className="flex-shrink-0 p-4 cursor-pointer">
         <div
@@ -99,13 +91,7 @@ const Header = props => {
           <span></span>
         </div>
       </div>
-      <StyledDrawer
-        className=" z-10"
-        dir="ltr"
-        modal
-        open={open}
-        onClose={menu}
-      >
+      <StyledDrawer className="z-10" dir="ltr" modal open={open} onClose={menu}>
         <DrawerHeader>
           {" "}
           <DrawerTitle>
@@ -137,11 +123,9 @@ const Header = props => {
                 About
               </li>
             </a>
-            <Link to="/blog">
-              <li className="text-darkPrimary nav-list-item mr-6 p-1 quicksand">
-                Blog
-              </li>
-            </Link>{" "}
+            <a href="/blog">
+              <li className="text-darkPrimary nav-list-item mr-6 p-1">Blog</li>
+            </a>{" "}
             <a
               onClick={() => props.onNav("contact")}
               className="hover:text-midPrimary cursor-pointer"
@@ -180,7 +164,7 @@ const Header = props => {
           className="text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
-          <GitHub className="social-icon-footer" />{" "}
+          <GitHub className="social-icon" />{" "}
         </a>
         <a
           href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
@@ -189,7 +173,7 @@ const Header = props => {
           className=" text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
-          <LinkedIn className="social-icon-footer" />
+          <LinkedIn className="social-icon" />
         </a>
         {/* <button
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -204,7 +188,7 @@ const Header = props => {
           className=" text-gray-900 font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
-          <Email className="social-icon-footer" />
+          <Email className="social-icon" />
         </a>
       </div>
     </header>
