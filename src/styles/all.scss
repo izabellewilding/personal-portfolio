@@ -233,13 +233,14 @@ blockquote {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.2s;
 
   &:hover {
-    color: $darkPrimary;
+    color: $lightPrimary;
   }
   &:focus,
   &:active {
-    color: $midPrimary;
+    color: $lightPrimary;
   }
 }
 
@@ -250,18 +251,18 @@ blockquote {
     text-decoration: none;
 
     &::after {
-      width: 80%;
+      width: 75%;
       transition: 0.3s ease all;
     }
   }
   &::after {
     content: "";
     position: absolute;
-    top: 74%;
+    top: 80%;
     height: 2px;
     width: 0%;
     left: 12%;
-    background-color: $midPrimary;
+    background-color: $lightPrimary;
     -webkit-transition: 0.5s ease all 0.3s;
     transition: 0.5s ease all 0s;
     // border-radius: 5px;

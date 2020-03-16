@@ -44,7 +44,7 @@ const Projects = React.forwardRef((props, ref) => {
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site.JPG"
                 cardTitle="Web Design and Development for a Bristol Doula"
-                siteLink="https://chantal-baptiste-doula.netlify.com/"
+                siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
               />
             }
