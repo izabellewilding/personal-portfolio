@@ -110,7 +110,25 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`),
+          require(`autoprefixer`),
+          require(`postcss-simple-vars`),
+          require(`postcss-nested`),
+          require(`postcss-import`),
+        ],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [__dirname + "/node_modules/"],
+      },
+    },
 
     {
       resolve: `gatsby-plugin-manifest`,

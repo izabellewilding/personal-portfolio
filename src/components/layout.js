@@ -8,7 +8,7 @@
 import React, { useEffect, useState, useRef, forwardRef } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "../style.css"
+import "../styles/tailwind.css"
 import "../styles/all.scss"
 import "../styles/gradient.scss"
 import Header from "../components/header"

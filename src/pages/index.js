@@ -9,6 +9,7 @@ import LandingPage from "../components/landing-page"
 import Projects from "../components/projects.js"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
+import "../styles/style.css"
 // import Blog from "../pages/blog"
 
 const IndexPage = () => {

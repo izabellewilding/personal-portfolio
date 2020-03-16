@@ -16,6 +16,7 @@
     "@rmwc/drawer": "^5.7.2",
     "@rmwc/list": "^5.7.2",
     "@rmwc/tooltip": "^5.7.2",
+    "autoprefixer": "^9.7.4",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -32,6 +33,9 @@
     "gatsby-transformer-remark": "^2.6.55",
     "gatsby-transformer-sharp": "^2.3.13",
     "node-sass": "^4.13.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -41,6 +45,7 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "postcss-cli": "^7.1.0",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"
   },
@@ -56,7 +61,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "tailwind:css": "tailwind build src/style.css -o public/style.css"
+    "tailwind:css": "tailwind build src/style.css -o public/style.css",
+    "postcss": "postcss --config postcss.json"
   },
   "repository": {
     "type": "git",
