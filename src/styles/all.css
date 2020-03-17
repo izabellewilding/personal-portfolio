@@ -104,16 +104,14 @@ blockquote {
 .arrow {
   bottom: 20%;
 }
+
 .wave {
   fill: $darkPrimary;
   opacity: 100;
   top: -3rem;
   width: 120%;
-
-  @media (--small-viewport-only) {
-    width: 231%;
-  }
 }
+
 .sticky {
   position: fixed;
   height: auto;
@@ -212,6 +210,12 @@ blockquote {
   }
 }
 
+.social-icon-footer {
+  fill: $darkPrimary;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
 //nav
 
 .nav-list-item {
@@ -268,7 +272,7 @@ blockquote {
 #nav-toggle {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
-  @media (--small-viewport-only) {
+  @media (max-width: 768px) {
     padding: 8px 17px 0px 0px;
   }
 }
@@ -337,7 +341,7 @@ blockquote {
   text-decoration: none;
   margin: 1rem;
 
-  @media (--small-viewport-only) {
+  @media (max-width: 768px) {
     margin: 0;
     margin-bottom: 1.666%;
   }
@@ -483,15 +487,6 @@ blockquote {
     }
   }
 }
-
-// .card-wave {
-//   position: absolute;
-//   transform: rotate(180deg);
-//   bottom: -1rem;
-//   left: -2rem;
-//   right: -1rem;
-//   width: 130%;
-// }
 
 .card-back-buttons {
   display: flex;

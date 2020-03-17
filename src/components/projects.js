@@ -53,7 +53,7 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{
                   backgroundColor: "#18132a",
                 }}
-                listItem1="Fully customizable content with Netlify CMS"
+                listItem1="St up with Netlify CMS for customisable content"
                 listItem2="Built using Bulma CSS framework"
                 listItem3="Live Instagram feed"
                 siteLink="https://chantal-baptiste-doula.netlify.com/"

@@ -5,7 +5,6 @@ import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
 import FloatingIcons from "../components/floating-icons"
-import Wave from "../assets/waveFlipped.svg"
 
 const Gradient = styled.div`
   background: linear-gradient(
@@ -23,7 +22,6 @@ const Contact = React.forwardRef((props, ref) => {
       ref={ref}
       className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden"
     >
-      <Wave className="wave absolute" />
       <FloatingIcons />
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
@@ -50,7 +48,7 @@ const Contact = React.forwardRef((props, ref) => {
                 className="social-icon-hover bg-white text-lightPrimary flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <GitHub className="social-icon" />{" "}
+                <GitHub className="social-icon-footer" />{" "}
               </a>
               <a
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
@@ -59,7 +57,7 @@ const Contact = React.forwardRef((props, ref) => {
                 className="social-icon-hover bg-white text-lightPrimary shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <LinkedIn className="social-icon" />
+                <LinkedIn className="social-icon-footer" />
               </a>
               {/* <button
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -74,13 +72,13 @@ const Contact = React.forwardRef((props, ref) => {
                 className="social-icon-hover bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <Email className="social-icon" />
+                <Email className="social-icon-footer" />
               </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4 pt-8 md:pt-0">
             <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full px-4 ml-auto">
+              <div className="w-full ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   Useful Links
                 </span>
