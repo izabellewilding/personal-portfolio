@@ -78,7 +78,7 @@ const Contact = React.forwardRef((props, ref) => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-6/12 px-4">
+          <div className="w-full lg:w-6/12 px-4 pt-8 md:pt-0">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">

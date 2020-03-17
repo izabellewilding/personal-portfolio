@@ -85,7 +85,7 @@ const Header = props => {
         <div
           id="nav-toggle"
           href="#"
-          className={classNames({ active: menuIconActive })}
+          className={classNames("hidden-desktop", { active: menuIconActive })}
           onClick={menu}
         >
           <span></span>
@@ -111,9 +111,6 @@ const Header = props => {
                 Projects
               </li>
             </a>
-            {/* <StyledLink to="/blog" className="nav-list-item">
-                Blog
-              </StyledLink> */}
             <a
               onClick={() => props.onNav("about")}
               className="hover:text-midPrimary cursor-pointer"
@@ -134,16 +131,13 @@ const Header = props => {
                 Contact
               </li>{" "}
             </a>{" "}
-            {/* <Link
-
-              className="hover:text-midPrimary cursor-pointer"
-            >
+            <Link className="hover:text-midPrimary cursor-pointer">
               <li className="nav-list-item mr-6 p-1">
                 <a className="text-darkPrimary" href="#">
                   Blog
                 </a>
               </li>
-            </Link>{" "} */}
+            </Link>{" "}
           </StyledList>
         </DrawerContent>
       </StyledDrawer>

@@ -1,5 +1,5 @@
-@custom-media --small-viewport (max-width: 30em);
-@custom-media --medium-viewport (max-width: 768px);
+@custom-media --small-viewport-only (max-width: 768px);
+@custom-media --medium-andUp (min-width: 768px);
 
 $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
@@ -113,7 +113,7 @@ blockquote {
   bottom: -1rem;
   width: 120%;
 
-  @media (--small-viewport) {
+  @media (--small-viewport-only) {
     width: 231%;
   }
 }
@@ -262,22 +262,21 @@ blockquote {
 }
 
 #nav-toggle {
-  display: none;
   position: absolute;
   right: 0;
   top: 0;
   margin: 2rem;
-
-  @media (--small-viewport) {
-    display: block;
-  }
 }
 
 #nav-toggle {
   cursor: pointer;
+
   padding: 10px 35px 16px 0px;
-  @media (--small-viewport) {
+  @media (--small-viewport-only) {
     padding: 8px 17px 0px 0px;
+  }
+  @media (--medium-andUp) {
+    display: none;
   }
 }
 #nav-toggle span,
@@ -345,7 +344,7 @@ blockquote {
   text-decoration: none;
   margin: 1rem;
 
-  @media (--small-viewport) {
+  @media (--small-viewport-only) {
     margin: 0;
     margin-bottom: 1.666%;
   }

@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "../styles/imports.css"
 import "../styles/all.css"
 import "../styles/gradient.css"
+import "../styles/mdc-drawer.css"
 
 import "@material/drawer/dist/mdc.drawer.min.css"
 import "@material/list/dist/mdc.list.min.css"
