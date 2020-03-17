@@ -56,7 +56,7 @@ const Projects = React.forwardRef((props, ref) => {
                 listItem1="St up with Netlify CMS for customisable content"
                 listItem2="Built using Bulma CSS framework"
                 listItem3="Live Instagram feed"
-                siteLink="https://chantal-baptiste-doula.netlify.com/"
+                siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
               />
             }
