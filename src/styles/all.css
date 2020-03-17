@@ -107,7 +107,7 @@ blockquote {
 .wave {
   fill: $darkPrimary;
   opacity: 100;
-  bottom: -1rem;
+  top: -3rem;
   width: 120%;
 
   @media (--small-viewport-only) {
@@ -267,7 +267,6 @@ blockquote {
 
 #nav-toggle {
   cursor: pointer;
-
   padding: 10px 35px 16px 0px;
   @media (--small-viewport-only) {
     padding: 8px 17px 0px 0px;

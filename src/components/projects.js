@@ -42,8 +42,8 @@ const Projects = React.forwardRef((props, ref) => {
               <CardFront
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
-                cardImage="../images/doula-site.JPG"
-                cardTitle="Web Design and Development for a Bristol Doula"
+                cardImage="../images/doula-site.PNG"
+                cardTitle="Doula Website"
                 siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
               />

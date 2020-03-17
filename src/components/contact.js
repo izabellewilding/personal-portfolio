@@ -23,7 +23,7 @@ const Contact = React.forwardRef((props, ref) => {
       ref={ref}
       className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden"
     >
-      {/* <Wave /> */}
+      <Wave className="wave absolute" />
       <FloatingIcons />
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
