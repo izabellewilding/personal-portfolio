@@ -81,12 +81,13 @@ const Header = props => {
           </li>
         </a>{" "}
       </ul>
-      <div className="flex-shrink-0 p-4 cursor-pointer">
+      <div className="flex-shrink-0 p-4 cursor-pointer" onClick={menu}>
         <div
           id="nav-toggle"
           href="#"
-          className={classNames("hidden-desktop", { active: menuIconActive })}
-          onClick={menu}
+          className={classNames("visible md:invisible", {
+            active: menuIconActive,
+          })}
         >
           <span></span>
         </div>
