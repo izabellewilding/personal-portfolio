@@ -132,13 +132,13 @@ const Header = props => {
                 Contact
               </li>{" "}
             </a>{" "}
-            <Link className="hover:text-midPrimary cursor-pointer">
+            {/* <Link className="hover:text-midPrimary cursor-pointer">
               <li className="nav-list-item mr-6 p-1">
                 <a className="text-darkPrimary" href="#">
                   Blog
                 </a>
               </li>
-            </Link>{" "}
+            </Link>{" "} */}
           </StyledList>
         </DrawerContent>
       </StyledDrawer>
