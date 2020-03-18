@@ -164,6 +164,10 @@ blockquote {
   bottom: 25rem;
 }
 
+.max-width {
+  max-width: 91rem;
+}
+
 //landing page svg splashes
 .splash {
   left: 10%;
