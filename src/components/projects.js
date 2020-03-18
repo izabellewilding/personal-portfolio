@@ -93,7 +93,7 @@ const Projects = React.forwardRef((props, ref) => {
                   // logo={"Artist Photograph & Art Gallery"}
                   cardTitle="Artist Image Gallery"
                   gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
-                  siteLink="https://flickr-api-gallery.netlify.com/#/"
+                  siteLink="https://izabelle-art.netlify.com/#/"
                 />
               }
               cardBack={
