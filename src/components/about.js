@@ -1,22 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "./image"
+import Bird from "../assets/bird-green.svg"
 
 const About = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
       {...props}
-      className=" relative w-full min-h-full flex flex-wrap items-center overflow-hidden bg-lightPrimary pb-16 pt-32"
+      className=" relative w-full min-h-full flex flex-wrap items-center bg-lightPrimary pb-16 pt-32"
     >
       {/* <div className="header-offset"></div> */}
 
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-8 ">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>
-        </div> */}
+        </div> */}{" "}
         <h2 className="text-3xl mb-2 leading-normal chivo">About Me</h2>
-
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-800"></p>
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
           Hello! I'm Izabelle, a freelance web developer based in Bristol. I
@@ -36,14 +36,21 @@ const About = React.forwardRef((props, ref) => {
       </div>
 
       <div className="w-full md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
-        <Link to="/blog" class="max-w-sm rounded overflow-hidden shadow-lg">
+        {" "}
+        <Bird className="bird absolute right-0 opacity-75 h-screen" />
+        <Link
+          to="/blog"
+          class="relative max-w-sm rounded overflow-hidden shadow-lg"
+        >
+          {" "}
           <Image
             className="w-full"
             style={{ maxHeight: 228 }}
             src="../images/adrien-converse-xzH7K6nVVgI-unsplash.jpg"
             alt="Sunset in the mountains"
           />
-          <div className="px-6 py-4 bg-white">
+          <div className="px-6 py-4 bg-white relative">
+            {" "}
             <div className="font-bold text-xl mb-2 text-darkPrimary">
               My Blog
             </div>

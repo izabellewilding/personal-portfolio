@@ -1,13 +1,10 @@
 import React, { useState } from "react"
-
 import "../styles/card-back.css"
 import "../styles/card-flip.css"
 // import "../styles/card-front.css"
 import "../styles/all.css"
-
 import CardFront from "./card-front"
 import CardBack from "./card-back"
-import GitHub from "../assets/github-darkRed.svg"
 
 const Card = ({ cardFront, cardBack }) => {
   return (
@@ -25,7 +22,7 @@ const Projects = React.forwardRef((props, ref) => {
     <main
       ref={ref}
       {...props}
-      className="mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
+      className="relative mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
     >
       <div className="header-offset"></div>
       <div className="container inline-block pb-16">
@@ -53,7 +50,7 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{
                   backgroundColor: "#18132a",
                 }}
-                listItem1="St up with Netlify CMS for customisable content"
+                listItem1="Linked up to Netlify CMS for customisable content"
                 listItem2="Built using Bulma CSS framework"
                 listItem3="Live Instagram feed"
                 siteLink="https://doula-site.netlify.com/"

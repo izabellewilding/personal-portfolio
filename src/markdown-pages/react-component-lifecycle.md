@@ -13,7 +13,7 @@ I’m on a bit of a React journey at the moment, so I’ve decided to write some
 ![The React Component Lifecycle](../images/lifecycle.png)
 [Click to see the original!]('http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/')
 
-Just like humans, React components go through their own lifecycles. These lifecycles are composed of several different phases that can be manipulated to run code at different times in the component's existence. Each phase comes with its own lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://flickr-api-gallery.netlify.com/#/').
+Just like humans, React components go through their own lifecycles. These lifecycles are composed of several different phases that can be manipulated to run code at different times in the component's existence. Each phase comes with its own lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://izabelle-art.netlify.com/#/').
 
 The lifecycle methods come in four main categories:
 
