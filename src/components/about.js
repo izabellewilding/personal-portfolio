@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "./image"
-import Bird from "../assets/bird-green.svg"
+// import Bird from "../assets/bird-green.svg"
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -37,7 +37,7 @@ const About = React.forwardRef((props, ref) => {
 
       <div className="w-full md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
         {" "}
-        <Bird className="bird absolute right-0 opacity-75 h-screen" />
+        {/* <Bird className="bird absolute right-0 opacity-75 h-screen" /> */}
         <Link
           to="/blog"
           class="relative max-w-sm rounded overflow-hidden shadow-lg"
