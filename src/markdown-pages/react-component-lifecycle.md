@@ -11,9 +11,9 @@ postImage: "../images/lifecycle"
 I’m on a bit of a React journey at the moment, so I’ve decided to write some blog posts about its key concepts. First on my list if the component lifecycle, because I've been using it to give my websites some life. By this I mean animating sticky headers and fetching data from a remote endpoint.
 
 ![The React Component Lifecycle](../images/lifecycle.png)
-[Click to see the original!]('http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/')
+[Click to see the original!](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-Just like humans, React components go through their own lifecycles. These lifecycles are composed of several different phases that can be manipulated to run code at different times in the component's existence. Each phase comes with its own lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery]('https://izabelle-art.netlify.com/#/').
+Just like humans, React components go through their own lifecycles. These lifecycles are composed of several different phases that can be manipulated to run code at different times in the component's existence. Each phase comes with its own lifecycle methods, which are particularly useful if you want to make something happen at a specific time in the program. I’ll mostly be using asynchronous data fetching in my examples because it’s something I had to get my head around to make my [FlickrAPI image gallery](https://izabelle-art.netlify.com/#/).
 
 The lifecycle methods come in four main categories:
 
@@ -100,4 +100,4 @@ useEffect(() => {
 }, []);
 ```
 
-Find out more from the [React official docs.]('https://reactjs.org/docs/react-component.html')
+Find out more from the [React official docs.](https://reactjs.org/docs/react-component.html)

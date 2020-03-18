@@ -11,7 +11,7 @@ const About = React.forwardRef((props, ref) => {
       className=" relative w-full min-h-full flex flex-wrap items-center bg-lightPrimary pb-16 pt-32 "
     >
       {/* <div className="header-offset"></div> */}
-      <div className="max-width flex mr-auto ml-auto">
+      <div className="max-width md:flex mr-auto ml-auto">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-8 ">
           {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>
