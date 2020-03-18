@@ -161,9 +161,7 @@ const Contact = React.forwardRef((props, ref) => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()}{" "}
-              <a className="text-gray-600 hover:text-gray-900">
-                Izabelle Wilding
-              </a>
+              <a className="text-gray-600">Izabelle Wilding</a>
             </div>
           </div>
         </div>{" "}
