@@ -105,7 +105,7 @@ const Projects = React.forwardRef((props, ref) => {
                     backgroundColor: "#18132a",
                   }}
                   gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
-                  siteLink="https://flickr-api-gallery.netlify.com/#/"
+                  siteLink="https://izabelle-art.netlify.com/#/"
                   // cardImage="../images/card1-img"
                 />
               }
