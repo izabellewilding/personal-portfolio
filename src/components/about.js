@@ -27,7 +27,7 @@ const About = React.forwardRef((props, ref) => {
           </p>
           <br />
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-            I use React and frameworks like Gatby to make most of my websites,
+            I use React and frameworks like Gatsby to make most of my websites,
             but I'm always looking to expand my knowledge of frameworks and
             libraries. I spend a lot of my free time experimenting with
             Photoshop and Illustrator to convert my art and hand drawn images in
