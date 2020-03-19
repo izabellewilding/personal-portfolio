@@ -208,8 +208,8 @@ blockquote {
 
 .social-icon-footer {
   fill: $darkPrimary;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 20px;
+  width: 20px;
 }
 
 //nav
