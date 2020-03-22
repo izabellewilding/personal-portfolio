@@ -105,7 +105,7 @@ const Contact = React.forwardRef((props, ref) => {
                   </li> */}
                   <li>
                     <a
-                      href="https://flickr-api-gallery.netlify.com/#/art-gallery"
+                      href="https://izabelle-art.netlify.com/#/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
