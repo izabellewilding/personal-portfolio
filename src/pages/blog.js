@@ -22,26 +22,28 @@ import Contact from "../components/contact"
 import FavoriteBorder from "../assets/favorite_border-24px.svg"
 import Share from "../assets/share-24px.svg"
 import More from "../assets/more_vert-24px.svg"
-import Img from "../components/image"
+import Img from "gatsby-image"
 
-const ListItem = props => {
+const ListItem = ({ data, ...props }) => {
   return (
-    <Link to={props.linkTo} className="blog-post-card">
-      <Card style={{ width: "20rem", height: "20rem" }}>
-        <CardPrimaryAction>
-          {/* <CardMedia
-            sixteenByNine
-            src={props.src}
-            style={{
-              backgroundImage: "{props.src}",
-            }}
-          ></CardMedia> */}
-          {/* <Img src={props.src} /> */}
-          <div style={{ padding: "0 1rem 1rem 1rem" }}>
-            <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
-              {props.postTitle}
-            </h3>
-            {/* <Typography
+    <div className="m-6">
+      <Link to={props.linkTo} className="blog-post-card">
+        <Card style={{ width: "20rem", height: "20rem" }}>
+          <CardPrimaryAction>
+            {/* <CardMedia
+              sixteenByNine
+              // src={props.fluid}
+              // style={{
+              //   backgroundImage: `${props.fluid}`,
+              // }}
+            > */}
+            <Img fluid={props.fluid} /> {/* </CardMedia> */}
+            {/* <Img src={props.src} /> */}
+            <div style={{ padding: "0 1rem 1rem 1rem" }}>
+              <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
+                {props.postTitle}
+              </h3>
+              {/* <Typography
               use="subtitle2"
               tag="h2"
               theme="textSecondaryOnBackground"
@@ -49,25 +51,29 @@ const ListItem = props => {
             >
               by Izzy Wilding
             </Typography> */}
-          </div>
-        </CardPrimaryAction>
-        <CardActions>
-          <CardActionButtons>
-            <CardActionButton>Read</CardActionButton>
-          </CardActionButtons>
-          <CardActionIcons>
-            <CardActionIcon icon={<FavoriteBorder />} />
-            <CardActionIcon icon={<Share />} />
-            <CardActionIcon icon={<More />} />
-          </CardActionIcons>
-        </CardActions>
-      </Card>
-    </Link>
-    //     <Img src={props.src} className="blog-post-thumbnail" />
-    //
+            </div>
+          </CardPrimaryAction>
+          <CardActions>
+            <CardActionButtons>
+              <CardActionButton>Read</CardActionButton>
+            </CardActionButtons>
+            <CardActionIcons>
+              <CardActionIcon icon={<FavoriteBorder />} />
+              <CardActionIcon icon={<Share />} />
+              <CardActionIcon icon={<More />} />
+            </CardActionIcons>
+          </CardActions>
+        </Card>
+      </Link>
+      {/* <Img
+        src={props.src}
+        fixed={data.file.childImageSharp.fixed}
+        className="blog-post-thumbnail"
+      /> */}
+    </div>
   )
 }
-const BlogHome = () => {
+const BlogHome = ({ data }) => {
   const result = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -78,7 +84,14 @@ const BlogHome = () => {
           node {
             frontmatter {
               path
-              postImage
+              postImage {
+                id
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               title
               description
             }
@@ -102,6 +115,7 @@ const BlogHome = () => {
       //   blogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
     }
   }
+
   return (
     <Layout pageTitle="blog">
       <Header isSticky={true} onNav={handleHeaderNavigation} />
@@ -114,7 +128,7 @@ const BlogHome = () => {
             return (
               <ListItem
                 linkTo={node.frontmatter.path}
-                src={node.frontmatter.postImage}
+                fluid={node.frontmatter.postImage.childImageSharp.fluid}
                 postTitle={node.frontmatter.title}
                 postDescription={node.frontmatter.description}
               />

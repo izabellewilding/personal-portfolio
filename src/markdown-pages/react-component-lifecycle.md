@@ -3,7 +3,7 @@ path: "/react-component-lifecycle"
 date: "2020-03-13"
 title: "React Component Lifecycle: Before and After React 16"
 description: "Beginners Guide to the React Lifecycle Methods in Class and Function Components"
-postImage: "../images/lifecycle"
+postImage: "../images/lifecycle.png"
 ---
 
 <br />
