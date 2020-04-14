@@ -45,7 +45,7 @@ const Contact = React.forwardRef((props, ref) => {
                 href="https://github.com/izabellewilding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-white flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="bg-white flex shadow-lg font-normal p-2  items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <GitHub className="social-icon-footer" />{" "}
@@ -54,7 +54,7 @@ const Contact = React.forwardRef((props, ref) => {
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-white shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className=" bg-white shadow-lg flex font-normal p-2 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <LinkedIn className="social-icon-footer" />
@@ -64,7 +64,7 @@ const Contact = React.forwardRef((props, ref) => {
                 href="mailto:izabellewilding@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className=" bg-white text-gray-900 shadow-lg font-normal p-2 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <Email className="social-icon-footer" />
