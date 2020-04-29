@@ -28,7 +28,13 @@ const ListItem = ({ data, ...props }) => {
   return (
     <div className="m-6">
       <Link to={props.linkTo} className="blog-post-card">
-        <Card style={{ width: "20rem", height: "20rem" }}>
+        <Card
+          style={{
+            width: "20rem",
+            height: "20rem",
+            justifyContent: "space-between",
+          }}
+        >
           <CardPrimaryAction>
             {/* <CardMedia
               sixteenByNine
@@ -58,9 +64,7 @@ const ListItem = ({ data, ...props }) => {
               <CardActionButton>Read</CardActionButton>
             </CardActionButtons>
             <CardActionIcons>
-              <CardActionIcon icon={<FavoriteBorder />} />
               <CardActionIcon icon={<Share />} />
-              <CardActionIcon icon={<More />} />
             </CardActionIcons>
           </CardActions>
         </Card>

@@ -78,7 +78,7 @@ useEffect(() =>
 
 <br />
 
-We just want `useEfecct()` to run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the `useEffect()` is run. If the array is left empty, then it will only run once on mounting. If you include dependency parameters, the `useEffect()` hook will run each time one of these parameters is changed or updated. Without the dependency conditions, it can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
+We just want `useEffect()` to run and clean up once, so a dependency array can be passed in as the second argument. This array can either be empty, or it can contain parameters (state and props) that control when the `useEffect()` is run. If the array is left empty, then it will only run once on mounting. If you include dependency parameters, the `useEffect()` hook will run each time one of these parameters is changed or updated. Without the dependency conditions, it can be triggered by any change to the component’s data, which can be quite often if you have a complex app with lots of props.
 
 ## Don't forget to Unmount
 
