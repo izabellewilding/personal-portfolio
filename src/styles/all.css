@@ -17,7 +17,6 @@ $midPrimary: #1fb3cb;
 @font-face {
   font-family: "barlow-cond";
   src: url(../fonts/BarlowCondensed-Medium.ttf);
-  font-display: swap;
 }
 
 ///tailwind preset overrides for markdown
