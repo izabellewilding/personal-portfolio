@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Logo from "../assets/text-logo2.svg"
 import GitHub from "../assets/github-darkRed.svg"
@@ -8,7 +8,7 @@ import classNames from "classnames"
 
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
 import styled from "styled-components"
-import { ListItem, List } from "@rmwc/list"
+import { List } from "@rmwc/list"
 import "@material/list/dist/mdc.list.min.css"
 import "@material/drawer/dist/mdc.drawer.min.css"
 

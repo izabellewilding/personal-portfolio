@@ -1,7 +1,6 @@
 import React from "react"
-import styled from "styled-components"
 import SocialIcons from "../components/social-icons.js"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import SEO from "../components/seo"
 
 import Splash from "../assets/slash-nice.svg"

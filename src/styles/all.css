@@ -19,7 +19,6 @@ $midPrimary: #1fb3cb;
   src: url(../fonts/BarlowCondensed-Medium.ttf);
 }
 
-///tailwind preset overrides for markdown
 p {
   margin-bottom: 1.666rem;
 }

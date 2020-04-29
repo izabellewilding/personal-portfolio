@@ -4,7 +4,6 @@ import { useStaticQuery, graphql, Link, navigate } from "gatsby"
 import {
   Card,
   CardPrimaryAction,
-  CardMedia,
   CardActions,
   CardActionIcon,
   CardActionButtons,
@@ -19,9 +18,7 @@ import "@material/drawer/dist/mdc.drawer.min.css"
 
 import Header from "../components/header"
 import Contact from "../components/contact"
-import FavoriteBorder from "../assets/favorite_border-24px.svg"
 import Share from "../assets/share-24px.svg"
-import More from "../assets/more_vert-24px.svg"
 import Img from "gatsby-image"
 
 const ListItem = ({ data, ...props }) => {

@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/card-back.css"
 import "../styles/projects.css"
-import Img from "./image"
 import GitHub from "../assets/github-darkRed.svg"
 
 const CardBack = ({ ...props }) => {

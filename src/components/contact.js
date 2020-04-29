@@ -6,15 +6,15 @@ import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
 import FloatingIcons from "../components/floating-icons"
 
-const Gradient = styled.div`
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 1, 62, 0.5055894183845413) 29%,
-    rgba(0, 13, 104, 0.15825048281031162) 59%,
-    rgba(198, 204, 214, 0) 100%
-  );
-`
+// const Gradient = styled.div`
+//   background: linear-gradient(
+//     0deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(0, 1, 62, 0.5055894183845413) 29%,
+//     rgba(0, 13, 104, 0.15825048281031162) 59%,
+//     rgba(198, 204, 214, 0) 100%
+//   );
+// `
 
 const Contact = React.forwardRef((props, ref) => {
   return (
