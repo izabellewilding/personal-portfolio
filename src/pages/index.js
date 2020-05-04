@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"
-
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import About from "../components/about.js"
@@ -42,6 +42,8 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      {" "}
+      <SEO title="Izabelle Wilding - Web Developer" />
       <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage navItem="landing" id="home" ref={landingRef} />
       <Projects navItem="projects" id="projects" ref={projectsRef} />

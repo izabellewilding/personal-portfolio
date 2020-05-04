@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { useStaticQuery, graphql, Link, navigate } from "gatsby"
 import {
   Card,
@@ -24,6 +25,7 @@ import Img from "gatsby-image"
 const ListItem = ({ data, ...props }) => {
   return (
     <div className="m-6">
+      <SEO title="Izabelle Wilding: Blog" />
       <Link to={props.linkTo} className="blog-post-card">
         <Card
           style={{

@@ -27,7 +27,7 @@ const LandingPage = React.forwardRef((props, ref) => {
       {" "}
       <SEO
         title="Homepage"
-        description="Izabelle Wilding - Freelance WebDeveloper"
+        description="Izabelle Wilding - Freelance Web Developer"
       />
       <div className="gradient relative w-full h-screen">
         {" "}
