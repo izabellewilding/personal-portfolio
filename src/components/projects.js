@@ -39,7 +39,7 @@ const Projects = React.forwardRef((props, ref) => {
               <CardFront
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
-                cardImage="../images/doula-site.PNG"
+                cardImage="../images/doula-site.png"
                 cardTitle="Doula Website"
                 siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
@@ -89,7 +89,7 @@ const Projects = React.forwardRef((props, ref) => {
                   style={{
                     fontFamily: "europa",
                   }}
-                  cardImage="../images/flickrapi-img.JPG"
+                  cardImage="../images/flickrapi-img.jpg"
                   // logo={"Artist Photograph & Art Gallery"}
                   cardTitle="Artist Image Gallery"
                   gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"

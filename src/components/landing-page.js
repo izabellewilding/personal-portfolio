@@ -2,23 +2,10 @@ import React from "react"
 import SocialIcons from "../components/social-icons.js"
 import { Link } from "react-scroll"
 import SEO from "../components/seo"
-
-import Splash from "../assets/slash-nice.svg"
-import SplashMedium from "../assets/slash-medium.svg"
-
-// const Gradient = styled.div`
-//   background: linear-gradient(
-//     0deg,
-//     rgba(0, 0, 0, 1) 0%,
-//     rgba(0, 1, 62, 0.5055894183845413) 29%,
-//     rgba(0, 13, 104, 0.15825048281031162) 59%,
-//     rgba(198, 204, 214, 0) 100%
-//   );
-// `
+import Splashes from "./splashes.js"
 
 const LandingPage = React.forwardRef((props, ref) => {
   return (
-    //landing page top
     <main
       {...props}
       ref={ref}
@@ -29,27 +16,11 @@ const LandingPage = React.forwardRef((props, ref) => {
         title="Homepage"
         description="Izabelle Wilding - Freelance Web Developer"
       />
-      <div className="gradient relative w-full h-screen">
-        {" "}
-        <Splash
-          className=" absolute lightSVG bottom-0 splash "
-          style={{ height: "35vh" }}
-        />
-        <SplashMedium
-          className=" absolute bottom-0  lightSVG splash-med-left  invisible sm:visible"
-          style={{ height: "50vh" }}
-        />
-        <Splash
-          className=" absolute lightSVG top-0 splash2 "
-          style={{ height: "35vh" }}
-        />
-        <SplashMedium className="h-screen absolute bottom-0 right-0 lightSVG" />
-      </div>{" "}
+      <div className="gradient relative w-full h-screen"> </div>{" "}
       <div className=" absolute opacity-25 bottom-0 right-0 top-0 left-0" />
       {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " /> */}
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
-        {" "}
-        {/* hero text */}
+        <Splashes /> {/* hero text */}
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="inline-block">
             <h1 className="relative whitespace-no-wrap text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond leading-none">
