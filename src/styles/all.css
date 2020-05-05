@@ -17,6 +17,7 @@ $midPrimary: #1fb3cb;
 @font-face {
   font-family: "barlow-cond";
   src: url(../fonts/BarlowCondensed-Medium.ttf);
+  font-display: swap;
 }
 
 p {
@@ -48,6 +49,7 @@ blockquote {
 
 .barlow-cond {
   font-family: "barlow-cond", Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap;
 }
 
 //text style
