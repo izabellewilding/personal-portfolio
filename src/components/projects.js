@@ -40,9 +40,7 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site.png"
-                cardTitle="Doula Website"
-                siteLink="https://doula-site.netlify.com/"
-                gitLink="https://github.com/doula-website/personal-doula-website"
+                cardTitle="Gatsby & Netlify CMS"
               />
             }
             cardBack={
@@ -50,8 +48,8 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{
                   backgroundColor: "#18132a",
                 }}
-                listItem1="Linked up to Netlify CMS for customisable content"
-                listItem2="Built using Bulma CSS framework"
+                listItem1="Netlify CMS for customisable content"
+                listItem2="Bulma CSS"
                 listItem3="Live Instagram feed"
                 siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
@@ -63,16 +61,14 @@ const Projects = React.forwardRef((props, ref) => {
               <CardFront
                 // logo={<FoodBlogLogo />}
                 cardImage="../images/abof-img.png"
-                cardTitle="Recipe Website and Blog"
-                gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
-                siteLink="https://abitoffood.netlify.com/"
+                cardTitle="Food Recipe Website"
               />
             }
             cardBack={
               <CardBack
-                listItem1="On and offline search bar made with Elasticlunr"
-                listItem2="MDX recipe pages"
-                listItem3="Responsive UI design, bespoke SVGs, easy to read recipe format"
+                listItem1="Elasticlunr on and offline search bar"
+                listItem2="Markdown recipe pages"
+                listItem3="Fully responsive UI"
                 style={{
                   backgroundColor: "#18132a",
                 }}
@@ -89,23 +85,21 @@ const Projects = React.forwardRef((props, ref) => {
                   style={{
                     fontFamily: "europa",
                   }}
-                  cardImage="../images/flickrapi-img.jpg"
+                  cardImage="../images/ecommerce-snippet.png"
                   // logo={"Artist Photograph & Art Gallery"}
-                  cardTitle="Artist Image Gallery"
-                  gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
-                  siteLink="https://izabelle-art.netlify.com/#/"
+                  cardTitle="Ecommerce Website"
                 />
               }
               cardBack={
                 <CardBack
-                  listItem1="Data fetching from Flickr API"
-                  listItem2="Responsive image carousel"
-                  listItem3="Page slide transition using React Router"
+                  listItem1="Stripe payment integration"
+                  listItem2="Custom built shopping cart"
+                  listItem3="Netlify contact form"
                   style={{
                     backgroundColor: "#18132a",
                   }}
-                  gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
-                  siteLink="https://izabelle-art.netlify.com/#/"
+                  gitLink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+                  siteLink="https://www.izabelleart.com/"
                   // cardImage="../images/card1-img"
                 />
               }
@@ -126,8 +120,6 @@ const Projects = React.forwardRef((props, ref) => {
                 // logo={<ElecLogo />}
                 cardImage="../images/elec-site-img.png"
                 cardTitle="Small business website"
-                siteLink="https://www.alexwildingelectricalservices.com/"
-                gitLink="https://github.com/izabellewilding/website-for-electrician"
               />
             }
             cardBack={
