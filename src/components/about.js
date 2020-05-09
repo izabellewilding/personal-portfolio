@@ -40,7 +40,8 @@ const About = React.forwardRef((props, ref) => {
           {/* <Bird className="bird absolute right-0 opacity-75 h-screen" /> */}
           <Link
             to="/blog"
-            class="relative max-w-sm rounded overflow-hidden shadow-lg"
+            className="relative max-w-sm rounded bg-white overflow-hidden shadow-lg"
+            style={{ minWidth: "21rem" }}
           >
             {" "}
             <Image
@@ -49,7 +50,7 @@ const About = React.forwardRef((props, ref) => {
               src="../images/adrien-converse-xzH7K6nVVgI-unsplash.jpg"
               alt="Sunset in the mountains"
             />
-            <div className="px-6 py-4 bg-white relative">
+            <div className="px-6 bg-white relative">
               {" "}
               <div className="font-bold text-xl mb-2 text-darkPrimary">
                 My Blog

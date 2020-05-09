@@ -22,7 +22,7 @@ const Projects = React.forwardRef((props, ref) => {
     <main
       ref={ref}
       {...props}
-      className="relative mt-12 mb-12 w-full min-h-screen flex justify-center items-center "
+      className="relative mt-12 mb-12 w-full min-h-screen flex justify-center items-center"
     >
       <div className="header-offset"></div>
       <div className="container inline-block pb-16">
@@ -40,7 +40,8 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site.png"
-                cardTitle="Gatsby & Netlify CMS"
+                cardTitle="Small Business Website
+            "
               />
             }
             cardBack={
