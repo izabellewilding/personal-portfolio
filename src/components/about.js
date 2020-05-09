@@ -35,7 +35,7 @@ const About = React.forwardRef((props, ref) => {
           </p>
         </div>
 
-        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
+        <div className=" w-2/4 md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
           {" "}
           {/* <Bird className="bird absolute right-0 opacity-75 h-screen" /> */}
           <Link
@@ -56,19 +56,19 @@ const About = React.forwardRef((props, ref) => {
               </div>
               <p className="text-gray-700 text-base bg-white">
                 I've recently started writing a front-end blog to reaffirm my
-                knowledge and explore some of the interesting topics I've been
-                learning about :-){" "}
+                knowledge and explore some of the topics I've been learning
+                about.
               </p>
             </div>
             <div className="px-6 py-4 bg-white">
               <Link to="/react-component-lifecycle">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  React Lifecycle
+                  #React Lifecycle
                 </span>
               </Link>
               <Link to="/problem-creating-react-app">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  Dependency Tree Error
+                  #Dependency Tree Error
                 </span>
               </Link>
               {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
