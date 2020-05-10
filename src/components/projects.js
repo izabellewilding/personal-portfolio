@@ -39,7 +39,7 @@ const Projects = React.forwardRef((props, ref) => {
               <CardFront
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
-                cardImage="../images/doula-site.png"
+                cardImage="../images/doula-site-snippet.png"
                 cardTitle="Small Business Website
             "
               />
@@ -49,8 +49,8 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{
                   backgroundColor: "#18132a",
                 }}
-                listItem1="Netlify CMS for customisable content"
-                listItem2="Bulma CSS"
+                listItem1="Netlify CMS integration"
+                listItem2="Bulma CSS theme"
                 listItem3="Live Instagram feed"
                 siteLink="https://doula-site.netlify.com/"
                 gitLink="https://github.com/doula-website/personal-doula-website"
