@@ -8,7 +8,7 @@ const About = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       {...props}
-      className=" relative w-full min-h-full flex flex-wrap items-center bg-lightPrimary pb-16 pt-32 "
+      className=" relative w-full min-h-full flex flex-wrap items-center bg-lightPrimary pb-16 pt-12 "
     >
       {/* <div className="header-offset"></div> */}
       <div className="max-width md:flex mr-auto ml-auto">
@@ -19,23 +19,23 @@ const About = React.forwardRef((props, ref) => {
           <h2 className="text-3xl mb-2 leading-normal chivo">About Me</h2>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-800"></p>
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-            Hello! I'm Izabelle, a freelance web developer based in Bristol. I
+            Hi, I'm Izabelle. A freelance web developer based in Bristol. I
             hadn't always planned to become a developer, but my love for
-            language, solving complex problems, and art lead me here. As a
-            developer I can channel my combined knowledge and interests into
-            building responsive, high performance, attractive web applications.
+            language, solving complex problems, and art lead me here. I spend my
+            time building responsive, high performance web applications
+            following the JAMStack architecture.
           </p>
           <br />
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
             I use React and frameworks like Gatsby to make most of my websites,
             but I'm always looking to expand my knowledge of frameworks and
             libraries. I spend a lot of my free time experimenting with
-            Photoshop and Illustrator to convert my art and hand drawn images in
-            SVGs for my sites.
+            Photoshop and Illustrator to convert hand drawn images into SVGs for
+            my sites.
           </p>
         </div>
 
-        <div className=" w-2/4 md:w-4/12 px-4 mr-auto ml-auto flex justify-center">
+        <div className="sm:w-4/12 px-4 mr-auto ml-auto flex justify-center">
           {" "}
           {/* <Bird className="bird absolute right-0 opacity-75 h-screen" /> */}
           <Link
@@ -52,7 +52,7 @@ const About = React.forwardRef((props, ref) => {
             />
             <div className="px-6 bg-white relative">
               {" "}
-              <div className="font-bold text-xl mb-2 text-darkPrimary">
+              <div className="font-bold text-xl mb-2 text-darkPrimary pt-4">
                 My Blog
               </div>
               <p className="text-gray-700 text-base bg-white">

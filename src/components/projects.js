@@ -37,10 +37,35 @@ const Projects = React.forwardRef((props, ref) => {
           <Card
             cardFront={
               <CardFront
+                style={{
+                  fontFamily: "europa",
+                }}
+                cardImage="../images/ecommerce-snippet.png"
+                // logo={"Artist Photograph & Art Gallery"}
+                cardTitle="Gatsby Stripe Ecommerce"
+              />
+            }
+            cardBack={
+              <CardBack
+                listItem1="Stripe payment integration"
+                listItem2="Custom built shopping cart"
+                listItem3="Netlify contact form"
+                style={{
+                  backgroundColor: "#18132a",
+                }}
+                gitLink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+                siteLink="https://www.izabelleart.com/"
+                // cardImage="../images/card1-img"
+              />
+            }
+          />
+          <Card
+            cardFront={
+              <CardFront
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site-snippet.png"
-                cardTitle="Small Business Website
+                cardTitle="Gatsby Netlify CMS
             "
               />
             }
@@ -79,41 +104,6 @@ const Projects = React.forwardRef((props, ref) => {
               />
             }
           />{" "}
-          <div className="relative">
-            <Card
-              cardFront={
-                <CardFront
-                  style={{
-                    fontFamily: "europa",
-                  }}
-                  cardImage="../images/ecommerce-snippet.png"
-                  // logo={"Artist Photograph & Art Gallery"}
-                  cardTitle="Ecommerce Website"
-                />
-              }
-              cardBack={
-                <CardBack
-                  listItem1="Stripe payment integration"
-                  listItem2="Custom built shopping cart"
-                  listItem3="Netlify contact form"
-                  style={{
-                    backgroundColor: "#18132a",
-                  }}
-                  gitLink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
-                  siteLink="https://www.izabelleart.com/"
-                  // cardImage="../images/card1-img"
-                />
-              }
-            />
-            {/* <a
-              href="#about"
-              class=" absolute bottom-0 invisible md:visible bg-transparent hover:bg-blue-500 text-blue-900 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
-              style={{ bottom: "-4rem", left: "35%" }}
-              role="button"
-            >
-              About Me
-            </a> */}
-          </div>
           <Card
             cardFront={
               <CardFront

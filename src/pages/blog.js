@@ -29,33 +29,16 @@ const ListItem = ({ data, ...props }) => {
       <Link to={props.linkTo} className="blog-post-card">
         <Card
           style={{
-            width: "20rem",
-            height: "20rem",
             justifyContent: "space-between",
           }}
+          className="w-full blog-post-card"
         >
           <CardPrimaryAction>
-            {/* <CardMedia
-              sixteenByNine
-              // src={props.fluid}
-              // style={{
-              //   backgroundImage: `${props.fluid}`,
-              // }}
-            > */}
-            <Img fluid={props.fluid} /> {/* </CardMedia> */}
-            {/* <Img src={props.src} /> */}
+            <Img fluid={props.fluid} />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>
               <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
                 {props.postTitle}
               </h3>
-              {/* <Typography
-              use="subtitle2"
-              tag="h2"
-              theme="textSecondaryOnBackground"
-              style={{ marginTop: "-1rem" }}
-            >
-              by Izzy Wilding
-            </Typography> */}
             </div>
           </CardPrimaryAction>
           <CardActions>

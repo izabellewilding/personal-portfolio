@@ -334,13 +334,14 @@ blockquote {
 }
 .blog-post-card {
   text-decoration: none;
-  margin: 1rem;
 
-  @media (max-width: 768px) {
-    margin: 0;
-    margin-bottom: 1.666%;
+  @media (min-width: 768px) {
+    margin: 1;
+    width: 20rem;
+    height: 20rem;
   }
 }
+
 .blog-post-list {
   display: flex;
   flex-wrap: wrap;
