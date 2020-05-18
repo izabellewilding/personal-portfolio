@@ -259,17 +259,13 @@ blockquote {
 
 #nav-toggle {
   position: absolute;
-  right: 0;
-  top: 0;
-  margin: 2rem;
+  right: 2rem;
+  top: 2rem;
 }
 
 #nav-toggle {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
-  @media (max-width: 768px) {
-    padding: 8px 17px 0px 0px;
-  }
 }
 #nav-toggle span,
 #nav-toggle span:before,
