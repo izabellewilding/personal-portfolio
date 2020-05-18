@@ -220,7 +220,7 @@ const Contact = React.forwardRef((props, ref) => {
                   </li> */}
                   <li>
                     <a
-                      href="https://izabelle-art.netlify.com/#/"
+                      href="https://www.izabelleart.com/#/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"

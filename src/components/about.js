@@ -41,7 +41,7 @@ const About = React.forwardRef((props, ref) => {
           <Link
             to="/blog"
             className="relative max-w-sm rounded bg-white overflow-hidden shadow-lg"
-            style={{ minWidth: "21rem" }}
+            style={{ maxHeight: "32rem", minWidth: "19rem" }}
           >
             {" "}
             <Image
