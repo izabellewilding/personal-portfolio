@@ -15,7 +15,7 @@ import "../styles/mdc-drawer.css"
 import "@material/drawer/dist/mdc.drawer.min.css"
 import "@material/list/dist/mdc.list.min.css"
 
-import "@rmwc/tooltip/tooltip.css"
+// import "@rmwc/tooltip/tooltip.css"
 
 // import Header from "./header"
 
