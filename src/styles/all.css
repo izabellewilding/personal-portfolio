@@ -556,3 +556,10 @@ blockquote {
   height: auto;
   width: 15rem;
 }
+
+.bird {
+  position: absolute;
+  bottom: -1.8rem;
+  right: 0;
+  height: 250px;
+}

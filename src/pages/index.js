@@ -41,7 +41,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout>
+    <Layout className="relative">
       {" "}
       <SEO title="Izabelle Wilding - Web Developer" />
       <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
