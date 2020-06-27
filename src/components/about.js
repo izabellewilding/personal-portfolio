@@ -47,19 +47,8 @@ const About = React.forwardRef((props, ref) => {
                 Bristol, UK
               </p>
               <p className="pt-8 text-sm">
-                <p classNameName="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-                  I hadn't always planned to become a developer but my love for
-                  language, solving complex problems, and art lead me here. I
-                  discovered coding a year ago when I found the book HTML & CSS
-                  by John Duckett, I've been hooked ever since.
-                </p>
-                <p classNameName="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800">
-                  I love building websites with HTML, CSS and JavaScript and use
-                  Gatsby as a framework. In my free time I enjoy experimenting
-                  with Photoshop and Illustrator to convert hand drawn images
-                  into SVGs for my sites. I also paint - click on the bird below
-                  to see some of my art.
-                </p>{" "}
+                Freelance web developer with a love for buildng blazing fast
+                websites with sleek user interfaces.
               </p>
 
               <Link to="/#contact" className="pt-12 pb-8">
@@ -133,10 +122,10 @@ const About = React.forwardRef((props, ref) => {
             </div>
           </div>
           <div className="w-full lg:w-2/5">
-            {/* <Img */}
-            {/* // src="https://source.unsplash.com/MP0IUfwrn0A" */}
-            {/* className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" */}
-            {/* /> */}
+            <img
+              src="https://source.unsplash.com/MP0IUfwrn0A"
+              className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+            />
           </div>
         </div>
       </div>

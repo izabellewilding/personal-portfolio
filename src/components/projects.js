@@ -54,7 +54,7 @@ const Projects = React.forwardRef((props, ref) => {
                   backgroundColor: "#18132a",
                 }}
                 gitLink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
-                siteLink="https://www.izabelleart.com/"
+                siteLink="https://pottery-ecommerce.netlify.app/"
                 // cardImage="../images/card1-img"
               />
             }
