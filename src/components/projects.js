@@ -40,7 +40,7 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{
                   fontFamily: "europa",
                 }}
-                cardImage="../images/ecommerce-snippet.png"
+                cardImage="../images/pastelCermaincs.jpg"
                 // logo={"Artist Photograph & Art Gallery"}
                 cardTitle="Gatsby Stripe Ecommerce"
               />

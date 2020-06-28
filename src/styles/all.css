@@ -159,10 +159,6 @@ blockquote {
 //   }
 // }
 
-.bird {
-  bottom: 25rem;
-}
-
 .max-width {
   max-width: 91rem;
 }
@@ -559,7 +555,7 @@ blockquote {
 
 .bird {
   position: absolute;
-  bottom: -1.8rem;
+  bottom: -0.8rem;
   right: 0;
   height: 250px;
 }

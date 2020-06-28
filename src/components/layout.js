@@ -11,7 +11,6 @@ import "../styles/imports.css"
 import "../styles/all.css"
 import "../styles/gradient.css"
 import "../styles/mdc-drawer.css"
-import Bird from "../assets/bird-green.svg"
 import { Tooltip } from "@rmwc/tooltip"
 import "@rmwc/tooltip/tooltip.css"
 
@@ -24,11 +23,13 @@ import "@material/list/dist/mdc.list.min.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative">
+    <div className="">
       <Tooltip content="I also like to make art - take a look" showArrow>
-        <a href="https://www.izabelleart.com/" className="bird" target="_blank">
-          <Bird className="bird" />
-        </a>
+        <a
+          href="https://www.izabelleart.com/"
+          className="bird"
+          target="_blank"
+        ></a>
       </Tooltip>{" "}
       {children}
     </div>
