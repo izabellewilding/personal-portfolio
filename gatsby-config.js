@@ -4,7 +4,7 @@ module.exports = {
     description: `Personal website Izabelle Wilding Freelance Web Developer in Bristol`,
     author: `@izabellewilding`,
     siteUrl: "https://izzywilding.com",
-    image: "/images/text-logo2.png",
+    image: "/images/site-shot.JPG",
     keywords: ["izabelle wilding"],
     twitterUsername: "@izzwizz_",
   },
