@@ -3,6 +3,12 @@ module.exports = {
     title: `Izabelle Wilding`,
     description: `Izabelle Wilding, Freelance Web Developer in Bristol`,
     author: `@izabellewilding`,
+    siteURL: "izzywilding.com",
+    image: {
+      src: "./src/images/text-logo2.png",
+      height: 200,
+      width: 200,
+    },
   },
   plugins: [
     {
