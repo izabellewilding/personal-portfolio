@@ -5,7 +5,7 @@ module.exports = {
     author: `@izabellewilding`,
     siteURL: "izzywilding.com",
     image: {
-      src: "./src/images/text-logo2.png",
+      src: "./public/static/site-preview.JPG",
       height: 200,
       width: 200,
     },
