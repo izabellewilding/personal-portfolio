@@ -3,7 +3,7 @@ module.exports = {
     title: `Izabelle Wilding`,
     description: `Personal website Izabelle Wilding Freelance Web Developer in Bristol`,
     author: `@izabellewilding`,
-    siteUrl: "izzywilding.com",
+    siteUrl: "https://izzywilding.com",
     image: "/images/text-logo2.png",
     keywords: ["izabelle wilding"],
     twitterUsername: "@izzwizz_",
