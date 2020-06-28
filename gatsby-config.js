@@ -1,14 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Izabelle Wilding`,
-    description: `Izabelle Wilding, Freelance Web Developer in Bristol`,
+    description: `Personal website Izabelle Wilding Freelance Web Developer in Bristol`,
     author: `@izabellewilding`,
-    siteURL: "izzywilding.com",
-    image: {
-      src: "./public/static/site-preview.JPG",
-      height: 200,
-      width: 200,
-    },
+    siteUrl: "izzywilding.com",
+    image: "/images/text-logo2.png",
+    keywords: ["izabelle wilding"],
+    twitterUsername: "@izzwizz_",
   },
   plugins: [
     {
