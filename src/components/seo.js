@@ -19,7 +19,10 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            image
+            image {
+              width
+              height
+            }
           }
         }
       }
@@ -28,6 +31,7 @@ function SEO({ description, lang, meta, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
   const metaImg = image || site.siteMetadata.image
+
   return (
     <Helmet
       htmlAttributes={{
