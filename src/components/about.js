@@ -66,8 +66,9 @@ const About = React.forwardRef((props, ref) => {
               </p>
 
               <p className="">
-                Aspiring front-end developer with a real passion for building
-                user interfaces. Currently working on an ecommerce store using
+                Freelance front-end developer with a passion for building
+                attractive user interfaces and keeping up to date with modern
+                technologies. Currently working on an ecommerce store using
                 Gatsby, Stripe, and Material UI.{" "}
                 <a
                   href="https://pottery-ecommerce.netlify.app/"
@@ -77,9 +78,7 @@ const About = React.forwardRef((props, ref) => {
                 </a>
               </p>
 
-              <p className=" text-blue-900 font-bold">
-                Looking for a junior role!
-              </p>
+              <p className=" text-blue-900 font-bold">Looking for a job!</p>
               <h3 className="mb-6">Currently Using:</h3>
 
               <div className="flex flex-row items-center mb-6 text-left justify-center lg:justify-start">
