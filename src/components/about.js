@@ -40,11 +40,11 @@ const About = React.forwardRef((props, ref) => {
                 src="../images/selfie.JPG"
               />
 
-              <h1 className="text-3xl font-bold pt-8 lg:pt-0">
+              <h1 className="text-3xl font-bold pt-8 lg:pt-0 barlow-cond uppercase">
                 Izabelle Wilding
               </h1>
               <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-              <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+              <p className="pt-4 font-bold flex items-center justify-center lg:justify-start">
                 <svg
                   className="h-4 fill-current text-teal-700 pr-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +78,7 @@ const About = React.forwardRef((props, ref) => {
                 </a>
               </p>
 
-              <p className=" text-blue-900 font-bold">Looking for a job!</p>
-              <h3 className="mb-6">Currently Using:</h3>
+              <h3 className="mb-6 font-bold ">Currently Using:</h3>
 
               <div className="flex flex-row items-center mb-6 text-left justify-center lg:justify-start">
                 <ul className="list-disc list-inside text-sm mr-4">

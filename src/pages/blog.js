@@ -36,7 +36,10 @@ const ListItem = ({ data, ...props }) => {
           <CardPrimaryAction>
             <Img fluid={props.fluid} />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>
-              <h3 className=" text-xl" style={{ paddingTop: "1rem" }}>
+              <h3
+                className=" text-xl text-center "
+                style={{ paddingTop: "1rem" }}
+              >
                 {props.postTitle}
               </h3>
             </div>
@@ -45,9 +48,6 @@ const ListItem = ({ data, ...props }) => {
             <CardActionButtons>
               <CardActionButton>Read</CardActionButton>
             </CardActionButtons>
-            <CardActionIcons>
-              <CardActionIcon icon={<Share />} />
-            </CardActionIcons>
           </CardActions>
         </Card>
       </Link>
@@ -107,9 +107,13 @@ const BlogHome = ({ data }) => {
       <Header isSticky={true} onNav={handleHeaderNavigation} />
       <div className="header-offset"></div>
 
-      <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden  pb-64 pt-16">
-        <h2 className="text-3xl mb-8 leading-normal ">Blog Posts</h2>
-        <div className="blog-post-list">
+      <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden pb-64 ">
+        <div className="blog-page-header">
+          <h2 className="text-5xl text-left leading-normal DM-serif uppercase ">
+            Blog Posts
+          </h2>
+        </div>
+        <div className="blog-post-list max-w-6xl">
           {result.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <ListItem

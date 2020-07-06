@@ -49,7 +49,7 @@ class ContactForm extends React.Component {
     return (
       <section className="section w-full p-4 sm:w-9/12 lg:w-1/2 m-auto md:m-0 my-4 shadow-md">
         <div className=" font-sans">
-          <h1 className="text-xl chivo-reg mb-6 text-center uppercase underlined inline text-lightPrimary">
+          <h1 className="text-xl mb-6 text-center uppercase underlined inline text-lightPrimary">
             Contact
           </h1>
           <form
@@ -148,7 +148,7 @@ const Contact = React.forwardRef((props, ref) => {
           <div className="w-full lg:w-1/3 px-4">
             {" "}
             {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
-            <h4 className="text-3xl font-semibold text-lightPrimary mb-6">
+            <h4 className="text-3xl font-semibold DM-serif text-lightPrimary mb-6">
               Get in touch
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-400">

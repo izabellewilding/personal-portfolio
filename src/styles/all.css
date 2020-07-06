@@ -3,12 +3,6 @@ $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
 
 @font-face {
-  font-family: "chivo";
-  src: url(../fonts/Chivo-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
   font-family: "quicksand";
   src: url(../fonts/Quicksand-Light.ttf);
   font-display: swap;
@@ -17,6 +11,12 @@ $midPrimary: #1fb3cb;
 @font-face {
   font-family: "barlow-cond";
   src: url(../fonts/BarlowCondensed-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM-serif";
+  src: url(../fonts/DMSerifDisplay-Regular.ttf);
   font-display: swap;
 }
 
@@ -51,6 +51,10 @@ blockquote {
   font-family: "barlow-cond", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.DM-serif {
+  font-family: "DM-serif", serif;
+}
+
 //text style
 
 //colors
@@ -68,7 +72,10 @@ blockquote {
 }
 
 .bg-button {
-  background-color: rgba(158, 19, 133, 0.1);
+  background-color: #123d6382;
+}
+.bg-button:hover {
+  background-color: $darkPrimary;
 }
 
 .text-darkPrimary {
@@ -97,7 +104,7 @@ blockquote {
 }
 
 .header-offset {
-  height: 99px;
+  height: 80px;
 }
 
 .arrow {
@@ -317,6 +324,15 @@ blockquote {
   text-decoration: none;
 }
 
+.mdc-button__label {
+  color: $darkPrimary;
+  font-size: 1rem;
+}
+
+.mdc-card__actions {
+  justify-content: center;
+  padding: 1rem;
+}
 //blog
 
 .blog-post-container {
@@ -324,19 +340,36 @@ blockquote {
   margin: auto;
   padding: 3rem;
 }
+.blog-page-header {
+  height: 25vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 3rem;
+  padding-top: 8rem;
+}
 .blog-post-card {
   text-decoration: none;
+  transition: all ease-in-out 0.25s;
 
   @media (min-width: 768px) {
     margin: 1;
-    width: 20rem;
+    width: 28rem;
     height: 20rem;
   }
+}
+
+.blog-post-card:hover {
+  transform: translateY(-1rem);
+  transition: all ease-in-out 0.5s;
 }
 
 .blog-post-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem;
 }
 .blog-intro {
   text-align: left;

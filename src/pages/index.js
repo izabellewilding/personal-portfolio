@@ -13,6 +13,7 @@ const IndexPage = () => {
   const aboutRef = useRef()
   const projectsRef = useRef()
   const contactRef = useRef()
+
   // const blogRef = useRef()
 
   //sticky header scroll
@@ -26,6 +27,8 @@ const IndexPage = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
+
+    //smooth scrolling effect
   }, [])
 
   const handleHeaderNavigation = navItem => {

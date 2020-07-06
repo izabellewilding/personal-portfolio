@@ -48,7 +48,7 @@ const Projects = React.forwardRef((props, ref) => {
             cardBack={
               <CardBack
                 listItem1="Stripe payment integration"
-                listItem2="Custom built shopping cart"
+                listItem2="Custom built shopping cart using React Context"
                 listItem3="Netlify contact form"
                 style={{
                   backgroundColor: "#18132a",
