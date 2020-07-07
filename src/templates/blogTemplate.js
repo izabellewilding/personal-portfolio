@@ -29,13 +29,13 @@ export default function Template({
     <Layout>
       <Header isSticky={true} onNav={handleHeaderNavigation} />
       <div className="header-offset"></div>
-      <div className="w-full min-h-full flex flex-wrap overflow-hidden mt-12">
+      <div className="w-full min-h-full flex flex-wrap overflow-hidden mt-6">
         <div className="w-full md:w-7/12 px-4 mr-auto ml-auto mb-8">
           <header className="">
-            <h1 className="text-3xl mb-2 leading-normal ">
+            <h1 className="text-4xl mb-2 DM-serif leading-normal ">
               {frontmatter.title}
             </h1>
-            <h2 className="text-2xl mb-2 quicksand text-gray-700">
+            <h2 className="text-2xl mb-2 text-gray-700">
               {frontmatter.description}
             </h2>
             <h3>{frontmatter.date}</h3>
