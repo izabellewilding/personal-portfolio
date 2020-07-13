@@ -4,8 +4,10 @@ import Logo from "../assets/text-logo2.svg"
 import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
-import classNames from "classnames"
+import Twitter from "../assets/twitter.svg"
+import Medium from "../assets/medium.svg"
 
+import classNames from "classnames"
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
 import styled from "styled-components"
 import { List } from "@rmwc/list"
@@ -161,20 +163,23 @@ const Header = props => {
         >
           <LinkedIn className="social-icon" />
         </a>
-        {/* <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <i className="fab fa-dribbble"></i>
-              </button> */}
         <a
-          href="mailto:izabellewilding@gmail.com"
+          href="https://twitter.com/izzwizz_"
           target="_blank"
           rel="noopener noreferrer"
           className=" text-gray-900 font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-          type="button"
+          title="Twitter"
         >
-          <Email className="social-icon" />
+          <Twitter className="social-icon" />
+        </a>
+        <a
+          href="https://medium.com/@izabellewilding"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" text-gray-900 font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          title="Medium"
+        >
+          <Medium className="social-icon" />
         </a>
       </div>
     </header>

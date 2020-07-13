@@ -32,7 +32,7 @@ export default function Template({
       <div className="w-full min-h-full flex flex-wrap overflow-hidden mt-6">
         <div className="w-full md:w-7/12 px-4 mr-auto ml-auto mb-8">
           <header className="">
-            <h1 className="text-4xl mb-2 DM-serif leading-normal ">
+            <h1 className="text-4xl mb-2 quicksand leading-normal ">
               {frontmatter.title}
             </h1>
             <h2 className="text-2xl mb-2 text-gray-700">

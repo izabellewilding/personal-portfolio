@@ -4,6 +4,7 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import FloatingIcons from "../components/floating-icons"
+import Twitter from "../assets/twitter.svg"
 
 // const Gradient = styled.div`
 //   background: linear-gradient(
@@ -148,7 +149,7 @@ const Contact = React.forwardRef((props, ref) => {
           <div className="w-full lg:w-1/3 px-4">
             {" "}
             {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
-            <h4 className="text-3xl font-semibold DM-serif text-lightPrimary mb-6">
+            <h4 className="text-3xl font-semibold quicksand text-lightPrimary mb-6">
               Get in touch
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-400">
@@ -176,13 +177,13 @@ const Contact = React.forwardRef((props, ref) => {
               </a>
 
               <a
-                href="mailto:izabellewilding@gmail.com"
+                href="https://twitter.com/izzwizz_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" bg-white text-gray-900 shadow-lg font-normal p-2 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <Email className="social-icon-footer" />
+                <Twitter className="social-icon-footer" />
               </a>
             </div>
           </div>

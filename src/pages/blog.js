@@ -19,7 +19,7 @@ import "@material/drawer/dist/mdc.drawer.min.css"
 
 import Header from "../components/header"
 import Contact from "../components/contact"
-import Share from "../assets/share-24px.svg"
+import Medium from "../assets/medium.svg"
 import Img from "gatsby-image"
 
 const ListItem = ({ data, ...props }) => {
@@ -109,11 +109,25 @@ const BlogHome = ({ data }) => {
 
       <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden pb-64 ">
         <div className="blog-page-header">
-          <h2 className="text-5xl text-left leading-normal DM-serif uppercase ">
+          <h2 className="text-5xl text-center leading-normal quicksand uppercase ">
             Blog Posts
           </h2>
+          <div className="flex flex-col justify-center text-center  align-middle">
+            <h3 className="mb-5 text-lg font-sans uppercase">
+              Find me on Medium
+            </h3>
+            <a
+              href="https://medium.com/@izabellewilding"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+              title="Medium"
+            >
+              <Medium className=" h-8" />
+            </a>
+          </div>
         </div>
-        <div className="blog-post-list max-w-6xl">
+        <div className="flex flex-wrap justify-center mt-12 md:m-12 max-w-6xl">
           {result.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <ListItem

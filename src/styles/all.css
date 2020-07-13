@@ -346,8 +346,10 @@ blockquote {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 3rem;
-  padding-top: 8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 .blog-post-card {
   text-decoration: none;
@@ -365,12 +367,6 @@ blockquote {
   transition: all ease-in-out 0.5s;
 }
 
-.blog-post-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 3rem;
-}
 .blog-intro {
   text-align: left;
 }
