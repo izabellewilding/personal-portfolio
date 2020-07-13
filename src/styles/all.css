@@ -588,7 +588,8 @@ blockquote {
 
 .bird {
   position: absolute;
-  bottom: -0.8rem;
+  bottom: -9.8rem;
   right: 0;
-  height: 250px;
+  height: 711px;
+  fill: #0000000d;
 }

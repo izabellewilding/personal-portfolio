@@ -5,6 +5,7 @@ import "../styles/card-flip.css"
 import "../styles/all.css"
 import CardFront from "./card-front"
 import CardBack from "./card-back"
+import Bird from "../assets/bird-green.svg"
 
 const Card = ({ cardFront, cardBack }) => {
   return (
@@ -24,6 +25,8 @@ const Projects = React.forwardRef((props, ref) => {
       {...props}
       className="relative mt-12 mb-12 w-full min-h-screen flex justify-center items-center"
     >
+      <Bird className="bird" />
+
       <div className="header-offset"></div>
       <div className="container inline-block pb-16">
         {/* <div classname="section">
