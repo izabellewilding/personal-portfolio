@@ -159,11 +159,11 @@ const Contact = React.forwardRef((props, ref) => {
             <h4 className="text-3xl font-semibold quicksand text-lightPrimary mb-6">
               Get in touch
             </h4>
-            <h5 className="text-lg mt-0 mb-2 text-gray-400">
+            {/* <h5 className="text-lg mt-0 mb-2 text-gray-400">
               Find me on these platforms - or say hello!
-            </h5>{" "}
+            </h5>{" "} */}
             <p className="text-gray-500">izabellewilding@gmail.com</p>
-            <div className="my-6 flex flex-row">
+            {/* <div className="my-6 flex flex-row">
               <IconButton
                 tag="a"
                 href={`https://github.com/izabellewilding`}
@@ -185,9 +185,9 @@ const Contact = React.forwardRef((props, ref) => {
                 target="_blank"
                 rel="noopener noreferrer"
               />
-            </div>
+            </div> */}
           </div>
-          <div className="w-full lg:w-6/12 px-4 pt-8 md:pt-0">
+          <div className="w-full lg:w-6/12 px-4 md:pt-0">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
