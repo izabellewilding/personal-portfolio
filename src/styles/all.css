@@ -2,11 +2,11 @@ $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
 
-@font-face {
+/* @font-face {
   font-family: "quicksand";
   src: url(../fonts/Quicksand-Light.ttf);
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "barlow-cond";
@@ -44,7 +44,7 @@ blockquote {
 }
 
 .quicksand {
-  font-family: "quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .barlow-cond {
