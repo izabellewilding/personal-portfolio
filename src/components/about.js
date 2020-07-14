@@ -78,9 +78,11 @@ const About = React.forwardRef((props, ref) => {
                 </a>
               </p>
 
-              <h3 className="mb-6 font-bold ">Currently Using:</h3>
+              <h3 className="mb-6 font-bold hidden md:block ">
+                Currently Using:
+              </h3>
 
-              <div className="flex flex-row items-center mb-6 text-left justify-center lg:justify-start">
+              <div className="hidden md:flex flex-row items-center mb-6 text-left justify-center lg:justify-start ">
                 <ul className="list-disc list-inside text-sm mr-4">
                   <li>Gatsby</li>
                   <li>React</li>
