@@ -5,7 +5,8 @@ import LinkedIn from "../assets/linkedin-darkRed.svg"
 import FloatingIcons from "../components/floating-icons"
 import Twitter from "../assets/twitter.svg"
 import { IconButton } from "@rmwc/icon-button"
-import "@material/icon-button/dist/mdc.icon-button.css"
+import "@material/icon-button/dist/mdc.icon-button.min.css"
+
 import styled from "styled-components"
 
 // const Gradient = styled.div`
