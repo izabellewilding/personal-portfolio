@@ -35,7 +35,7 @@ const CardFront = ({ ...props }) => {
       <p className="absolute text-white text-4xl uppercase flex barlow-cond p-8 text-center">
         {props.cardTitle}
       </p>
-      <div className="card-back-buttons absolute visible md:invisible text-center">
+      <div className="card-buttons absolute visible md:invisible text-center">
         <a href={props.siteLink} target="_blank" rel="noopener noreferrer">
           <button className="visit-site-button">View Site</button>
         </a>{" "}
@@ -43,7 +43,7 @@ const CardFront = ({ ...props }) => {
           <button className="visit-site-button">
             {" "}
             <GitHub className="git-button-icon" />
-            Git
+            Github
           </button>
         </a>
       </div>

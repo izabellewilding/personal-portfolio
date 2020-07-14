@@ -16,7 +16,7 @@ const CardBack = ({ ...props }) => {
           <li>{props.listItem2}</li>
           <li>{props.listItem3}</li>
         </ul>{" "}
-        <div className="card-back-buttons">
+        <div className="card-buttons">
           <a href={props.siteLink} target="_blank" rel="noopener noreferrer">
             <button className="visit-site-button">View Site</button>
           </a>{" "}

@@ -46,6 +46,8 @@ const Projects = React.forwardRef((props, ref) => {
                 cardImage="../images/pastelCermaincs.jpg"
                 // logo={"Artist Photograph & Art Gallery"}
                 cardTitle="Gatsby Stripe Ecommerce"
+                gitLink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+                siteLink="https://pottery-ecommerce.netlify.app/"
               />
             }
             cardBack={
@@ -68,8 +70,9 @@ const Projects = React.forwardRef((props, ref) => {
                 style={{ backgroundColor: "#18132a" }}
                 // logo={<ElecLogo />}
                 cardImage="../images/doula-site-snippet.png"
-                cardTitle="Gatsby Netlify CMS
-            "
+                cardTitle="Gatsby Netlify CMS"
+                siteLink="https://doula-site.netlify.com/"
+                gitLink="https://github.com/doula-website/personal-doula-website"
               />
             }
             cardBack={
@@ -91,6 +94,8 @@ const Projects = React.forwardRef((props, ref) => {
                 // logo={<FoodBlogLogo />}
                 cardImage="../images/abof-img.png"
                 cardTitle="Food Recipe Website"
+                gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
+                siteLink="https://abitoffood.netlify.com/"
               />
             }
             cardBack={
@@ -114,6 +119,8 @@ const Projects = React.forwardRef((props, ref) => {
                 // logo={<ElecLogo />}
                 cardImage="../images/elec-site-img.png"
                 cardTitle="Small business website"
+                siteLink="https://www.alexwildingelectricalservices.com/"
+                gitLink="https://github.com/izabellewilding/website-for-electrician"
               />
             }
             cardBack={
