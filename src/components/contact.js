@@ -54,7 +54,7 @@ class ContactForm extends React.Component {
     return (
       <section className="section w-full p-4 sm:w-9/12 lg:w-1/2 m-auto md:m-0 my-4 shadow-md">
         <div className=" font-sans">
-          <h1 className="text-xl mb-6 text-center uppercase underlined inline text-lightPrimary">
+          <h1 className="text-3xl font-semibold quicksand text-lightPrimary mb-6 text-center underlined inline">
             Contact
           </h1>
           <form
