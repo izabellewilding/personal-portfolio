@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
 import GitHub from "../assets/github-darkRed.svg"
-import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import FloatingIcons from "../components/floating-icons"
 import Twitter from "../assets/twitter.svg"
+import { IconButton } from "@rmwc/icon-button"
+import "@material/icon-button/dist/mdc.icon-button.css"
+import styled from "styled-components"
 
 // const Gradient = styled.div`
 //   background: linear-gradient(
@@ -15,6 +17,7 @@ import Twitter from "../assets/twitter.svg"
 //     rgba(198, 204, 214, 0) 100%
 //   );
 // `
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -157,34 +160,27 @@ const Contact = React.forwardRef((props, ref) => {
             </h5>{" "}
             <p className="text-gray-500">izabellewilding@gmail.com</p>
             <div className="my-6 flex flex-row">
-              <a
-                href="https://github.com/izabellewilding"
+              <IconButton
+                tag="a"
+                href={`https://github.com/izabellewilding`}
+                icon={<GitHub style={{ fill: "white" }} />}
                 target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white flex shadow-lg font-normal p-2  items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <GitHub className="social-icon-footer" />{" "}
-              </a>
-              <a
+              />
+
+              <IconButton
+                icon={<LinkedIn style={{ fill: "white" }} />}
+                tag="a"
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-white shadow-lg flex font-normal p-2 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <LinkedIn className="social-icon-footer" />
-              </a>
-
-              <a
-                href="https://twitter.com/izzwizz_"
+              />
+              <IconButton
+                tag="a"
+                icon={<Twitter style={{ fill: "white" }} />}
+                href={"https://twitter.com/izzwizz_"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-white text-gray-900 shadow-lg font-normal p-2 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <Twitter className="social-icon-footer" />
-              </a>
+              />
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4 pt-8 md:pt-0">

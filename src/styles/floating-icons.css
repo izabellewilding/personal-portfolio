@@ -7,12 +7,9 @@
   left: 59vw;
   top: -1rem;
   @media (max-width: 1000px) {
-    /* position: absolute;
-    height: 500px;
-    vertical-align: top;
-    left: 169px;
-    top: 1rem;
-    opacity: 0.75; */
+    /* vertical-align: top;
+    left: 37vw;
+    top: 9rem; */
   }
 }
 
