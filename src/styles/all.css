@@ -2,6 +2,8 @@ $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
 
+@import "prismjs/themes/prism-solarizedlight.css";
+
 /* @font-face {
   font-family: "quicksand";
   src: url(../fonts/Quicksand-Light.ttf);

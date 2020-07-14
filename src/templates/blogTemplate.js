@@ -3,7 +3,7 @@ import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Contact from "../components/contact"
-import "prismjs/themes/prism-solarizedlight.css"
+import "../styles/prism-solarizedlight.css"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

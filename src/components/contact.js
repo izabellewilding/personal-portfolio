@@ -6,6 +6,9 @@ import FloatingIcons from "../components/floating-icons"
 import Twitter from "../assets/twitter.svg"
 import { IconButton } from "@rmwc/icon-button"
 import "@material/icon-button/dist/mdc.icon-button.min.css"
+import "@material/icon-button/dist/mdc.icon-button.css"
+import "@rmwc/icon/icon.css"
+import "@material/ripple/dist/mdc.ripple.css"
 
 import styled from "styled-components"
 
