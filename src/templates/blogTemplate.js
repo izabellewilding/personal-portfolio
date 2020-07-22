@@ -3,7 +3,7 @@ import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Contact from "../components/contact"
-import "../styles/prism-solarizedlight.css"
+import "../styles/prism-solarizedlight.scss"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -29,13 +29,16 @@ export default function Template({
     <Layout>
       <Header isSticky={true} onNav={handleHeaderNavigation} />
       <div className="header-offset"></div>
-      <div className="w-full min-h-full flex flex-wrap overflow-hidden mt-6">
+      <div
+        className="w-full min-h-full flex flex-wrap m-auto overflow-hidden mt-6"
+        style={{ maxWidth: 1200 }}
+      >
         <div className="w-full md:w-7/12 px-4 mr-auto ml-auto mb-8">
           <header className="">
-            <h1 className="text-4xl mb-2 quicksand leading-normal ">
+            <h1 className="text-4xl mb-2 DM-sans leading-normal ">
               {frontmatter.title}
             </h1>
-            <h2 className="text-2xl mb-2 text-gray-700">
+            <h2 className="text-3xl quicksand mb-2 text-gray-700">
               {frontmatter.description}
             </h2>
             <h3>{frontmatter.date}</h3>

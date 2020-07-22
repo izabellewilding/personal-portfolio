@@ -5,6 +5,23 @@ import SEO from "../components/seo"
 import Splashes from "./splashes.js"
 import Logo from "../assets/text-logo2.svg"
 
+export const Button = () => {
+  return (
+    <Link
+      to="projects"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={500}
+      className="absolute bottom-0 bg-button transition-all bg-duration-100 hover:bg-blue-900 text-blue-100 font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-full quicksand"
+      style={{ bottom: "25%" }}
+      role="button"
+    >
+      Take me to Projects
+    </Link>
+  )
+}
+
 const LandingPage = React.forwardRef((props, ref) => {
   return (
     <main
@@ -25,7 +42,7 @@ const LandingPage = React.forwardRef((props, ref) => {
         <Splashes /> {/* hero text */}
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="inline-block">
-            <h1 className="relative whitespace-no-wrap DM-sans text-5xl md:text-6xl text-darkPrimary uppercase  leading-none">
+            <h1 className="relative whitespace-no-wrap DM-sans text-4xl md:text-6xl text-darkPrimary uppercase  leading-none">
               Izabelle Wilding
             </h1>{" "}
             <p className="landing-subheading quicksand quicksand-letter-spacing text-xl md:text-3xl text-lightPrimary uppercase ">
@@ -33,21 +50,9 @@ const LandingPage = React.forwardRef((props, ref) => {
             </p>{" "}
             <SocialIcons />
           </div>
-
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="absolute bottom-0 bg-button transition-all bg-duration-100 hover:bg-blue-900 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
-            style={{ bottom: "25%" }}
-            role="button"
-          >
-            Take me to Projects
-          </Link>
         </div>{" "}
       </div>{" "}
+      <Button />
       {/* </div>{" "} */}
       {/* </div> */}
     </main>

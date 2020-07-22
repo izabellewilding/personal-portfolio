@@ -99,7 +99,7 @@ const Header = props => {
           {" "}
           <DrawerTitle>
             {" "}
-            <Link>
+            <Link to="/">
               <Logo className="h-12 nav-logo svg-darkPrimary" />
             </Link>
           </DrawerTitle>

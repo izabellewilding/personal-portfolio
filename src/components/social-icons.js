@@ -5,7 +5,7 @@ import LinkedIn from "../assets/linkedin-darkRed.svg"
 import Twitter from "../assets/twitter.svg"
 import Medium from "../assets/medium.svg"
 
-import "../styles/social-icons.css"
+import "../styles/social-icons.scss"
 
 const SocialIcons = props => {
   return (

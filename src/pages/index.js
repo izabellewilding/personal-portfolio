@@ -46,11 +46,11 @@ const IndexPage = () => {
   return (
     <Layout className="relative">
       {" "}
-      <SEO title="Izabelle Wilding - Web Developer" />
+      <SEO title="Izabelle Wilding | Web development and Design" />
       <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage navitem="landing" id="home" ref={landingRef} />
-      <Projects navitem="projects" id="projects" ref={projectsRef} />
       <About navitem="about" ref={aboutRef} id="about" />
+      <Projects navitem="projects" id="projects" ref={projectsRef} />
       <Contact navitem="contact" id="contact" ref={contactRef} />
     </Layout>
   )

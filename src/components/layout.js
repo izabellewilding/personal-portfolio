@@ -8,14 +8,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import SEO from "./seo"
-import "../styles/imports.css"
-import "../styles/all.css"
-import "../styles/gradient.css"
-import "../styles/mdc-drawer.css"
+import "../styles/fonts.scss"
+import "../styles/imports.scss"
+import "../styles/all.scss"
+import "../styles/gradient.scss"
+import "../styles/mdc-drawer.scss"
 import "@rmwc/tooltip/tooltip.css"
-
-import "@material/drawer/dist/mdc.drawer.min.css"
-import "@material/list/dist/mdc.list.min.css"
+import "../../node_modules/tailwindcss/dist/base.css"
+import "../../node_modules/tailwindcss/dist/components.css"
+import "../../node_modules/tailwindcss/dist/utilities.css"
 
 // import "@rmwc/tooltip/tooltip.css"
 
@@ -24,7 +25,7 @@ import "@material/list/dist/mdc.list.min.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <SEO />
+      <SEO title="Izabelle Wilding | Web development and Design" />
       <div className="">{children}</div>
     </>
   )

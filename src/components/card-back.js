@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/card-back.css"
+import "../styles/card-back.scss"
 import "../styles/projects.css"
 import GitHub from "../assets/github-darkRed.svg"
 

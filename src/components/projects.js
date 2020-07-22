@@ -1,8 +1,8 @@
 import React from "react"
-import "../styles/card-back.css"
-import "../styles/card-flip.css"
+import "../styles/card-back.scss"
+import "../styles/card-flip.scss"
 // import "../styles/card-front.css"
-import "../styles/all.css"
+import "../styles/all.scss"
 import Bird from "../assets/bird-green.svg"
 import ProjectCard from "./project-card.js"
 
@@ -27,7 +27,7 @@ const Projects = React.forwardRef((props, ref) => {
       <Bird className="bird" />
 
       <div className="header-offset"></div>
-      <div className="inline-block pb-16 w-full p-10">
+      <div className="inline-block pb-16 w-full p-4 md:p-10">
         <h1
           className="quicksand uppercase text-md font-semibold"
           style={{ letterSpacing: 3 }}
@@ -40,7 +40,7 @@ const Projects = React.forwardRef((props, ref) => {
         >
           Take a Look{" "}
         </h2>{" "}
-        <section className="projects w-full grid grid-cols-1 md:grid-cols-2 gap-10 justify-between">
+        <section className="projects w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
           <ProjectCard
             date="July 2020"
             backgroundcolor="#643ede"

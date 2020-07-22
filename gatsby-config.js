@@ -113,19 +113,10 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [
-          require(`tailwindcss`),
-          require(`autoprefixer`),
-          require(`postcss-simple-vars`),
-          require(`postcss-nested`),
-          require(`postcss-import`),
-          require(`postcss-custom-media`),
-        ],
-        parser: require("postcss-comment"),
+        postCssPlugins: [require("tailwindcss")],
       },
     },
 
@@ -160,8 +151,8 @@ module.exports = {
           "/node_modules/@material/list",
           "/node_modules/@material/button",
           "/node_modules/@material/card",
-          "all.css",
-          "imports.css",
+          "all.scss",
+          "imports.scss",
           "mdc-drawer.css",
         ], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders

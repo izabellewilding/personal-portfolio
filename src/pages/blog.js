@@ -6,10 +6,8 @@ import {
   Card,
   CardPrimaryAction,
   CardActions,
-  CardActionIcon,
   CardActionButtons,
   CardActionButton,
-  CardActionIcons,
 } from "@rmwc/card"
 import "@material/card/dist/mdc.card.css"
 import "@material/button/dist/mdc.button.css"
@@ -131,6 +129,7 @@ const BlogHome = ({ data }) => {
           {result.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <ListItem
+                key={node.frontmatter.postImage.id}
                 linkTo={node.frontmatter.path}
                 fluid={node.frontmatter.postImage.childImageSharp.fluid}
                 postTitle={node.frontmatter.title}

@@ -1,104 +1,8 @@
 $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
+$secondary: #ea0fb6;
 
-/* ERROR ARE CAUSED BY POSTCSS LINTING PROBLEM WITH VS CODE - THE CODE IS FINE :)  */
-
-@import "prismjs/themes/prism-solarizedlight.css";
-
-@font-face {
-  font-family: "barlow-cond";
-  src: url(../fonts/BarlowCondensed-Medium.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DM-sans";
-  src: url(../fonts/DMSans-Medium.ttf);
-  font-display: swap;
-}
-
-p {
-  margin-bottom: 1.666rem;
-}
-h2 {
-  font-size: 1.25rem;
-}
-a {
-  color: $midPrimary;
-}
-ol {
-  list-style: square;
-}
-aside {
-  display: unset;
-}
-blockquote {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-}
-
-.quicksand {
-  font-family: "Quicksand", sans-serif;
-}
-
-.barlow-cond {
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.DM-sans {
-  font-family: "DM-sans", serif;
-}
-
-//text style
-
-//colors
-
-//color utils
-
-.bg-darkPrimary {
-  background-color: $darkPrimary;
-}
-.bg-midPrimary {
-  background-color: $midPrimary;
-}
-.bg-lightPrimary {
-  background-color: $lightPrimary;
-}
-
-.bg-button {
-  background-color: #123d6382;
-}
-.bg-button:hover {
-  background-color: $darkPrimary;
-}
-
-.text-darkPrimary {
-  color: $darkPrimary;
-}
-.text-midPrimary {
-  color: $midPrimary;
-}
-.text-lightPrimary {
-  color: $lightPrimary;
-}
-
-.svg-lightPrimary {
-  fill: $lightPrimary;
-}
-.svg-midPrimary {
-  fill: $midPrimary;
-}
-.svg-darkPrimary {
-  fill: $darkPrimary;
-}
-
-.quicksand-letter-spacing {
-  letter-spacing: 5px;
-}
 .notSticky {
   display: none;
   z-index: 1;
@@ -208,6 +112,7 @@ blockquote {
 .button-icons {
   height: 24px;
   width: 24px;
+  margin: 0.5rem;
 }
 
 //nav
@@ -417,165 +322,27 @@ blockquote {
     }
   }
 }
+/* card */
 
-//card back
-
-.card-back {
-  position: absolute;
-  top: 0;
+.project-card {
+  min-height: 500px;
+}
+.project-image-wrapper {
+  position: absolute !important;
   bottom: 0;
-  left: 0;
   right: 0;
-  overflow: hidden;
-  font-family: "quicksand";
+  width: 100%;
+  height: 30%;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  transition: filter ease-in-out 0.5s;
+  @media (min-width: 760px) {
+    width: 60%;
+  }
 }
 
-.card-back-image-wrapper {
+.project-image {
+  position: initial !important;
   height: 100%;
-  width: 100%;
-  position: relative;
-
-  .card-img {
-    position: absolute !important;
-    top: 0rem;
-    left: 0rem;
-    right: 0rem;
-    bottom: 0rem;
-  }
-
-  // .card-gradient {
-  //   background: linear-gradient(
-  //     to bottom,
-  //     rgba(51, 51, 51, 0.123) 0%,
-  //     rgba(0, 18, 36, 0.897) 50%,
-  //     rgb(0, 18, 36) 100%
-  //   );
-  // }
-}
-
-.card-text-wrapper {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  right: 0rem;
-  bottom: 0rem;
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: transparent;
-
-  .card-back-title {
-    margin-bottom: 0;
-    font-size: 1.25rem;
-    color: $lightPrimary;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  // .card-back-subtitle {
-  //   padding: 1rem;
-  //   padding-bottom: 0rem;
-  // }
-
-  ul {
-    color: $lightPrimary;
-
-    padding: 1rem;
-    padding-top: 0;
-    padding-bottom: 0rem;
-    font-size: 1rem;
-    margin-bottom: 0;
-
-    li {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.card-buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "quicksand";
-  width: 100%;
-  bottom: 1rem;
-
-  a {
-    text-decoration: none !important;
-  }
-  button {
-    padding: 0.75rem;
-    margin: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-
-    height: 3rem;
-    width: auto;
-
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: transparent;
-
-    border: solid 1px $lightPrimary;
-    color: $lightPrimary;
-    cursor: pointer;
-    font-family: "quicksand";
-
-    display: flex;
-    align-items: center;
-
-    transition: all;
-
-    &:active,
-    &:hover,
-    &:focus {
-      background-color: rgba(240, 248, 255, 0.096);
-    }
-
-    .git-button-icon {
-      fill: $lightPrimary;
-
-      height: 1.2rem;
-      margin-right: 0.5rem;
-      margin-left: 0;
-    }
-  }
-}
-
-//card front
-.card-front {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: all 0.2s;
-
-  line-height: 1.5;
-  // color: $lightPrimary;
-  // font-family: $primaryFont;
-  // text-transform: uppercase;
-  font-size: 2rem;
-}
-
-.project-logo {
-  height: auto;
-  width: 15rem;
+  opacity: 0.7;
 }
 
 .bird {
