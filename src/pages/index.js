@@ -47,9 +47,14 @@ const IndexPage = () => {
     <Layout className="relative">
       {" "}
       <SEO title="Izabelle Wilding | Web development and Design" />
-      <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
+      {/* <Header isSticky={isSticky} onNav={handleHeaderNavigation} /> */}
       <LandingPage navitem="landing" id="home" ref={landingRef} />
-      <About navitem="about" ref={aboutRef} id="about" />
+      <About
+        navitem="about"
+        ref={aboutRef}
+        id="about"
+        style={{ position: "sticky", top: -20 }}
+      />
       <Projects navitem="projects" id="projects" ref={projectsRef} />
       <Contact navitem="contact" id="contact" ref={contactRef} />
     </Layout>

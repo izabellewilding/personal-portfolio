@@ -46,6 +46,7 @@ const Header = props => {
     <header
       {...props}
       className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
+      style={{ zIndex: 50 }}
     >
       <Link to="/" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
