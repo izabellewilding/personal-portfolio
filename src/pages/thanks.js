@@ -25,7 +25,7 @@ const Thanks = () => {
       {" "}
       <Header isSticky={true} onNav={handleHeaderNavigation} />
       <div className="header-offset"></div>
-      <div className=" m-12 md:m-40">
+      <div className="m-12 md:m-40">
         <p>Thank you! I'll get back to you as soon as possible.</p>
       </div>
       <Contact />

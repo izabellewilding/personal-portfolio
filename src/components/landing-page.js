@@ -25,11 +25,11 @@ const LandingPage = React.forwardRef((props, ref) => {
         <Splashes /> {/* hero text */}
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="inline-block">
-            <h1 className="relative whitespace-no-wrap text-darkPrimary text-5xl md:text-6xl uppercase barlow-cond leading-none">
+            <h1 className="relative whitespace-no-wrap DM-sans text-5xl md:text-6xl text-darkPrimary uppercase  leading-none">
               Izabelle Wilding
             </h1>{" "}
-            <p className="landing-subheading quicksand text-xl md:text-3xl text-lightPrimary uppercase">
-              Freelance Web Developer
+            <p className="landing-subheading quicksand quicksand-letter-spacing text-xl md:text-3xl text-lightPrimary uppercase ">
+              Web Development & Design
             </p>{" "}
             <SocialIcons />
           </div>

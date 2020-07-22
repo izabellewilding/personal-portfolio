@@ -17,8 +17,8 @@ $midPrimary: #1fb3cb;
 }
 
 @font-face {
-  font-family: "DM-serif";
-  src: url(../fonts/DMSerifDisplay-Regular.ttf);
+  font-family: "DM-sans";
+  src: url(../fonts/DMSans-Medium.ttf);
   font-display: swap;
 }
 
@@ -53,8 +53,8 @@ blockquote {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.DM-serif {
-  font-family: "DM-serif", serif;
+.DM-sans {
+  font-family: "DM-sans", serif;
 }
 
 //text style
@@ -100,6 +100,9 @@ blockquote {
   fill: $darkPrimary;
 }
 
+.quicksand-letter-spacing {
+  letter-spacing: 5px;
+}
 .notSticky {
   display: none;
   z-index: 1;
@@ -144,16 +147,6 @@ blockquote {
 .sm-active {
   background-color: $midPrimary;
   width: 100%;
-}
-
-@keyframes moveDown {
-  from {
-    transform: translateY(-5rem);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translateY(0);
-  }
 }
 
 //breakpoints

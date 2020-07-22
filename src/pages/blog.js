@@ -109,7 +109,7 @@ const BlogHome = ({ data }) => {
 
       <main className="flex-col relative w-full min-h-full flex flex-wrap items-center overflow-hidden pb-64 ">
         <div className="blog-page-header">
-          <h2 className="text-5xl text-center leading-normal quicksand uppercase ">
+          <h2 className="text-5xl text-center leading-normal DM-sans uppercase ">
             Blog Posts
           </h2>
           <div className="flex flex-col justify-center text-center  align-middle">

@@ -40,7 +40,7 @@ const About = React.forwardRef((props, ref) => {
                 src="../images/selfie.JPG"
               />
 
-              <h1 className="text-3xl font-bold pt-8 lg:pt-0 quicksand uppercase">
+              <h1 className="text-3xl font-bold pt-8 lg:pt-0 DM-sans uppercase">
                 Izabelle Wilding
               </h1>
               <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
