@@ -10,7 +10,7 @@ export const ScrollButton = ({ ...props }) => {
       smooth={true}
       offset={0}
       duration={500}
-      className="p-4 w-full DM-sans text-lg "
+      className="p-3 w-full DM-sans text-lg "
       role="button"
     >
       {props.content}
@@ -22,7 +22,7 @@ export const NavigationButton = ({ ...props }) => {
   return (
     <GatsbyLink
       to={props.linkto}
-      className="p-4 w-full DM-sans text-lg "
+      className="p-3 w-full DM-sans text-lg "
       role="button"
     >
       <div>{props.content}</div>
@@ -32,7 +32,7 @@ export const NavigationButton = ({ ...props }) => {
 
 export const TextButton = ({ ...props }) => {
   return (
-    <div className="p-4 rounded-full text-lightPrimary uppercase DM-sans text-lg bg-secondary button-hover ">
+    <div className="p-3 rounded-full text-lightPrimary uppercase DM-sans text-lg bg-secondary button-hover ">
       {props.text}
     </div>
   )

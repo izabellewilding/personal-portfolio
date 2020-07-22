@@ -12,15 +12,15 @@ const About = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       {...props}
-      className="relative w-full min-h-full bg-white z-10"
+      className="relative w-full min-h-screen bg-white z-10"
     >
       <Bird className="bird" />
 
-      <div className=" w-full ">
+      <div className=" w-full flex ">
         <div className="max-w-screen-lg flex items-center justify-center h-auto lg:h-screen m-auto my-32 lg:my-0">
           <div
             id="profile"
-            className="w-full flex flex-col relative m-auto lg:w-2/3 text-center lg:mx-0"
+            className="w-full flex flex-col relative m-auto lg:w-2/3 text-center lg:mx-0 p-3"
           >
             {/* <Img
                 className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
@@ -39,11 +39,7 @@ const About = React.forwardRef((props, ref) => {
               JavaScript.
             </p>
 
-            <p className="font-semibold text-lg mt-8">
-              {" "}
-              I've recently started a blog - have a read!
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 mx-6 col-gap-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 mx-20 col-gap-8 mt-6">
               <ScrollButton
                 linkto="projects"
                 content={<TextButton text="Projects" />}
