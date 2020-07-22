@@ -1,0 +1,78 @@
+@import "./all.scss";
+
+@font-face {
+  font-family: "barlow-cond";
+  src: url(../fonts/BarlowCondensed-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM-sans";
+  src: url(../fonts/DMSans-Medium.ttf);
+  font-display: swap;
+}
+
+p {
+  margin-bottom: 1.666rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+a {
+  color: $midPrimary;
+}
+ol {
+  list-style: square;
+}
+aside {
+  display: unset;
+}
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.barlow-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.DM-sans {
+  font-family: "DM-sans", serif;
+}
+
+//text style
+
+//colors
+
+//color utils
+
+.text-darkPrimary {
+  color: $darkPrimary;
+}
+.text-midPrimary {
+  color: $midPrimary;
+}
+.text-lightPrimary {
+  color: $lightPrimary;
+}
+
+.svg-lightPrimary {
+  fill: $lightPrimary;
+}
+.svg-midPrimary {
+  fill: $midPrimary;
+}
+.svg-darkPrimary {
+  fill: $darkPrimary;
+}
+
+.quicksand-letter-spacing {
+  letter-spacing: 1.5px;
+}

@@ -143,7 +143,7 @@ const Contact = React.forwardRef((props, ref) => {
   return (
     <footer
       ref={ref}
-      className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden"
+      className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden z-10"
     >
       <FloatingIcons />
       <div

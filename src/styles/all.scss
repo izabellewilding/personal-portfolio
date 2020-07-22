@@ -2,7 +2,30 @@ $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
 $secondary: #ea0fb6;
+$secondaryDark: #a1017c;
 
+.bg-darkPrimary {
+  background-color: $darkPrimary;
+}
+.bg-midPrimary {
+  background-color: $midPrimary;
+}
+.bg-lightPrimary {
+  background-color: $lightPrimary;
+}
+
+.bg-button {
+  background-color: #123d6382;
+}
+.bg-button:hover {
+  background-color: $darkPrimary;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.button-hover:hover {
+  background-color: $secondaryDark;
+}
 .notSticky {
   display: none;
   z-index: 1;
