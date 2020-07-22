@@ -43,7 +43,7 @@ const Projects = React.forwardRef((props, ref) => {
         <section className="projects w-full grid grid-cols-1 md:grid-cols-2 gap-10 justify-between">
           <ProjectCard
             date="July 2020"
-            backgroundColor="#643ede"
+            backgroundcolor="#643ede"
             cardimage="../images/todo-app.JPG"
             cardtitle="Tdolist - Todo app built with React Hooks"
             gitlink="https://github.com/izabellewilding/react-todo-app"
@@ -56,7 +56,7 @@ const Projects = React.forwardRef((props, ref) => {
           <ProjectCard
             date="April - July 2020"
             cardimage="../images/pottery-ecommerce.JPG"
-            backgroundColor="#262229"
+            backgroundcolor="#262229"
             cardtitle="eCommerce - Using Stripe and Gatsby"
             gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
             sitelink="https://pottery-ecommerce.netlify.app/"

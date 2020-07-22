@@ -2,13 +2,9 @@ $lightPrimary: #e5f8fc;
 $darkPrimary: #12182b;
 $midPrimary: #1fb3cb;
 
-@import "prismjs/themes/prism-solarizedlight.css";
+/* ERROR ARE CAUSED BY POSTCSS LINTING PROBLEM WITH VS CODE - THE CODE IS FINE :)  */
 
-/* @font-face {
-  font-family: "quicksand";
-  src: url(../fonts/Quicksand-Light.ttf);
-  font-display: swap;
-} */
+@import "prismjs/themes/prism-solarizedlight.css";
 
 @font-face {
   font-family: "barlow-cond";
@@ -207,6 +203,11 @@ blockquote {
   fill: $darkPrimary;
   height: 20px;
   width: 20px;
+}
+
+.button-icons {
+  height: 24px;
+  width: 24px;
 }
 
 //nav

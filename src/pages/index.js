@@ -31,14 +31,14 @@ const IndexPage = () => {
     //smooth scrolling effect
   }, [])
 
-  const handleHeaderNavigation = navItem => {
-    if (navItem === "landing") {
+  const handleHeaderNavigation = navitem => {
+    if (navitem === "landing") {
       landingRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-    } else if (navItem === "projects") {
+    } else if (navitem === "projects") {
       projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-    } else if (navItem === "about") {
+    } else if (navitem === "about") {
       aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-    } else if (navItem === "contact") {
+    } else if (navitem === "contact") {
       contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
     }
   }
@@ -48,10 +48,10 @@ const IndexPage = () => {
       {" "}
       <SEO title="Izabelle Wilding - Web Developer" />
       <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
-      <LandingPage navItem="landing" id="home" ref={landingRef} />
-      <Projects navItem="projects" id="projects" ref={projectsRef} />
-      <About navItem="about" ref={aboutRef} id="about" />
-      <Contact navItem="contact" id="contact" ref={contactRef} />
+      <LandingPage navitem="landing" id="home" ref={landingRef} />
+      <Projects navitem="projects" id="projects" ref={projectsRef} />
+      <About navitem="about" ref={aboutRef} id="about" />
+      <Contact navitem="contact" id="contact" ref={contactRef} />
     </Layout>
   )
 }

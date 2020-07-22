@@ -87,17 +87,17 @@ const BlogHome = ({ data }) => {
     }
   `)
 
-  const handleHeaderNavigation = navItem => {
-    if (navItem === "landing") {
+  const handleHeaderNavigation = navitem => {
+    if (navitem === "landing") {
       navigate("/")
-    } else if (navItem === "projects") {
+    } else if (navitem === "projects") {
       navigate("/#projects")
-    } else if (navItem === "about") {
+    } else if (navitem === "about") {
       navigate("/#about")
-    } else if (navItem === "contact") {
+    } else if (navitem === "contact") {
       navigate("/#contact")
 
-      // } else if (navItem === "blog") {
+      // } else if (navitem === "blog") {
       //   blogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
     }
   }
