@@ -49,7 +49,7 @@ const IndexPage = () => {
       <SEO title="Izabelle Wilding | Web development and Design" />
       <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage navitem="landing" id="home" ref={landingRef} />
-      <div className="relative bg-white">
+      <div className="relative bg-white z-20">
         <About navitem="about" ref={aboutRef} id="about" />
         <Projects navitem="projects" id="projects" ref={projectsRef} />
         <Contact navitem="contact" id="contact" ref={contactRef} />
