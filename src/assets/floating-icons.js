@@ -10,44 +10,39 @@ import PhotoshopLogo from "../assets/adobephotoshop.svg"
 import JSLogo from "../assets/javascript.svg"
 import IllustratorLogo from "../assets/adobeillustrator.svg"
 
+const IconContainer = ({ icon, ...props }) => {
+  return <div className={` tech-icon-container ${props.iconName}`}>{icon}</div>
+}
 const FloatingIcons = () => {
   return (
     <div className="tech-icons">
-      {/* <a href="" className="tech-icon-link">
-        {" "}
-        <div className="tech-icon-container sass">
-          <SassIcon className="image tech-icon" />
-        </div>
-      </a> */}
-
-      <div className="tech-icon-container sass">
+      <IconContainer iconName="sass">
         <SassIcon className="image tech-icon large" />
-      </div>
-      <div className="tech-icon-container git">
+      </IconContainer>
+      <IconContainer iconName="git">
         <GitIcon className="image tech-icon medium-size" />
-      </div>
-      <div className="tech-icon-container react">
+      </IconContainer>{" "}
+      <IconContainer iconName="react">
         <ReactLogo className="image tech-icon medium-size" />
-      </div>
-      <div className="tech-icon-container java-script">
+      </IconContainer>
+      <IconContainer iconName="java-script">
         <JSLogo className="image tech-icon small" />
-      </div>
-
-      <div className="tech-icon-container gatsby">
+      </IconContainer>{" "}
+      <IconContainer iconName="gatsby">
         <GatsbyIcon className="image tech-icon" />
-      </div>
-      <div className="tech-icon-container html-5">
+      </IconContainer>{" "}
+      <IconContainer iconName="HTML-5">
         <HTML5Icon className="image tech-icon medium-size" />
-      </div>
-      <div className="tech-icon-container photoshop">
+      </IconContainer>{" "}
+      <IconContainer iconName="photoshop">
         <PhotoshopLogo className="image tech-icon small" />
-      </div>
-      <div className="tech-icon-container css-3">
+      </IconContainer>{" "}
+      <IconContainer iconName="css-3">
         <CSS3Icon className="image tech-icon" />
-      </div>
-      <div className="tech-icon-container illustrator">
+      </IconContainer>{" "}
+      <IconContainer>
         <IllustratorLogo className="image tech-icon medium-size" />
-      </div>
+      </IconContainer>{" "}
     </div>
   )
 }
