@@ -18,7 +18,8 @@ const StyledDrawer = styled(Drawer)`
   background-color: #ffffff;
   top: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 50;
+  height: 100vh;
 `
 
 const StyledList = styled(List)`
@@ -96,7 +97,13 @@ const Header = props => {
           <span></span>
         </div>
       </div>
-      <StyledDrawer className="z-10" dir="ltr" modal open={open} onClose={menu}>
+      <StyledDrawer
+        className="z-10 h"
+        dir="ltr"
+        modal
+        open={open}
+        onClose={menu}
+      >
         <DrawerHeader>
           {" "}
           <DrawerTitle>
@@ -146,7 +153,7 @@ const Header = props => {
           </StyledList>
         </DrawerContent>
       </StyledDrawer>
-      <div className="mt-6 flex flex-row w-full justify-end invisible md:visible">
+      <div className=" flex flex-row w-full justify-end invisible md:visible">
         <a
           href="https://github.com/izabellewilding"
           target="_blank"
