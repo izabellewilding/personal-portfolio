@@ -116,20 +116,20 @@ const Header = props => {
         <DrawerContent>
           <StyledList stlye={{ listStyle: "none" }}>
             <a
-              onClick={() => props.onNav("projects")}
-              className="hover:text-midPrimary cursor-pointer"
-            >
-              <li className="text-darkPrimary nav-list-item mr-6 p-1">
-                Projects
-              </li>
-            </a>
-            <a
               onClick={() => props.onNav("about")}
               className="hover:text-midPrimary cursor-pointer"
             >
               {" "}
               <li className="text-darkPrimary nav-list-item  mr-6 p-1">
                 About
+              </li>
+            </a>
+            <a
+              onClick={() => props.onNav("projects")}
+              className="hover:text-midPrimary cursor-pointer"
+            >
+              <li className="text-darkPrimary nav-list-item mr-6 p-1">
+                Projects
               </li>
             </a>
             <a href="/blog">

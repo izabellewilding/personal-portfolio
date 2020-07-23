@@ -21,7 +21,7 @@ const Projects = React.forwardRef((props, ref) => {
     <main
       ref={ref}
       {...props}
-      className="w-full relative z-10"
+      className="w-full "
       style={{ backgroundColor: "#f2f2f2" }}
     >
       <div className="relative py-20 w-full min-h-screen max-w-screen-xl m-auto flex justify-center items-center">
