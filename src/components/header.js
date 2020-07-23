@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Logo from "../assets/text-logo2.svg"
 import GitHub from "../assets/github-darkRed.svg"
+import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import Twitter from "../assets/twitter.svg"
 import Medium from "../assets/medium.svg"
@@ -10,6 +11,8 @@ import classNames from "classnames"
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
 import styled from "styled-components"
 import { List } from "@rmwc/list"
+import "@material/list/dist/mdc.list.min.css"
+import "@material/drawer/dist/mdc.drawer.min.css"
 
 const StyledDrawer = styled(Drawer)`
   background-color: #ffffff;
@@ -42,8 +45,9 @@ const Header = props => {
   return (
     <header
       {...props}
-      className={`${props.isSticky ? "sticky shadow gradient" : "notSticky"}`}
-      style={{ zIndex: 50 }}
+      className={`${
+        props.isSticky ? "nav-active shadow z-40" : "nav-hidden shadow z-40"
+      }`}
     >
       <Link to="/" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />

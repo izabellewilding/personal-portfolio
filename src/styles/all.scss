@@ -27,8 +27,8 @@ $secondaryDark: #a1017c;
   background-color: $secondaryDark;
 }
 .notSticky {
-  display: none;
-  z-index: 1;
+  transform: translateY(-79.9px);
+  position: fixed;
 }
 
 .header-offset {
@@ -46,17 +46,30 @@ $secondaryDark: #a1017c;
   width: 120%;
 }
 
-.sticky {
+.nav-active {
   position: fixed;
-  height: auto;
   display: flex;
   flex-direction: row;
-  background-color: white;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  animation: moveDown 0.5s ease;
+  transform: translateY(0px);
+  transition: all 0.2s ease-in-out;
+  background-color: #7ac7ce;
+  height: auto;
+}
+
+.nav-hidden {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-90px);
+  transition: all 0.2s ease-in-out;
 }
 
 .social-icon-hover {
