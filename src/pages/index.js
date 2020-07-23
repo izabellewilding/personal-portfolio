@@ -19,7 +19,7 @@ const IndexPage = () => {
   //sticky header scroll
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(projectsRef.current.getBoundingClientRect().top <= 80)
+      setSticky(aboutRef.current.getBoundingClientRect().top <= 80)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -47,7 +47,7 @@ const IndexPage = () => {
     <Layout className="relative">
       {" "}
       <SEO title="Izabelle Wilding | Web development and Design" />
-      {/* <Header isSticky={isSticky} onNav={handleHeaderNavigation} /> */}
+      <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage navitem="landing" id="home" ref={landingRef} />
       <About
         navitem="about"
