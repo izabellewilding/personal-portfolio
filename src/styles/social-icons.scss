@@ -1,4 +1,4 @@
-/* @import "../styles/all.scss";
+@import "./colors.scss";
 
 .social-bar {
   width: 100%;
@@ -34,8 +34,8 @@
   }
 
   &:hover,
-  // &:active,
-  &:focus {
+    // &:active,
+    &:focus {
     .social-icon {
       fill: $lightPrimary;
     }
@@ -43,4 +43,4 @@
       opacity: 1;
     }
   }
-} */
+}

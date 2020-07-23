@@ -1,20 +1,6 @@
 import React from "react"
-import "../styles/card-back.scss"
-import "../styles/card-flip.scss"
-// import "../styles/card-front.css"
 import "../styles/all.scss"
 import ProjectCard from "./project-card.js"
-
-// const Card = ({ cardFront, cardBack }) => {
-//   return (
-//     <div className="flip-container m-5">
-//       <div className="flipper">
-//         <div className="front">{NewCard}</div>
-//         <div className="back">{cardBack}</div>
-//       </div>
-//     </div>
-//   )
-// }
 
 const Projects = React.forwardRef((props, ref) => {
   return (
@@ -73,52 +59,6 @@ const Projects = React.forwardRef((props, ref) => {
               listitem2="Live Instagram feed using Netlify Cloud Functions "
               listitem3="Bulma CSS theme"
             />
-            {/*           
-          <Card
-            cardFront={
-              <CardFront
-                cardImage="../images/abof-img.png"
-                cardTitle="Food Recipe Website"
-                gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
-                siteLink="https://abitoffood.netlify.com/"
-              />
-            }
-            cardBack={
-              <CardBack
-                listItem1="Elasticlunr on and offline search bar"
-                listItem2="Markdown recipe pages"
-                listItem3="Fully responsive UI"
-                style={{
-                  backgroundColor: "#18132a",
-                }}
-                gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
-                siteLink="https://abitoffood.netlify.com/"
-              /> */}
-            {/* }
-          />{" "}
-          <Card
-            cardFront={
-              <CardFront
-                style={{ backgroundColor: "#18132a" }}
-                cardImage="../images/elec-site-img.png"
-                cardTitle="Small business website"
-                siteLink="https://www.alexwildingelectricalservices.com/"
-                gitLink="https://github.com/izabellewilding/website-for-electrician"
-              />
-            }
-            cardBack={
-              <CardBack
-                style={{
-                  backgroundColor: "#18132a",
-                }}
-                listItem1="Optimised for SEO with targeted keyword strategy"
-                listItem2="Responsive design"
-                listItem3="High lighthouse performance score"
-                siteLink="https://www.alexwildingelectricalservices.com/"
-                gitLink="https://github.com/izabellewilding/website-for-electrician"
-              /> */}
-            {/* } */}
-            {/* /> */}
           </section>
         </div>
       </div>

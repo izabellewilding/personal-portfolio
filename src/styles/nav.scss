@@ -1,0 +1,123 @@
+@import "./colors.scss";
+
+.nav-list-item {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:focus,
+  &:active {
+    color: $lightPrimary;
+  }
+}
+
+.custom-underline {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    &::after {
+      width: 75%;
+      transition: 0.3s ease all;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    height: 2px;
+    width: 0%;
+    left: 12%;
+    background-color: $lightPrimary;
+    -webkit-transition: 0.5s ease all 0.3s;
+    transition: 0.5s ease all 0s;
+    // border-radius: 5px;
+  }
+}
+.hover-textLight {
+  &:hover {
+    color: $lightPrimary;
+  }
+}
+
+.nav-active {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0px);
+  transition: all 0.2s ease-in-out;
+  background-color: #7ac7ce;
+  height: auto;
+}
+
+.nav-hidden {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-90px);
+  transition: all 0.2s ease-in-out;
+}
+
+#nav-toggle {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 31px;
+  background: $darkPrimary;
+  position: absolute;
+  display: block;
+  content: "";
+  // @media (max-width: $mobileBreakpoint) {
+  //   display: block;
+  // }
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+  right: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
