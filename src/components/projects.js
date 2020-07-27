@@ -45,19 +45,19 @@ const Projects = React.forwardRef((props, ref) => {
               cardtitle="eCommerce - Using Stripe and Gatsby"
               gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
               sitelink="https://pottery-ecommerce.netlify.app/"
-              listitem1="Stripe secure payment integration"
-              listitem2="Products automatically pulled from Stripe by gatsby-plugin-stripe"
-              listitem3="Shopping cart built with React Hooks"
+              listitem1="Stripe Checkout redirect for secure payments"
+              listitem2="Loads Stripe products from Stripe API at build time using SSG"
+              listitem3="Custom built shopping cart built with React Context provider"
             />
 
             <ProjectCard
-              cardimage="../images/doula-site.JPG"
-              cardtitle="Small Business Website for a Bristol Based Doula"
-              sitelink="https://doula-site.netlify.com/"
-              gitlink="https://github.com/doula-website/personal-doula-website"
-              listitem1="Netlify CMS integration"
-              listitem2="Live Instagram feed using Netlify Cloud Functions "
-              listitem3="Bulma CSS theme"
+              date="July 2020"
+              cardtitle="Registration Form"
+              sitelink="https://react-registration-form.netlify.app/"
+              gitlink="https://github.com/izabellewilding/registration-form"
+              listitem1="JavaScript (React Hooks) form submission"
+              listitem2="Clean use of CSS-in-JS"
+              listitem3="Follows HTML form best practices"
             />
           </section>
         </div>
