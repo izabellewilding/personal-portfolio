@@ -53,11 +53,22 @@ const Projects = React.forwardRef((props, ref) => {
             <ProjectCard
               date="July 2020"
               cardtitle="Registration Form"
+              backgroundcolor="hsl(229deg 24% 22%)"
               sitelink="https://react-registration-form.netlify.app/"
               gitlink="https://github.com/izabellewilding/registration-form"
               listitem1="JavaScript (React Hooks) form submission"
               listitem2="Clean use of CSS-in-JS"
               listitem3="Follows HTML form best practices"
+            />
+            <ProjectCard
+              date="March - April 2020"
+              cardtitle="Small Business Website"
+              backgroundcolor="#076686"
+              sitelink="https://doula-site.netlify.com/"
+              gitLink="https://github.com/doula-website/personal-doula-website"
+              listitem1="Instagram feed with Netlify Cloud Functions"
+              listitem2="Bulma CSS styling"
+              listitem3="Netlify CMS integration"
             />
           </section>
         </div>
