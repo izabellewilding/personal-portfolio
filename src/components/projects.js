@@ -56,9 +56,9 @@ const Projects = React.forwardRef((props, ref) => {
               backgroundcolor="hsl(229deg 24% 22%)"
               sitelink="https://react-registration-form.netlify.app/"
               gitlink="https://github.com/izabellewilding/registration-form"
-              listitem1="JavaScript (React Hooks) form submission"
-              listitem2="Clean use of CSS-in-JS"
-              listitem3="Follows HTML form best practices"
+              listitem1="React Hooks user registration form"
+              listitem2="CSS-in-JS styled-component styling"
+              listitem3="Password and email validation"
             />
             <ProjectCard
               date="March - April 2020"
