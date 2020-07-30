@@ -52,13 +52,13 @@ const Projects = React.forwardRef((props, ref) => {
 
             <ProjectCard
               date="July 2020"
-              cardtitle="Registration Form"
+              cardtitle="React Hooks Registration Form"
               backgroundcolor="hsl(229deg 24% 22%)"
               sitelink="https://react-registration-form.netlify.app/"
               gitlink="https://github.com/izabellewilding/registration-form"
-              listitem1="React Hooks user registration form"
+              listitem1="Follows HMTL and accessibility best practices with password and email validation"
               listitem2="CSS-in-JS styled-component styling"
-              listitem3="Password and email validation"
+              listitem3="Unit testing with React-Testing Library"
             />
             <ProjectCard
               date="March - April 2020"
