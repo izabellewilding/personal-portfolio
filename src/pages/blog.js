@@ -111,7 +111,7 @@ const BlogHome = ({ data }) => {
             Blog Posts
           </h2>
           <div className="flex flex-col justify-center text-center  align-middle">
-            <h3 className="mb-5 text-lg font-sans uppercase">
+            {/* <h3 className="mb-5 text-lg font-sans uppercase">
               Find me on Medium
             </h3>
             <a
@@ -122,7 +122,7 @@ const BlogHome = ({ data }) => {
               title="Medium"
             >
               <Medium className=" h-8" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flex flex-wrap justify-center mt-12 md:m-12 max-w-6xl">

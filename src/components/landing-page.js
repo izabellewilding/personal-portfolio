@@ -38,7 +38,7 @@ const LandingPage = React.forwardRef((props, ref) => {
             linkto="about"
             content={
               <div className="flex justify-center">
-                {<Arrow className="h-12" />}
+                {<Arrow className="h-12 bounce" />}
               </div>
             }
           />

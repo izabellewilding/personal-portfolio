@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import SEO from "./seo"
+import "../styles/bounce.scss"
 import "../styles/fonts.scss"
 import "../styles/imports.scss"
 import "../styles/all.scss"

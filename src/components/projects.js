@@ -27,6 +27,16 @@ const Projects = React.forwardRef((props, ref) => {
           </h2>{" "}
           <section className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
             <ProjectCard
+              date="August 2020"
+              backgroundcolor="hsl(0deg 0% 10%)"
+              cardtitle="Tech Test for Kerve"
+              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              sitelink="https://kerve-test.netlify.app/"
+              listitem1="Website built with flat HTML, SASS, and JavaScript"
+              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
+              listitem3="JavaScript and CSS animations"
+            />
+            <ProjectCard
               date="July 2020"
               backgroundcolor="#643ede"
               cardimage="../images/todo-app.JPG"
@@ -41,7 +51,7 @@ const Projects = React.forwardRef((props, ref) => {
             <ProjectCard
               date="April - July 2020"
               cardimage="../images/pottery-ecommerce.JPG"
-              backgroundcolor="#262229"
+              backgroundcolor="#c61ee9"
               cardtitle="eCommerce - Using Stripe and Gatsby"
               gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
               sitelink="https://pottery-ecommerce.netlify.app/"
