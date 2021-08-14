@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Izabelle Wilding`,
-    description: `Personal website Izabelle Wilding Freelance Web Developer in Bristol`,
+    description: `Personal website Izabelle Wilding Web Developer`,
     author: `@izabellewilding`,
     siteUrl: "https://izzywilding.com",
     image: "/images/site-shot.JPG",
