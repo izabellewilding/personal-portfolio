@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "./image"
 import Bird from "../assets/bird-green.svg"
 import {
   ScrollButton,
@@ -32,13 +31,12 @@ const About = React.forwardRef((props, ref) => {
             </h1>
 
             <p className="text-lg">
-              Front-end focused Javascript developer working as a component
-              expert for Ecologi. I work on specialist component development,
-              accessibility, UI bug fixes, and recently lead a rebuild of our
-              core component library using the Adobe React Aria accessibility
-              hooks. I love working at the forefront of modern frontend
-              development and use tools such as React Query, Storybook, and
-              Styled-Components.
+              Front-end focused Javascript developer. I work on specialist
+              component development, accessibility, UI bug fixes, and recently
+              lead a rebuild of our core component library using the Adobe React
+              Aria accessibility hooks. I love working at the forefront of
+              modern frontend development and use tools such as React Query,
+              Storybook, and Styled-Components.
             </p>
             <br />
             <p className="text-lg">
