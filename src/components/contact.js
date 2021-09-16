@@ -1,16 +1,16 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
-import GitHub from "../assets/github-darkRed.svg"
-import LinkedIn from "../assets/linkedin-darkRed.svg"
 import FloatingIcons from "../components/floating-icons"
-import Twitter from "../assets/twitter.svg"
-import { IconButton } from "@rmwc/icon-button"
 import "@material/icon-button/dist/mdc.icon-button.min.css"
 import "@material/icon-button/dist/mdc.icon-button.css"
 import "@rmwc/icon/icon.css"
 import "@material/ripple/dist/mdc.ripple.css"
+// import GitHub from "../assets/github-darkRed.svg"
+// import LinkedIn from "../assets/linkedin-darkRed.svg"
+// import Twitter from "../assets/twitter.svg"
+// import { IconButton } from "@rmwc/icon-button"
 
-import styled from "styled-components"
+// import styled from "styled-components"
 
 // const Gradient = styled.div`
 //   background: linear-gradient(

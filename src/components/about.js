@@ -38,13 +38,6 @@ const About = React.forwardRef((props, ref) => {
               modern frontend development and use tools such as React Query,
               Storybook, and Styled-Components.
             </p>
-            <br />
-            <p className="text-lg">
-              Before coding I completed a degree in Linguistics from UCL and
-              have always loved solving challenging problems. When I am not
-              coding you can find me painting, DJing, or writing blog posts.
-            </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 mx-20 col-gap-8 mt-6">
               <ScrollButton
                 linkto="projects"

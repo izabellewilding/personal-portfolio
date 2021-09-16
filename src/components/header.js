@@ -5,7 +5,6 @@ import GitHub from "../assets/github-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import Twitter from "../assets/twitter.svg"
 import Medium from "../assets/medium.svg"
-
 import classNames from "classnames"
 import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer"
 import styled from "styled-components"
@@ -54,24 +53,24 @@ const Header = props => {
       </Link>
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
         {" "}
-        <a
+        <p
+          role="link"
           onClick={() => props.onNav("projects")}
           className="hover:text-midPrimary cursor-pointer"
         >
           <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Projects
-          </li>{" "}
-        </a>
-        <a
+          </li>
+        </p>
+        <p
           onClick={() => props.onNav("about")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          {" "}
           <li className="text-darkPrimary nav-list-item  hover-textLight custom-underline mr-6 p-1 quicksand">
             About
           </li>
-        </a>
-        <Link to="/blog">
+        </p>
+        <Link href="/blog" to="/blog">
           <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Blog
           </li>
