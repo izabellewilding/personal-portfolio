@@ -70,7 +70,7 @@ const Projects = React.forwardRef((props, ref) => {
               listitem2="CSS-in-JS styled-component styling"
               listitem3="Unit testing with React-Testing Library"
             />
-            <ProjectCard
+            {/* <ProjectCard
               date="March - April 2020"
               cardtitle="Small Business Website"
               backgroundcolor="#076686"
@@ -79,7 +79,7 @@ const Projects = React.forwardRef((props, ref) => {
               listitem1="Instagram feed with Netlify Cloud Functions"
               listitem2="Bulma CSS styling"
               listitem3="Netlify CMS integration"
-            />
+            /> */}
           </section>
         </div>
       </div>
