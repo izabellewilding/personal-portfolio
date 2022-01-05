@@ -4,11 +4,12 @@ import {
   ScrollButton,
   NavigationButton,
   TextButton,
-} from "../components/buttons"
+} from "./Buttons"
 
 const About = React.forwardRef((props, ref) => {
   return (
     <div
+    //a ref passed down from index.js for scroll into view functionality
       ref={ref}
       {...props}
       className="relative w-full min-h-screen bg-white z-10"

@@ -2,6 +2,7 @@ import React from "react"
 import { Link as ScrollLink } from "react-scroll"
 import { Link as GatsbyLink } from "gatsby"
 
+
 export const ScrollButton = ({ ...props }) => {
   return (
     <ScrollLink

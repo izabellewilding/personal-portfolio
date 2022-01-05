@@ -1,5 +1,5 @@
 import React from "react"
-import SocialIcons from "../components/social-icons.js"
+import SocialIcons from "../components/SocialIcons.js"
 import SEO from "../components/seo"
 import Splashes from "./splashes.js"
 import Logo from "../assets/text-logo2.svg"

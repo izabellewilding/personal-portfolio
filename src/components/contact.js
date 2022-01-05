@@ -1,26 +1,11 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
-import FloatingIcons from "../components/floating-icons"
+import FloatingIcons from "./FloatingTechIcons"
 import "@material/icon-button/dist/mdc.icon-button.min.css"
 import "@material/icon-button/dist/mdc.icon-button.css"
 import "@rmwc/icon/icon.css"
 import "@material/ripple/dist/mdc.ripple.css"
-// import GitHub from "../assets/github-darkRed.svg"
-// import LinkedIn from "../assets/linkedin-darkRed.svg"
-// import Twitter from "../assets/twitter.svg"
-// import { IconButton } from "@rmwc/icon-button"
 
-// import styled from "styled-components"
-
-// const Gradient = styled.div`
-//   background: linear-gradient(
-//     0deg,
-//     rgba(0, 0, 0, 1) 0%,
-//     rgba(0, 1, 62, 0.5055894183845413) 29%,
-//     rgba(0, 13, 104, 0.15825048281031162) 59%,
-//     rgba(198, 204, 214, 0) 100%
-//   );
-// `
 
 function encode(data) {
   return Object.keys(data)
@@ -155,37 +140,12 @@ const Contact = React.forwardRef((props, ref) => {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/3 px-4">
             {" "}
-            {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
             <h4 className="text-3xl font-semibold DM-sans text-lightPrimary mb-6">
               Get in touch
             </h4>
-            {/* <h5 className="text-lg mt-0 mb-2 text-gray-400">
-              Find me on these platforms - or say hello!
-            </h5>{" "} */}
+      
             <p className="text-gray-500">izabellewilding@gmail.com</p>
-            {/* <div className="my-6 flex flex-row">
-              <IconButton
-                tag="a"
-                href={`https://github.com/izabellewilding`}
-                icon={<GitHub style={{ fill: "white" }} />}
-                target="_blank"
-              />
-
-              <IconButton
-                icon={<LinkedIn style={{ fill: "white" }} />}
-                tag="a"
-                href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-              <IconButton
-                tag="a"
-                icon={<Twitter style={{ fill: "white" }} />}
-                href={"https://twitter.com/izzwizz_"}
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-            </div> */}
+ 
           </div>
           <div className="w-full lg:w-6/12 px-4 md:pt-0">
             <div className="flex flex-wrap items-top mb-6">

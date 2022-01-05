@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/all.scss"
-import ProjectCard from "./project-card.js"
+import ProjectCard from "./ProjectCard"
 
 const Projects = React.forwardRef((props, ref) => {
   return (

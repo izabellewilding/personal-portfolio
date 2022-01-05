@@ -3,6 +3,8 @@ import "../styles/card-back.scss"
 import "../styles/projects.css"
 import GitHub from "../assets/github-darkRed.svg"
 
+//flip cards are no longer part of the site but leaving here for future use 
+
 const CardBack = ({ ...props }) => {
   return (
     <div className="card-back" {...props}>

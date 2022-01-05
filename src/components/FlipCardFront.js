@@ -1,8 +1,11 @@
 import React from "react"
-import Img from "../components/image"
+import Img from "./image"
 import "../styles/projects.css"
 import styled from "styled-components"
 import GitHub from "../assets/github-darkRed.svg"
+
+//flip cards are no longer part of the site but leaving here for future use 
+
 
 // const Gradient = styled.div`
 //   background: linear-gradient(
