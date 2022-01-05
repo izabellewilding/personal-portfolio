@@ -1,6 +1,6 @@
 import React from "react"
 import SocialIcons from "../components/SocialIcons.js"
-import SEO from "../components/seo"
+import SEO from "./seo"
 import Splashes from "./splashes.js"
 import Logo from "../assets/text-logo2.svg"
 import Arrow from "../assets/arrow4-black.svg"
@@ -23,7 +23,6 @@ const LandingPage = React.forwardRef((props, ref) => {
       <div className="gradient relative w-full h-screen"> </div>
       <div className=" absolute opacity-25 bottom-0 right-0 top-0 left-0" />
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
-        <Splashes /> {/* hero text */}
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="inline-block">
             <h1 className="relative DM-sans text-4xl md:text-6xl text-darkPrimary uppercase  leading-none">

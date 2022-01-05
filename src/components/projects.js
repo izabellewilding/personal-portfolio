@@ -26,16 +26,27 @@ const Projects = React.forwardRef((props, ref) => {
             Take a Look{" "}
           </h2>{" "}
           <section className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
-            <ProjectCard
-              date="August 2020"
-              backgroundcolor="hsl(0deg 0% 10%)"
-              cardtitle="Tech Test for Kerve"
-              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
-              sitelink="https://kerve-test.netlify.app/"
-              listitem1="Website built with flat HTML, SASS, and JavaScript"
-              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
-              listitem3="JavaScript and CSS animations"
+          <ProjectCard
+              date="November 2021"
+              backgroundcolor="rgb(86 141 163)"
+              cardtitle="Avatar Generator used to generate avatars for NFTs"
+              gitlink="https://github.com/izabellewilding/avatar-generator"
+              listitem1="Custom built node CLI tool"
+              listitem2="Generates avatars from a set of SVGs"
+              listitem3="Made for an NFT project"
             />
+               <ProjectCard
+              date="April - July 2020"
+              cardimage="../images/pottery-ecommerce.JPG"
+              backgroundcolor="#c61ee9"
+              cardtitle="eCommerce - Using Stripe and Gatsby"
+              gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+              sitelink="https://pottery-ecommerce.netlify.app/"
+              listitem1="Stripe Checkout redirect for secure payments"
+              listitem2="Loads Stripe products from Stripe API at build time using SSG"
+              listitem3="Custom built shopping cart built with React Context provider"
+            />
+    
             <ProjectCard
               date="July 2020"
               backgroundcolor="#643ede"
@@ -48,17 +59,7 @@ const Projects = React.forwardRef((props, ref) => {
               listitem3="Saves todos in browser storage"
             />
 
-            <ProjectCard
-              date="April - July 2020"
-              cardimage="../images/pottery-ecommerce.JPG"
-              backgroundcolor="#c61ee9"
-              cardtitle="eCommerce - Using Stripe and Gatsby"
-              gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
-              sitelink="https://pottery-ecommerce.netlify.app/"
-              listitem1="Stripe Checkout redirect for secure payments"
-              listitem2="Loads Stripe products from Stripe API at build time using SSG"
-              listitem3="Custom built shopping cart built with React Context provider"
-            />
+         
 
             <ProjectCard
               date="July 2020"
@@ -69,6 +70,26 @@ const Projects = React.forwardRef((props, ref) => {
               listitem1="Follows HMTL and accessibility best practices with password and email validation"
               listitem2="CSS-in-JS styled-component styling"
               listitem3="Unit testing with React-Testing Library"
+            />        
+            <ProjectCard
+              date="August 2020"
+              backgroundcolor="rgb(198 30 233)"
+              cardtitle="Technical Test for Kerve Creative (Bath)"
+              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              sitelink="https://kerve-test.netlify.app/"
+              listitem1="Website built with flat HTML, SASS, and JavaScript"
+              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
+              listitem3="JavaScript and CSS animations"
+            />
+               <ProjectCard
+              date="August 2020"
+              backgroundcolor="rgb(6 108 80)"
+              cardtitle="Technical Test for Ecologi Climate Action (Bath)"
+              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              sitelink="https://kerve-test.netlify.app/"
+              listitem1="Website built with flat HTML, SASS, and JavaScript"
+              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
+              listitem3="JavaScript and CSS animations"
             />
             {/* <ProjectCard
               date="March - April 2020"

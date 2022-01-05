@@ -12,6 +12,9 @@ import { List } from "@rmwc/list"
 import "@material/list/dist/mdc.list.min.css"
 import "@material/drawer/dist/mdc.drawer.min.css"
 
+const StyledLogo = styled(Logo)`
+  height: 20px;
+`
 const StyledDrawer = styled(Drawer)`
   background-color: #ffffff;
   top: 0;
