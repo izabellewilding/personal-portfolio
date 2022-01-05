@@ -42,7 +42,10 @@ const Header = props => {
 
   function drawerOpen() {
     setOpen(!open)
+
   }
+
+  console.warn(props.isSticky, "is sticky")
 
   return (
     <header

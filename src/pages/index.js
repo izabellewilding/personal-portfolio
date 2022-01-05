@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from "react"
 import SEO from "../components/seo"
-import Layout from "../components/layout"
-import Header from "../components/header"
-import About from "../components/about.js"
+import Layout from "../components/Layout.js"
+import Header from "../components/Header.js"
+import About from "../components/About.js"
 import LandingPage from "../components/landing-page"
-import Projects from "../components/projects.js"
-import Contact from "../components/contact"
+import Projects from "../components/Projects.js"
+import Contact from "../components/Contact"
 
 const IndexPage = () => {
   const [isSticky, setSticky] = useState(false)

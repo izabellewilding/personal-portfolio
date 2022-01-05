@@ -4,7 +4,7 @@ import SEO from "./seo"
 import Splashes from "./splashes.js"
 import Logo from "../assets/text-logo2.svg"
 import Arrow from "../assets/arrow4-black.svg"
-import { ScrollButton } from "./buttons"
+import { ScrollButton } from "./Buttons"
 
 const LandingPage = React.forwardRef((props, ref) => {
   return (
