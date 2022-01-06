@@ -29,7 +29,7 @@ const SocialIcons = props => {
           <LinkedIn className="social-icon w-1/3" />
           <p className="text-xs icon-text p-2">Linkedin</p>
         </a>
-        <a
+        {/* <a
           href="https://twitter.com/izzwizz_"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const SocialIcons = props => {
         >
           <Twitter className="social-icon w-1/3" />
           <p className="text-xs icon-text p-2">Twitter</p>
-        </a>
+        </a> */}
         <a
           href="https://medium.com/@izabellewilding"
           target="_blank"
