@@ -8,7 +8,7 @@ const Projects = React.forwardRef((props, ref) => {
       ref={ref}
       {...props}
       className="w-full "
-      style={{ backgroundColor: "#f2f2f2" }}
+      style={{ backgroundColor: "rgb(202 207 217)" }}
     >
       <div className="relative py-20 w-full min-h-screen max-w-screen-xl m-auto flex justify-center items-center">
         <div className="header-offset"></div>
@@ -29,11 +29,11 @@ const Projects = React.forwardRef((props, ref) => {
           <ProjectCard
               date="November 2021"
               backgroundcolor="rgb(86 141 163)"
-              cardtitle="Avatar Generator used to generate avatars for NFTs"
+              cardtitle="Generative Art Node CLI tool"
               gitlink="https://github.com/izabellewilding/avatar-generator"
               listitem1="Custom built node CLI tool"
-              listitem2="Generates avatars from a set of SVGs"
-              listitem3="Made for an NFT project"
+              listitem2="Generates any number of avatar images from a set of SVGs"
+              listitem3="Made as part of an NFT project"
             />
                <ProjectCard
               date="April - July 2020"
