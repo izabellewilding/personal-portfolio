@@ -41,11 +41,11 @@ const ProjectCard = ({ ...props }) => {
           </ul>{" "}
         </div>
         <section className="flex flex-row md:flex-col">
-          <LinkButton
+         {props.sitelink && <LinkButton
             href={props.sitelink}
             icon={<Home className="button-icons svg-lightPrimary" />}
             label="View"
-          />
+          />}
           <LinkButton
             href={props.gitlink}
             icon={<Github className="button-icons svg-lightPrimary" />}
