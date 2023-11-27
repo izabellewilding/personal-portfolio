@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from "react"
 import SEO from "../components/seo"
-import Layout from "../components/Layout.js"
-import Header from "../components/Header.js"
-import About from "../components/About.js"
+import Layout from "../components/Layout"
+import Header from "../components/Header"
+import About from "../components/About"
 import LandingPage from "../components/landing-page"
-import Projects from "../components/Projects.js"
+import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 
 const IndexPage = () => {
